@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Pearl PharmMed – Healthcare Consulting | Pharmaceutical & Medical Solutions</title>
+
+    <!-- Meta Description for SEO -->
+    <meta name="description" content="Pearl PharmMed Healthcare Consulting Pvt. Ltd – Empowering healthcare through innovation, integrity & global reach. High-quality pharmaceutical and medical solutions worldwide." />
+    <meta name="keywords" content="Pearl PharmMed, healthcare consulting, pharmaceutical solutions, medical solutions, global healthcare, innovation integrity" />
+    <meta name="author" content="Pearl PharmMed Healthcare Consulting Pvt. Ltd" />
+
+    <!-- Stylesheets -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+    <link rel="icon" href="images/favicon.png" type="image/x-icon" />
+
+    <!-- Responsive -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+        /* ============================================
+   FOOTER STYLES - Pearl PharmMed Healthcare
+   ============================================ */
+        /* ---------- COLUMN 1: COMPANY NAME ---------- */
+        
+        .footer-widget .company-name {
+            font-size: 24px;
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 20px;
+            letter-spacing: 1px;
+            position: relative;
+            padding-bottom: 15px;
+        }
+        /* Optional: Underline effect for company name */
+        
+        .footer-widget .company-name:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 50px;
+            height: 3px;
+            background: #00a651;
+            border-radius: 2px;
+        }
+        /* Company name text style */
+        
+        .footer-widget .company-name span {
+            color: #00a651;
+        }
+        /* Company description text */
+        
+        .footer-widget .text.text-white {
+            color: #cccccc !important;
+            font-size: 14px;
+            line-height: 1.7;
+            margin-bottom: 20px;
+        }
+        /* Social Icons in Column 1 */
+        
+        .footer-widget .social-icon-list1 {
+            display: flex;
+            gap: 12px;
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+        
+        .footer-widget .social-icon-list1 li a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 36px;
+            height: 36px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            color: #ffffff;
+            font-size: 16px;
+            transition: all 0.3s ease;
+        }
+        
+        .footer-widget .social-icon-list1 li a:hover {
+            background: #00a651;
+            color: #ffffff;
+            transform: translateY(-3px);
+        }
+        /* ---------- COLUMN 4: CONTACT DETAILS ---------- */
+        /* Contact widget container */
+        
+        .contact-widget .widget-content {
+            margin-top: 0;
+        }
+        /* Individual contact info items */
+        
+        .contact-widget .info {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            margin-bottom: 18px;
+            transition: all 0.3s ease;
+        }
+        /* Contact icons */
+        
+        .contact-widget .info i {
+            min-width: 32px;
+            width: 32px;
+            height: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(0, 166, 81, 0.15);
+            border-radius: 50%;
+            font-size: 14px;
+            color: #00a651;
+            margin-top: 2px;
+            transition: all 0.3s ease;
+        }
+        /* Hover effect on contact items */
+        
+        .contact-widget .info:hover i {
+            background: #00a651;
+            color: #ffffff;
+            transform: scale(1.1);
+        }
+        /* Contact text and links */
+        
+        .contact-widget .info span {
+            color: #cccccc;
+            font-size: 14px;
+            line-height: 1.6;
+            flex: 1;
+        }
+        
+        .contact-widget .info a {
+            color: #cccccc;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .contact-widget .info a:hover {
+            color: #00a651;
+        }
+        /* Phone number special styling */
+        
+        .contact-widget .info:first-child span a {
+            font-weight: 600;
+            font-size: 15px;
+        }
+        /* WhatsApp icon specific color on hover */
+        
+        .contact-widget .info .fa-whatsapp:hover {
+            background: #25D366;
+            color: #ffffff;
+        }
+        /* Email link styling */
+        
+        .contact-widget .info .fa-envelope,
+        .contact-widget .info .flaticon-common-email-1 {
+            font-size: 14px;
+        }
+        /* Location text - full address */
+        
+        .contact-widget .info:last-child span {
+            font-style: normal;
+        }
+        /* Website link styling */
+        
+        .contact-widget .info .fa-globe {
+            font-size: 14px;
+        }
+        /* ---------- RESPONSIVE STYLES ---------- */
+        
+        @media (max-width: 992px) {
+            .footer-widget .company-name {
+                font-size: 20px;
+            }
+            .contact-widget .info {
+                gap: 10px;
+            }
+            .contact-widget .info i {
+                min-width: 28px;
+                width: 28px;
+                height: 28px;
+                font-size: 12px;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .footer-column {
+                margin-bottom: 30px;
+            }
+            .footer-widget .company-name {
+                font-size: 22px;
+            }
+            .contact-widget .info span {
+                font-size: 13px;
+                word-break: break-word;
+            }
+        }
+        /* ---------- ADDITIONAL TOUCHES ---------- */
+        /* Widget title styling for all columns */
+        
+        .widget-title {
+            color: #ffffff;
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 25px;
+            position: relative;
+            padding-bottom: 12px;
+        }
+        
+        .widget-title:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 40px;
+            height: 2px;
+            background: #00a651;
+        }
+        /* Quick Links styling */
+        
+        .links-widget .user-links {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+        
+        .links-widget .user-links li {
+            margin-bottom: 12px;
+        }
+        
+        .links-widget .user-links li a {
+            color: #cccccc;
+            text-decoration: none;
+            font-size: 14px;
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
+        
+        .links-widget .user-links li a:hover {
+            color: #00a651;
+            padding-left: 5px;
+        }
+        /* Contact Widget Title specific */
+        
+        .contact-widget .widget-title:after {
+            background: #00a651;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="page-wrapper">
+        <!-- Back-to-top start -->
+        <div class="back-to-top-wrapper"><button id="back_to_top" type="button" class="back-to-top-btn"><svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11 6L6 1L1 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" /></svg></button></div>
+        <!-- Back-to-top start -->
+        <!-- Main Header-->
+        <header class="main-header header-style-one">
+            <div class="header-lower">
+                <div class="inner-container">
+                    <!-- Main box -->
+                    <div class="main-box">
+                        <div class="left-box">
+                            <div class="logo-box">
+                                <div class="logo">
+                                    <a href="index.html"><img src="images/logo-222.png" style="width: 100%; height: 80px;" alt="Pearl PharmMed Logo" /></a>
+                                </div>
+                            </div>
+                            <!--Nav Box-->
+                            <div class="nav-outer">
+                                <nav class="nav main-menu">
+                                    <ul class="navigation">
+                                        <li class="current"><a href="index.html">Home</a></li>
+                                        <li><a href="page-services.html">Services</a></li>
+                                        <li><a href="page-contact.html">Contact</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="right-box">
+                            <!-- Phone & WhatsApp Section -->
+                            <ul class="social-icon-list">
+                                <li><a href="tel:+919884700344" class="contact-icon" title="Call +91-9884700344"><i class="fa-solid fa-phone-alt"></i></a></li><a href="https://wa.me/919884700344" class="contact-icon" title="WhatsApp 9884700344"><i class="fa-brands fa-whatsapp"></i></a>
+                                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                            </ul>
+                            <!--Mobile Navigation Toggler--><button class="mobile-nav-toggler"><span></span><span></span><span></span></button></div>
+                    </div>
+                </div>
+            </div>
+            <!-- Mobile Menu -->
+            <div class="mobile-menu">
+                <div class="menu-backdrop"></div>
+                <nav class="menu-box">
+                    <div class="upper-box">
+                        <div class="nav-logo">
+                        </div>
+                        <div class="close-btn"><i class="icon fa fa-times"></i></div>
+                    </div>
+                    <ul class="navigation clearfix">
+                        <!-- <li><a href="index.html">Home</a></li><li><a href="page-services.html">Services</a></li><li><a href="page-contact.html">Contact</a></li>-->
+                    </ul>
+                    <ul class="contact-list-one">
+                        <li>
+                            <div class="contact-info-box"><i class="icon lnr-icon-phone-handset"></i><span class="title">Call Now</span><a href="tel:+919884700344">+91-9884700344</a>/ <a href="tel:+919840673580">9840673580</a></div>
+                        </li>
+                        <li>
+                            <div class="contact-info-box"><i class="icon fa-brands fa-whatsapp"></i><span class="title">WhatsApp</span><a href="https://wa.me/919884700344">9884700344</a>/ <a href="https://wa.me/919840673580">9840673580</a></div>
+                        </li>
+                        <li>
+                            <div class="contact-info-box"><span class="icon lnr-icon-envelope1"></span><span class="title">Send Email</span><a href="mailto:info@ppti.in">info@ppti.in</a></div>
+                        </li>
+                        <li>
+                            <div class="contact-info-box"><span class="icon lnr-icon-map-marker"></span><span class="title">Tenkasi Office</span>71/2 Middle Street, Kudiyiruppu, Courtallam Post, Tenkasi - 627802 </div>
+                        </li>
+                    </ul>
+                    <ul class="social-links">
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- End Mobile Menu -->
+            <!-- Header Search -->
+            <div class="search-popup"><span class="search-back-drop"></span><button class="close-search"><span class="fa fa-times"></span></button>
+                <div class="search-inner">
+                    <form method="post" action="#">
+                        <div class="form-group"><input type="search" name="search-field" value="" placeholder="Search..." required /><button type="submit"><i class="fa fa-search"></i></button></div>
+                    </form>
+                </div>
+            </div>
+            <!-- End Header Search -->
+            <!-- Sticky Header -->
+            <div class="sticky-header">
+                <div class="auto-container">
+                    <div class="inner-container">
+                        <div class="logo">
+                            <a href="index.html"><img src="images/logo-222.png" alt="Pearl PharmMed Logo"></a>
+                        </div>
+                        <div class="nav-outer">
+                            <nav class="main-menu">
+                                <div class="navbar-collapse show collapse clearfix">
+                                    <ul class="navigation clearfix"></ul>
+                                </div>
+                            </nav>
+                            <div class="mobile-nav-toggler"><span></span><span></span><span></span></div>
+                        </div><a href="tel:+919884700344" class="header-phone_box"><span class="icon"><i aria-hidden="true" class="fas fa-phone-alt"></i></span><span class="info">Call Anytime <strong>+91-9884700344</strong></span></a></div>
+                </div>
+            </div>
+            <!-- End Sticky Menu -->
+        </header>
+        <!--End Main Header -->
+        <!-- Start main-content -->
+        <section class="page-title" style="background-image: url(images/resource/page-title.jpg);">
+            <div class="auto-container">
+                <div class="title-outer text-center">
+                    <div class="h1 title">Contact</div>
+                    <ul class="page-breadcrumb">
+                        <li><a href="index.html">Home</a></li>
+                        <li>Conatct</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- end main-content -->
+        <!--Contact Details Start-->
+        <section class="contact-details">
+            <div class="container pt-110 pb-70">
+                <div class="row">
+                    <div class="col-xl-7 col-lg-6">
+                        <div class="sec-title black">
+                            <div class="h2">Feel free to write</div>
+                        </div>
+                        <!-- Contact Form -->
+                        <form id="contact_form" name="contact_form" action="mail.php" method="post">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="mb-3"><input name="form_name" class="form-control" type="text" placeholder="Enter Name" required></div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="mb-3"><input name="form_email" class="form-control required email" type="email" placeholder="Enter Email" required></div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="mb-3"><input name="form_subject" class="form-control required" type="text" placeholder="Enter Subject" required></div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="mb-3"><input name="form_phone" class="form-control" type="text" placeholder="Enter Phone" required></div>
+                                </div>
+                            </div>
+                            <div class="mb-3"><textarea name="form_message" class="form-control required" rows="7" placeholder="Enter Message" required></textarea></div>
+                            <div class="mb-5"><input name="form_botcheck" class="form-control" type="hidden" value="" /><button type="submit" class="theme-btn btn-style-four" data-loading-text="Please wait..."><span class="btn-title">Send message</span></button></div>
+                        </form>
+                    </div>
+                    <div class="col-xl-5 col-lg-6">
+                        <div class="contact-details__right">
+                            <div class="sec-title black">
+                                <div class="h2">Get in touch with us</div>
+                                <div class="text">Pearl PharmMed Healthcare Consulting Pvt. Ltd – Empowering healthcare through innovation, integrity & global reach.</div>
+                            </div>
+                            <ul class="list-unstyled contact-details__info">
+                                <li>
+                                    <div class="icon"><span class="fa-classic fa-light fa-phone-plus"></span></div>
+                                    <div class="text">
+                                        <div class="h6 mb-1">Call / WhatsApp</div><a href="tel:+919884700344">+91-9884700344</a>/ <a href="tel:+919840673580">9840673580</a></div>
+                                </li>
+                                <li>
+                                    <div class="icon"><span class="fal fa-envelope"></span></div>
+                                    <div class="text">
+                                        <div class="h6 mb-1">Write email</div><a href="mailto:info@ppti.in">info@ppti.in</a></div>
+                                </li>
+                                <li>
+                                    <div class="icon"><span class="fal fa-location-arrow"></span></div>
+                                    <div class="text">
+                                        <div class="h6 mb-1">Tenkasi Office</div><span>71/2 Middle Street,
+        Kudiyiruppu,
+        Courtallam Post,
+        Tenkasi - 627802</span></div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Contact Details End-->
+        <!-- Map Section-->
+        <section class="map-section"><iframe class="map w-100" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=71/2%20Middle%20Street,%20Kudiyiruppu,%20Courtallam%20Post,%20Tenkasi%20-%20627802,%20India+(Pearl%20PharmMed%20Healthcare%20Consulting%20Pvt.%20Ltd)&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></section>
+        <!--End Map Section-->
+        <!-- Main Footer -->
+        <footer class="main-footer footer-style-one">
+            <div class="footer-area">
+                <div class="outer-box">
+                    <div class="bg bg-image"><img src="images/background/footer-bg1-1.png" alt=""></div>
+                    <!-- Widgets Section -->
+                    <div class="widgets-section">
+                        <div class="auto-container">
+                            <div class="row">
+                                <!-- Footer Column 1: Company Name & Description -->
+                                <div class="footer-column border-0 col-xl-3 col-lg-6 col-md-6">
+                                    <div class="footer-widget about-widget wow fadeInLeft">
+                                        <div class="widget-content">
+                                            <h3 class="company-name">Pearl PharmMed Healthcare</h3>
+                                            <div class="text text-white">Empowering healthcare through innovation, integrity & global reach. We deliver high-quality pharmaceutical and medical solutions across the globe at the intersection of science, service, and sustainability.</div>
+                                            <div class="social-widget">
+                                                <ul class="social-icon-list1">
+                                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                                    <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Footer Column 2: Quick Links -->
+                                <div class="footer-column border-0 col-xl-3 col-lg-6 col-md-6">
+                                    <div class="footer-widget links-widget style-two col wow fadeInLeft" data-wow-delay="400ms">
+                                        <div class="h4 widget-title">Quick Links</div>
+                                        <div class="widget-content">
+                                            <ul class="user-links">
+                                                <li><a href="index.html">Home</a></li>
+                                                <li><a href="page-services.html">Services</a></li>
+                                                <li><a href="page-contact.html">Contact Us</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Footer Column 3: Our Services -->
+                                <div class="footer-column border-0 col-xl-3 col-lg-6 col-md-6">
+                                    <div class="footer-widget links-widget style-two col wow fadeInLeft" data-wow-delay="400ms">
+                                        <div class="h4 widget-title">Our Services</div>
+                                        <div class="widget-content">
+                                            <ul class="user-links">
+                                                <li><a href="page-services.html">Clinical Research & Trials</a></li>
+                                                <li><a href="page-services.html">Pharmacovigilance & Drug Safety</a></li>
+                                                <li><a href="page-services.html">Medical & Regulatory Writing</a></li>
+                                                <li><a href="page-services.html">Medical Device Compliance</a></li>
+                                                <li><a href="page-services.html">Internship & Training</a></li>
+                                                <li><a href="page-services.html">Pharmaceutical Trade</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Footer Column 4: Contact Details -->
+                                <div class="footer-column border-0 col-xl-3 col-lg-6 col-md-6">
+                                    <div class="footer-widget contact-widget style-two col wow fadeInLeft" data-wow-delay="400ms">
+                                        <div class="h4 widget-title">Contact Details</div>
+                                        <div class="widget-content">
+                                            <div class="info"><i aria-hidden="true" class="flaticon-common-call-1"></i><span><a href="tel:+919884700344">+91-9884700344</a>/ <a href="tel:+919840673580">9840673580</a></span></div>
+                                            <div class="info"><i aria-hidden="true" class="fab fa-whatsapp"></i><span><a href="https://wa.me/919884700344">9884700344</a>/ <a href="https://wa.me/919840673580">9840673580</a></span></div>
+                                            <div class="info"><i aria-hidden="true" class="flaticon-common-email-1"></i><span><a href="mailto:info@ppti.in">info@ppti.in</a></span></div>
+                                            <div class="info"><i aria-hidden="true" class="flaticon-common-location"></i><span>71/2 Middle Street,
+        Kudiyiruppu,
+        Courtallam Post,
+        Tenkasi - 627802</span></div>
+                                            <div class="info"><i aria-hidden="true" class="fas fa-globe"></i><span><a href="https://www.pharmmedhealthcare.com" target="_blank">www.pharmmedhealthcare.com</a></span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Footer Bottom with Dynamic Copyright -->
+                    <div class="auto-container">
+                        <div class="footer-bottom">
+                            <div class="inner-container justify-content-center justify-content-md-between">
+                                <p class="copyright-text" id="copyright-year"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Dynamic Copyright Script -->
+        <script>
+            document.getElementById('copyright-year').innerHTML = '© Copyright ' + new Date().getFullYear() + ' Pearl PharmMed Healthcare Consulting Pvt. Ltd. All Rights Reserved. Developed By <a href="https://chennaileads.com" target="_blank">Chennai Leads</a>';
+        </script>
+        <!--End Main Footer -->
+    </div>
+    <!-- End Page Wrapper -->
+    <script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.fancybox.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/wow.js"></script>
+    <script src="js/select2.min.js"></script>
+    <script src="js/appear.js"></script>
+    <script src="js/bxslider.js"></script>
+    <script src="js/knob.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/gsap.min.js"></script>
+    <script src="js/ScrollTrigger.min.js"></script>
+    <script src="js/splitType.js"></script>
+    <script src="js/gsap-scroll-smoother.js"></script>
+    <script src="js/gsap-scroll-to-plugin.js"></script>
+    <script src="js/SplitText.min.js"></script>
+    <script src="js/custom-gsap.js"></script>
+    <script src="js/script.js"></script>
+    <!-- form submit -->
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.form.min.js"></script>
+    <script src="js/contact-form-script.js"></script>
+    <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v833ccba57c9e4d2798f2e76cebdd09a11778172276447" integrity="sha512-57MDmcccJXYtNnH+ZiBwzC4jb2rvgVCEokYN+L/nLlmO8rfYT/gIpW2A569iJ/3b+0UEasghjuZH/ma3wIs/EQ==" data-cf-beacon='{"version":"2024.11.0","token":"88f4fa328f314d4c95a104b4a60b2313","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}'
+        crossorigin="anonymous"></script>
+    <!-- Sticky WhatsApp and Call Buttons -->
+    <div class="sticky-buttons"><a href="https://wa.me/919884700344" class="sticky-btn whatsapp-btn" target="_blank"><i class="fab fa-whatsapp"></i><span class="btn-text">WhatsApp</span></a><a href="tel:+919884700344" class="sticky-btn call-btn"><i class="fas fa-phone-alt"></i><span class="btn-text">Call Now</span></a></div>
+    <style>
+        /* Sticky Buttons Styling */
+        
+        .sticky-buttons {
+            position: fixed;
+            bottom: 30px;
+            right: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            z-index: 999;
+        }
+        
+        .sticky-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            overflow: hidden;
+            white-space: nowrap;
+        }
+        
+        .sticky-btn i {
+            font-size: 24px;
+            color: white;
+        }
+        
+        .sticky-btn .btn-text {
+            display: none;
+            font-size: 14px;
+            font-weight: 500;
+        }
+        /* WhatsApp Button */
+        
+        .whatsapp-btn {
+            background-color: #25D366;
+        }
+        /* Call Button */
+        
+        .call-btn {
+            background-color: #00a651;
+        }
+        /* Hover Effect - Expand on hover */
+        
+        .sticky-btn:hover {
+            width: auto;
+            border-radius: 30px;
+            padding: 0 18px;
+            gap: 8px;
+        }
+        
+        .sticky-btn:hover .btn-text {
+            display: inline-block;
+            color: white;
+        }
+        /* Mobile Optimization */
+        
+        @media (max-width: 768px) {
+            .sticky-buttons {
+                bottom: 20px;
+                right: 15px;
+                gap: 10px;
+            }
+            .sticky-btn {
+                width: 45px;
+                height: 45px;
+            }
+            .sticky-btn i {
+                font-size: 20px;
+            }
+        }
+    </style>
+</body>
+
+</html>

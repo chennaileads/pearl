@@ -1,0 +1,2914 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Pearl PharmMed – Healthcare Consulting | Pharmaceutical & Medical Solutions</title>
+
+    <!-- Meta Description for SEO -->
+    <meta name="description" content="Pearl PharmMed Healthcare Consulting Pvt. Ltd – Empowering healthcare through innovation, integrity & global reach. High-quality pharmaceutical and medical solutions worldwide." />
+    <meta name="keywords" content="Pearl PharmMed, healthcare consulting, pharmaceutical solutions, medical solutions, global healthcare, innovation integrity" />
+    <meta name="author" content="Pearl PharmMed Healthcare Consulting Pvt. Ltd" />
+
+    <!-- Stylesheets -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+    <link rel="icon" href="images/favicon.png" type="image/x-icon" />
+
+    <!-- Responsive -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+        /* ============================================
+       FOOTER STYLES - Pearl PharmMed Healthcare
+    ============================================ */
+        /* ---------- COLUMN 1: COMPANY NAME ---------- */
+        
+        .footer-widget .company-name {
+            font-size: 24px;
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 20px;
+            letter-spacing: 1px;
+            position: relative;
+            padding-bottom: 15px;
+        }
+        /* Optional: Underline effect for company name */
+        
+        .footer-widget .company-name:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 50px;
+            height: 3px;
+            background: #00a651;
+            border-radius: 2px;
+        }
+        /* Company name text style */
+        
+        .footer-widget .company-name span {
+            color: #00a651;
+        }
+        /* Company description text */
+        
+        .footer-widget .text.text-white {
+            color: #cccccc !important;
+            font-size: 14px;
+            line-height: 1.7;
+            margin-bottom: 20px;
+        }
+        /* Social Icons in Column 1 */
+        
+        .footer-widget .social-icon-list1 {
+            display: flex;
+            gap: 12px;
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+        
+        .footer-widget .social-icon-list1 li a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 36px;
+            height: 36px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            color: #ffffff;
+            font-size: 16px;
+            transition: all 0.3s ease;
+        }
+        
+        .footer-widget .social-icon-list1 li a:hover {
+            background: #00a651;
+            color: #ffffff;
+            transform: translateY(-3px);
+        }
+        /* ---------- COLUMN 4: CONTACT DETAILS ---------- */
+        /* Contact widget container */
+        
+        .contact-widget .widget-content {
+            margin-top: 0;
+        }
+        /* Individual contact info items */
+        
+        .contact-widget .info {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            margin-bottom: 18px;
+            transition: all 0.3s ease;
+        }
+        /* Contact icons */
+        
+        .program-tags {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        
+        .program-tags .badge {
+            display: inline-block;
+            background: linear-gradient(135deg, #eef2ff 0%, #e6eef9 100%);
+            color: #1a5f8b;
+            padding: 8px 18px;
+            border-radius: 40px;
+            font-size: 13px;
+            font-weight: 600;
+            border: 1px solid rgba(26, 95, 139, 0.15);
+        }
+        /* Tab Buttons */
+        
+        .default-tabs {
+            margin-top: 20px;
+        }
+        
+        .tab-btns {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 40px;
+            flex-wrap: wrap;
+        }
+        
+        .tab-btns .tab-btn {
+            background: transparent;
+            border: 2px solid #e0e8f0;
+            padding: 12px 32px;
+            border-radius: 50px;
+            font-size: 16px;
+            font-weight: 600;
+            color: #4a5a6a;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .tab-btns .tab-btn:hover {
+            border-color: #1a5f8b;
+            background: rgba(26, 95, 139, 0.05);
+            color: #1a5f8b;
+        }
+        
+        .tab-btns .tab-btn.active-btn {
+            /* background: linear-gradient(135deg, #1a5f8b, #2a8bbf); */
+            border-color: #1a5f8b;
+            color: #fff;
+        }
+        /* Tab Content */
+        
+        .tabs-content .tab {
+            display: none;
+            animation: fadeIn 0.5s ease;
+        }
+        
+        .tabs-content .tab.active-tab {
+            display: block;
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        /* Pricing Cards */
+        
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 -15px;
+        }
+        
+        .gx-4 {
+            margin: 0 -20px;
+        }
+        
+        .gx-4>[class*="col-"] {
+            padding: 0 20px;
+        }
+        
+        .col-xl-6 {
+            width: 50%;
+            padding: 0 15px;
+        }
+        
+        .col-xl-4 {
+            width: 33.333%;
+            padding: 0 15px;
+        }
+        /* .col-md-6 {
+            width: 50%;
+        } */
+        
+        @media (max-width: 991px) {
+            .col-xl-6,
+            .col-xl-4 {
+                width: 100%;
+                margin-bottom: 30px;
+            }
+        }
+        
+        .pricing-block-two {
+            margin-bottom: 30px;
+            height: 100%;
+        }
+        
+        .pricing-plan-inner-wrapper {
+            background: #ffffff;
+            border-radius: 24px;
+            transition: all 0.4s ease;
+            height: 100%;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+        }
+        
+        .pricing-plan-inner-wrapper:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.15);
+        }
+        
+        .pricing-plan-inner {
+            padding: 35px 28px;
+            background: #fff;
+            border-radius: 24px;
+            height: 100%;
+            border: 1px solid rgba(26, 95, 139, 0.08);
+        }
+        
+        .pricing-plan-title {
+            font-size: 22px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 3px solid #1a5f8b;
+            display: inline-block;
+            color: #1a2a3a;
+        }
+        
+        .pricing-plan-subtitle {
+            font-size: 15px;
+            color: #5a6a7a;
+            margin-bottom: 20px;
+            padding: 10px 15px;
+            background: #f8faff;
+            border-radius: 12px;
+            font-weight: 500;
+        }
+        /* Features List */
+        
+        .features-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .features-list li {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            margin-bottom: 14px;
+            font-size: 14px;
+            color: #34495e;
+            line-height: 1.5;
+            padding: 4px 0;
+        }
+        
+        .features-list li svg {
+            flex-shrink: 0;
+            margin-top: 4px;
+        }
+        
+        .features-list li strong {
+            color: #1a5f8b;
+            font-weight: 600;
+        }
+        
+        .info-note {
+            background: linear-gradient(135deg, #eef2ff 0%, #f8faff 100%);
+            border-left: 4px solid #1a5f8b;
+            border-radius: 12px;
+            padding: 15px 20px;
+            font-size: 14px;
+            color: #34495e;
+            margin-top: 20px;
+        }
+        
+        .mt-3 {
+            margin-top: 15px;
+        }
+        
+        .mt-4 {
+            margin-top: 25px;
+        }
+        
+        .mb-30 {
+            margin-bottom: 30px;
+        }
+        
+        .contact-widget .info i {
+            min-width: 32px;
+            width: 32px;
+            height: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(0, 166, 81, 0.15);
+            border-radius: 50%;
+            font-size: 14px;
+            color: #00a651;
+            margin-top: 2px;
+            transition: all 0.3s ease;
+        }
+        /* Hover effect on contact items */
+        
+        .contact-widget .info:hover i {
+            background: #00a651;
+            color: #ffffff;
+            transform: scale(1.1);
+        }
+        /* Contact text and links */
+        
+        .contact-widget .info span {
+            color: #cccccc;
+            font-size: 14px;
+            line-height: 1.6;
+            flex: 1;
+        }
+        
+        .contact-widget .info a {
+            color: #cccccc;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .contact-widget .info a:hover {
+            color: #00a651;
+        }
+        /* Phone number special styling */
+        
+        .contact-widget .info:first-child span a {
+            font-weight: 600;
+            font-size: 15px;
+        }
+        /* WhatsApp icon specific color on hover */
+        
+        .contact-widget .info .fa-whatsapp:hover {
+            background: #25D366;
+            color: #ffffff;
+        }
+        /* Email link styling */
+        
+        .contact-widget .info .fa-envelope,
+        .contact-widget .info .flaticon-common-email-1 {
+            font-size: 14px;
+        }
+        /* Location text - full address */
+        
+        .contact-widget .info:last-child span {
+            font-style: normal;
+        }
+        /* Website link styling */
+        
+        .contact-widget .info .fa-globe {
+            font-size: 14px;
+        }
+        /* Widget title styling for all columns */
+        
+        .widget-title {
+            color: #ffffff;
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 25px;
+            position: relative;
+            padding-bottom: 12px;
+        }
+        
+        .widget-title:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 40px;
+            height: 2px;
+            background: #00a651;
+        }
+        /* Quick
+    Links styling */
+        
+        .links-widget .user-links {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+        
+        .links-widget .user-links li {
+            margin-bottom: 12px;
+        }
+        
+        .links-widget .user-links li a {
+            color: #cccccc;
+            text-decoration: none;
+            font-size: 14px;
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
+        
+        .links-widget .user-links li a:hover {
+            color: #00a651;
+            padding-left: 5px;
+        }
+        /* Contact Widget Title specific */
+        
+        .contact-widget .widget-title:after {
+            background: #00a651;
+        }
+        /* ============================================
+    SERVICE LIST WITH ICONS - HOVER WORKING FIXED ============================================ */
+        
+        .service-list-with-icons {
+            padding-left: 0;
+            margin-bottom: 0;
+            list-style: none;
+        }
+        
+        .service-list-with-icons li {
+            position: relative;
+            margin-bottom: 12px;
+            font-size: 14px;
+            color: #555;
+            line-height: 1.6;
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .service-list-with-icons li i {
+            width: 20px;
+            color: #00a651;
+            font-size: 14px;
+            margin-top: 3px;
+            flex-shrink: 0;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+        /* HOVER - Icon turns white with green circle background */
+        
+        .service-list-with-icons li:hover i {
+            color: #ffffff !important;
+            background-color: #00a651 !important;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 11px;
+            margin-top: 3px;
+        }
+        /* HOVER - Text turns green and shifts right */
+        
+        .service-list-with-icons li:hover {
+            color: #00a651 !important;
+            transform: translateX(3px);
+        }
+        /* ============================================ WCU BLOCK STYLES ============================================ */
+        /* FAQ List Styling */
+        
+        .faq-list {
+            padding-left: 0;
+            margin-bottom: 0;
+            list-style: none;
+        }
+        
+        .faq-list li {
+            position: relative;
+            padding-left: 20px;
+            margin-bottom: 10px;
+            font-size: 14px;
+            color: #cccccc;
+            line-height: 1.6;
+        }
+        
+        .faq-list li:before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #00a651;
+            font-size: 16px;
+        }
+        
+        .faq-list.two-columns {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px 20px;
+        }
+        
+        .faq-list.two-columns li {
+            margin-bottom: 0;
+        }
+        
+        .note {
+            margin-top: 15px;
+            padding-top: 10px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 13px;
+            color: #00a651;
+            font-style: italic;
+        }
+        /* Responsive */
+        
+        @media (max-width: 768px) {
+            .faq-list.two-columns {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        .wcu-block .inner {
+            background: #ffffff;
+            border-radius: 16px;
+            padding: 25px;
+            height: 100%;
+            transition: all 0.35s ease;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+            border: 1px solid #eef2f6;
+        }
+        
+        .wcu-block .inner:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 18px 35px rgba(0, 166, 81, 0.12);
+            border-color: #00a651;
+        }
+        
+        .wcu-block .icon i {
+            font-size: 42px;
+            color: #00a651;
+            margin-bottom: 15px;
+            transition: all 0.3s ease;
+        }
+        
+        .wcu-block .inner:hover .icon i {
+            transform: scale(1.08);
+            color: #008544;
+        }
+        
+        .wcu-block .features-title {
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 15px;
+            color: #1a2b3e;
+            transition: color 0.3s ease;
+        }
+        
+        .wcu-block .inner:hover .features-title {
+            color: #00a651;
+        }
+        
+        .wcu-block .features-details p {
+            margin-bottom: 10px;
+            font-size: 14px;
+            color: #555;
+        }
+        
+        .wcu-block .features-details p strong {
+            color: #1a2b3e;
+        }
+        
+        .mt-2 {
+            margin-top: 10px;
+        }
+        /* Service Lists Styling */
+        
+        .service-list {
+            padding-left: 20px;
+            margin-bottom: 0;
+            list-style: none;
+        }
+        
+        .service-list li {
+            position: relative;
+            padding-left: 20px;
+            margin-bottom: 8px;
+            font-size: 14px;
+            color: #555;
+            line-height: 1.6;
+        }
+        
+        .service-list li:before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #00a651;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        
+        .service-list li strong {
+            color: #1a2b3e;
+            font-weight: 600;
+        }
+        
+        .service-bullet {
+            padding-left: 20px;
+            margin-bottom: 0;
+            list-style: none;
+        }
+        
+        .service-bullet li {
+            position: relative;
+            padding-left: 18px;
+            margin-bottom: 6px;
+            font-size: 14px;
+            color: #555;
+            line-height: 1.5;
+        }
+        
+        .service-bullet li:before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #00a651;
+            font-size: 14px;
+        }
+        /* ============================================ RESPONSIVE STYLES ============================================ */
+        
+        @media (max-width: 992px) {
+            .footer-widget .company-name {
+                font-size: 20px;
+            }
+            .contact-widget .info {
+                gap: 10px;
+            }
+            .contact-widget .info i {
+                min-width: 28px;
+                width: 28px;
+                height: 28px;
+                font-size: 12px;
+            }
+        }
+        /* Same height for all service cards */
+        
+        .service-block {
+            height: 100%;
+        }
+        
+        .service-block .inner-block {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .service-block .content-box {
+            height: 100%;
+        }
+        
+        .service-block .inner-box {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            padding: 30px 25px;
+            background: #ffffff;
+            border-radius: 16px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+            border: 1px solid #eef2f6;
+            transition: all 0.3s ease;
+        }
+        
+        .service-block .inner-box:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 18px 35px rgba(0, 166, 81, 0.12);
+            border-color: #00a651;
+        }
+        
+        .service-block .icon {
+            margin-bottom: 20px;
+        }
+        
+        .service-block .service-icon i {
+            font-size: 48px;
+            color: #00a651;
+        }
+        
+        .service-block .service-title {
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 15px;
+            color: #1a2b3e;
+            line-height: 1.3;
+        }
+        
+        .service-block .service-details {
+            font-size: 14px;
+            color: #666;
+            line-height: 1.6;
+            flex: 1;
+        }
+        /* Swiper slider adjustments */
+        
+        .services-slider .swiper-slide {
+            height: auto;
+        }
+        
+        .services-dot {
+            margin-top: 30px;
+            text-align: center;
+        }
+        /* Responsive
+    */
+        
+        @media (max-width: 768px) {
+            .service-block .inner-box {
+                padding: 20px;
+            }
+            .service-block .service-icon i {
+                font-size: 36px;
+            }
+            .service-block .service-title {
+                font-size: 18px;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .footer-column {
+                margin-bottom: 30px;
+            }
+            .footer-widget .company-name {
+                font-size: 22px;
+            }
+            .contact-widget .info span {
+                font-size: 13px;
+                word-break: break-word;
+            }
+            .wcu-block .inner {
+                padding: 20px;
+            }
+            .wcu-block .icon i {
+                font-size: 32px;
+            }
+            .wcu-block .features-title {
+                font-size: 18px;
+            }
+        }
+        /* HOVER - Text turns WHITE with dark background support */
+        /* ============================================ WCU BLOCK - CARD HOVER EFFECTS ============================================ */
+        
+        .wcu-block .inner {
+            background: #ffffff;
+            border-radius: 16px;
+            padding: 25px;
+            height: 100%;
+            transition: all 0.35s ease;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+            border: 1px solid #eef2f6;
+        }
+        /* Card hover - background changes, text turns white */
+        
+        .wcu-block .inner:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 18px 35px rgba(0, 166, 81, 0.12);
+            border-color: #00a651;
+            background-color: #00a651;
+        }
+        /* Title turns white on card hover */
+        
+        .wcu-block .inner:hover .features-title {
+            color: #ffffff;
+        }
+        /* Description text turns white on card hover */
+        
+        .wcu-block .inner:hover .features-details p {
+            color: #ffffff;
+        }
+        /* List items text turns white on card hover */
+        
+        .wcu-block .inner:hover .service-list-with-icons li {
+            color: #ffffff !important;
+        }
+        /* List icons turn white with darker circle on card
+    hover */
+        
+        .wcu-block .inner:hover .service-list-with-icons li i {
+            color: #00a651;
+            background-color: #ffffff;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 11px;
+            margin-top: 3px;
+        }
+        /* Main icon (top big icon) turns white on card hover */
+        
+        .wcu-block .inner:hover .icon i {
+            /* color: #ffffff; */
+            transform: scale(1.08);
+        }
+        /* ============================================ WCU BLOCK - CARD HOVER (ALL TEXT TURNS WHITE) ============================================
+    */
+        /* ============================================ WCU BLOCK - CARD HOVER (ALL TEXT TURNS WHITE, BIG ICON STAYS GREEN) ============================================ */
+        
+        .wcu-block .inner {
+            background: #ffffff;
+            border-radius: 16px;
+            padding: 25px;
+            height: 100%;
+            transition: all 0.35s ease;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+            border: 1px solid #eef2f6;
+        }
+        /* Card hover effect - Green background */
+        
+        .wcu-block .inner:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 18px 35px rgba(0, 166, 81, 0.2);
+            border-color: #00a651;
+            background: linear-gradient(135deg, #00a651 0%, #008544 100%);
+        }
+        /* EVERYTHING inside card turns white on hover */
+        
+        .wcu-block .inner:hover,
+        .wcu-block .inner:hover * {
+            color: #ffffff !important;
+        }
+        /* EXCEPTION 1: Big icon -
+    DOES NOT change color (stays green) */
+        
+        .wcu-block .inner:hover .icon i {
+            color: #00a651 !important;
+            transform: scale(1.08);
+            background-color: transparent;
+        }
+        /* EXCEPTION 2: List icons - white circle with green icon */
+        
+        .wcu-block .inner:hover .service-list-with-icons li i {
+            color: #00a651 !important;
+            background-color: #ffffff !important;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 11px;
+            margin-top: 3px;
+        }
+        /* EXCEPTION 3: Big icon
+    wrapper - ensure no background change */
+        
+        .wcu-block .inner:hover .icon {
+            background-color: transparent;
+        }
+        /* All other text turns white */
+        
+        .wcu-block .inner:hover .features-title,
+        .wcu-block .inner:hover .features-details,
+        .wcu-block .inner:hover .features-details p,
+        .wcu-block .inner:hover .features-details strong,
+        .wcu-block .inner:hover .features-details li,
+        .wcu-block .inner:hover .service-list-with-icons li,
+        .wcu-block .inner:hover .service-list-with-icons li strong,
+        .wcu-block .inner:hover .mt-2,
+        .wcu-block .inner:hover .mt-2 p,
+        .wcu-block .inner:hover .mt-2 strong {
+            color: #ffffff !important;
+        }
+        
+        .wcu-block .inner {
+            background: #ffffff;
+            border-radius: 16px;
+            padding: 25px;
+            height: 100%;
+            transition: all 0.35s ease;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+            border: 1px solid #eef2f6;
+        }
+        /* Card hover effect */
+        
+        .wcu-block .inner:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 18px 35px rgba(0, 166, 81, 0.2);
+            border-color: #00a651;
+            background: linear-gradient(135deg, #00a651 0%, #008544 100%);
+        }
+        /* ALL TEXT inside card turns white on hover - Complete selector */
+        
+        .wcu-block .inner:hover,
+        .wcu-block .inner:hover *,
+        .wcu-block .inner:hover .features-title,
+        .wcu-block .inner:hover .features-details,
+        .wcu-block .inner:hover .features-details p,
+        .wcu-block .inner:hover .features-details li,
+        .wcu-block .inner:hover .features-details strong,
+        .wcu-block .inner:hover .features-details span,
+        .wcu-block .inner:hover .service-list-with-icons,
+        .wcu-block .inner:hover .service-list-with-icons li,
+        .wcu-block .inner:hover .service-list-with-icons li strong,
+        .wcu-block .inner:hover .service-list-with-icons li span,
+        .wcu-block .inner:hover p,
+        .wcu-block .inner:hover strong,
+        .wcu-block .inner:hover .mt-2,
+        .wcu-block .inner:hover .mt-2 p,
+        .wcu-block .inner:hover .mt-2 strong {
+            color: #ffffff !important;
+        }
+        /* List icons on hover - white circle with green icon */
+        
+        .wcu-block .inner:hover .service-list-with-icons li i {
+            color: #00a651 !important;
+            background-color: #ffffff !important;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 11px;
+            margin-top: 3px;
+        }
+        /* Main big icon turns white */
+        
+        .wcu-block .inner:hover .icon i {
+            color: #ffffff !important;
+            transform: scale(1.08);
+        }
+        /* Bullet points (if using service-bullet class) */
+        
+        .wcu-block .inner:hover .service-bullet li,
+        .wcu-block .inner:hover .service-bullet li:before,
+        .wcu-block .inner:hover .service-list li,
+        .wcu-block .inner:hover .service-list li:before {
+            color: #ffffff !important;
+        }
+        /* Specific fix for "Project Work Support" card text */
+        
+        .wcu-block .inner:hover .features-details p strong,
+        .wcu-block .inner:hover .features-details ul li,
+        .wcu-block .inner:hover .features-details ul li strong,
+        .wcu-block .inner:hover .features-details .service-list-with-icons li,
+        .wcu-block .inner:hover .features-details .service-list-with-icons li strong {
+            color: #ffffff !important;
+        }
+        
+        .service-block .image img {
+            width: 100%;
+            height: auto;
+            min-height: 200px;
+            background: linear-gradient(135deg, #00a651 0%, #008544 100%);
+            object-fit: cover;
+        }
+        
+        .service-block .image {
+            position: relative;
+        }
+        
+        .service-block .image:before {
+            content: "🏥";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 50px;
+            color: white;
+            z-index: 1;
+        }
+        /* Force images to be visible */
+        
+        .service-block .image img {
+            display: block !important;
+            opacity: 1 !important;
+            visibility: visible !important;
+            width: 100%;
+            height: auto;
+        }
+        
+        .service-block .image {
+            display: block !important;
+            overflow: hidden;
+            opacity: 1 !important;
+            visibility: visible !important;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="page-wrapper">
+        <!-- Back-to-top start -->
+        <div class="back-to-top-wrapper"><button id="back_to_top" type="button" class="back-to-top-btn"><svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11 6L6 1L1 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" /></svg></button></div>
+        <!-- Back-to-top start -->
+        <!-- Main Header-->
+        <header class="main-header header-style-one">
+            <div class="header-lower">
+                <div class="inner-container">
+                    <!-- Main box -->
+                    <div class="main-box">
+                        <div class="left-box">
+                            <div class="logo-box">
+                                <div class="logo">
+                                    <a href="index.html"><img src="images/logo-222.png" style="width: 100%; height: 80px;" alt="Pearl PharmMed Logo" /></a>
+                                </div>
+                            </div>
+                            <!--Nav Box-->
+                            <div class="nav-outer">
+                                <nav class="nav main-menu">
+                                    <ul class="navigation">
+                                        <li class="current"><a href="index.html">Home</a></li>
+                                        <li><a href="page-services.html">Services</a></li>
+                                        <li><a href="page-contact.html">Contact</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="right-box">
+                            <!-- Phone & WhatsApp Section -->
+                            <ul class="social-icon-list">
+                                <li><a href="tel:+919884700344" class="contact-icon" title="Call +91-9884700344"><i class="fa-solid fa-phone-alt"></i></a></li><a href="https://wa.me/919884700344" class="contact-icon" title="WhatsApp 9884700344"><i class="fa-brands fa-whatsapp"></i></a>
+                                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                            </ul>
+                            <!--Mobile Navigation Toggler--><button class="mobile-nav-toggler"><span></span><span></span><span></span></button></div>
+                    </div>
+                </div>
+            </div>
+            <!-- Mobile Menu -->
+            <div class="mobile-menu">
+                <div class="menu-backdrop"></div>
+                <nav class="menu-box">
+                    <div class="upper-box">
+                        <div class="nav-logo">
+                        </div>
+                        <div class="close-btn"><i class="icon fa fa-times"></i></div>
+                    </div>
+                    <ul class="navigation clearfix">
+                        <!-- <li><a href="index.html">Home</a></li><li><a href="page-services.html">Services</a></li><li><a href="page-contact.html">Contact</a></li>-->
+                    </ul>
+                    <ul class="contact-list-one">
+                        <li>
+                            <div class="contact-info-box"><i class="icon lnr-icon-phone-handset"></i><span class="title">Call Now</span><a href="tel:+919884700344">+91-9884700344</a>/ <a href="tel:+919840673580">9840673580</a></div>
+                        </li>
+                        <li>
+                            <div class="contact-info-box"><i class="icon fa-brands fa-whatsapp"></i><span class="title">WhatsApp</span><a href="https://wa.me/919884700344">9884700344</a>/ <a href="https://wa.me/919840673580">9840673580</a></div>
+                        </li>
+                        <li>
+                            <div class="contact-info-box"><span class="icon lnr-icon-envelope1"></span><span class="title">Send Email</span><a href="mailto:info@ppti.in">info@ppti.in</a></div>
+                        </li>
+                        <li>
+                            <div class="contact-info-box"><span class="icon lnr-icon-map-marker"></span><span class="title">Tenkasi Office</span>71/2 Middle Street, Kudiyiruppu, Courtallam Post, Tenkasi - 627802 </div>
+                        </li>
+                    </ul>
+                    <ul class="social-links">
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- End Mobile Menu -->
+            <!-- Header Search -->
+            <div class="search-popup"><span class="search-back-drop"></span><button class="close-search"><span class="fa fa-times"></span></button>
+                <div class="search-inner">
+                    <form method="post" action="#">
+                        <div class="form-group"><input type="search" name="search-field" value="" placeholder="Search..." required /><button type="submit"><i class="fa fa-search"></i></button></div>
+                    </form>
+                </div>
+            </div>
+            <!-- End Header Search -->
+            <!-- Sticky Header -->
+            <div class="sticky-header">
+                <div class="auto-container">
+                    <div class="inner-container">
+                        <div class="logo">
+                            <a href="index.html"><img src="images/logo-222.png" alt="Pearl PharmMed Logo"></a>
+                        </div>
+                        <div class="nav-outer">
+                            <nav class="main-menu">
+                                <div class="navbar-collapse show collapse clearfix">
+                                    <ul class="navigation clearfix"></ul>
+                                </div>
+                            </nav>
+                            <div class="mobile-nav-toggler"><span></span><span></span><span></span></div>
+                        </div><a href="tel:+919884700344" class="header-phone_box"><span class="icon"><i aria-hidden="true" class="fas fa-phone-alt"></i></span><span class="info">Call Anytime <strong>+91-9884700344</strong></span></a></div>
+                </div>
+            </div>
+            <!-- End Sticky Menu -->
+        </header>
+        <!--End Main Header -->
+        <!--End Main Header -->
+
+        <!-- start banner-section-two -->
+        <section class="banner-section-two">
+            <div class="outer-box fix">
+                <div class="bg bg-image"><img src="images/banner/banner2-1.jpg" alt=""></div>
+                <div class="banner-content">
+                    <div class="inner-content">
+                        <div class="h1 banner-title wow fadeInUp" data-wow-delay="200ms">Advanced IVF Care Support.</div>
+                        <div class="text wow fadeInUp" data-wow-delay="400ms">Personalized fertility treatments with world-class specialists, advanced technology, and emotional care at every step.</div>
+                        <a href="page-contact.html" class="theme-btn btn-style-one wow fadeInUp" data-wow-delay="600ms">
+                            <span class="btn-arrow-left"><i class="fas flaticon-common-right-arrow"></i></span>
+                            <span class="btn-title">Book a Consultation</span>
+                            <span class="btn-arrow-right"><i class="fas flaticon-common-right-arrow"></i></span>
+                        </a>
+                        <div class="feature-box wow fadeInUp" data-wow-delay="800ms">
+                            <div class="feature">
+                                <span class="icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="41" height="31" viewBox="0 0 41 31" fill="none"><path d="M0 5.95911C0.328125 5.15521 0.91875 4.8845 1.78008 4.89271C6.84141 4.91732 11.9027 4.90911 16.9641 4.90911C17.1281 4.90911 17.3004 4.90911 17.4973 4.90911C17.5465 4.31029 17.3414 3.62122 18.2109 3.48177C18.2109 2.82552 18.2027 2.19388 18.2109 1.56224C18.2191 0.536849 18.7606 0.011849 19.7859 0.00364583C20.1797 0.00364583 20.5816 -0.00455729 20.9754 0.00364583C21.8039 0.0200521 22.3617 0.553255 22.4027 1.38997C22.4191 1.7345 22.4109 2.07904 22.4109 2.42357C22.4109 2.7681 22.4109 3.11263 22.4109 3.48177C23.2641 3.61302 23.0836 4.28568 23.1164 4.90911C23.3051 4.90911 23.4691 4.90911 23.6414 4.90911C28.7274 4.90911 33.8215 4.90911 38.9074 4.90911C40.1215 4.90911 40.6219 5.4013 40.6219 6.60716C40.6219 6.93529 40.6219 7.27161 40.6219 7.59974C40.6137 8.51028 40.0559 9.09271 39.1453 9.10091C37.8656 9.11732 36.5777 9.10091 35.2981 9.10091C34.7566 9.10091 34.2234 9.10091 33.6328 9.10091C33.6328 9.71614 33.6164 10.2904 33.6492 10.8728C33.6574 10.9876 33.8215 11.1107 33.9445 11.1845C36.5039 12.7021 38.1774 14.8923 38.9156 17.7716C40.466 23.8501 36.2168 30.0107 29.9988 30.7243C29.6215 30.7654 29.2359 30.79 28.8504 30.7982C28.2926 30.8064 28.0301 30.5439 28.0301 29.9779C28.0219 29.3216 28.0301 28.6654 28.0301 28.0009C25.0688 27.5825 22.8785 26.106 21.6891 23.3743C20.4914 20.6427 20.918 18.0341 22.6652 15.5322C22.2223 15.2615 21.7957 14.7939 21.3281 14.7365C19.4332 14.515 19.0641 14.6626 18.0387 15.5814C19.7449 18.0013 20.1715 20.6181 18.982 23.3579C17.7926 26.0896 15.6106 27.5661 12.641 27.9927C12.641 28.6243 12.641 29.256 12.641 29.8876C12.641 30.5767 12.4031 30.8064 11.7059 30.7982C6.5461 30.7243 2.05078 26.7376 1.50117 21.6681C1.00898 17.0908 2.80547 13.5962 6.71016 11.1763C6.91524 11.0451 6.99727 10.922 6.98906 10.6759C6.97266 10.1673 6.98086 9.65052 6.98086 9.09271C6.78399 9.09271 6.62813 9.09271 6.47227 9.09271C4.89727 9.09271 3.32227 9.0681 1.75547 9.10091C0.910547 9.12552 0.311719 8.83021 0 8.0181C0 7.33724 0 6.64817 0 5.95911ZM26.5289 12.8743C31.2375 11.5536 35.5852 14.7611 36.2988 19.0185C37.0289 23.399 33.8953 27.5497 29.441 27.9927C29.441 28.4439 29.441 28.895 29.441 29.3872C29.8512 29.3216 30.2285 29.2724 30.6059 29.1986C35.2324 28.288 38.4891 23.563 37.7016 18.9447C37.2012 16.0079 35.659 13.8095 33.0832 12.3329C32.468 11.9802 32.1809 11.488 32.1973 10.7825C32.2137 9.43724 32.2055 8.08372 32.2055 6.73841C32.2055 6.59896 32.2055 6.4595 32.2055 6.32005C30.0809 6.32005 28.0137 6.32005 25.9137 6.32005C25.9137 7.59974 25.9629 8.86302 25.8973 10.1099C25.8399 11.1025 26.2254 11.9556 26.5289 12.8743ZM8.4 6.31185C8.4 6.49232 8.4 6.63177 8.4 6.77942C8.4 8.07552 8.37539 9.37161 8.40821 10.6677C8.43281 11.4962 8.08828 12.0048 7.38281 12.4232C4.26563 14.3017 2.64961 17.0908 2.83008 20.7247C3.01875 24.5638 5.04492 27.238 8.55586 28.772C9.37617 29.1329 10.2457 29.3216 11.1645 29.3626C11.1645 28.8786 11.1645 28.4357 11.1645 28.0009C6.68555 27.5333 3.63399 23.4236 4.27383 19.1825C4.55274 17.3368 5.38945 15.7701 6.79219 14.5478C8.90039 12.7103 11.3531 12.2345 14.1012 12.9072C14.298 12.1935 14.6098 11.5208 14.6508 10.8318C14.741 9.47825 14.6836 8.10833 14.6836 6.74661C14.6836 6.60716 14.6672 6.46771 14.659 6.31185C12.5754 6.31185 10.5164 6.31185 8.4 6.31185ZM18.1945 20.29C18.1863 16.8118 15.3398 13.9736 11.8781 13.99C8.4 14.0064 5.58633 16.8365 5.60274 20.3228C5.61914 23.7927 8.41641 26.59 11.8863 26.59C15.3809 26.59 18.2027 23.7681 18.1945 20.29ZM22.4027 20.29C22.4027 23.7681 25.2164 26.59 28.7027 26.59C32.1727 26.59 34.9781 23.7927 34.9945 20.3228C35.0109 16.8447 32.1973 14.0064 28.7191 13.99C25.2574 13.9736 22.4109 16.82 22.4027 20.29ZM18.9246 4.92552C18.9246 6.31185 18.9246 7.68177 18.9246 9.0681C19.8598 9.0681 20.7621 9.0681 21.6809 9.0681C21.6809 7.67357 21.6809 6.31185 21.6809 4.92552C20.7703 4.92552 19.8762 4.92552 18.9246 4.92552ZM16.0453 9.11732C16.2832 10.6513 15.9633 12.0622 15.3563 13.3747C15.9469 13.7767 16.4801 14.1376 17.0379 14.515C17.366 14.2689 17.7188 14.0146 18.0633 13.7439C18.1371 13.6865 18.1945 13.5716 18.1945 13.4814C18.2027 12.497 18.2027 11.5044 18.2027 10.5118C17.325 10.3724 17.5547 9.66692 17.4973 9.11732C17.0215 9.11732 16.5867 9.11732 16.0453 9.11732ZM22.534 10.5775C22.493 10.5611 22.452 10.5529 22.4027 10.5365C22.4027 11.5126 22.4027 12.4888 22.4109 13.4568C22.4109 13.547 22.4684 13.67 22.534 13.7193C22.8785 13.9982 23.2395 14.2607 23.5676 14.4986C24.1418 14.113 24.675 13.7521 25.2574 13.3501C24.6094 12.0294 24.3551 10.6103 24.5438 9.10911C24.027 9.10911 23.584 9.10911 23.1246 9.10911C23.1082 9.41263 23.1574 9.70794 23.0672 9.94583C22.9606 10.2001 22.7145 10.3806 22.534 10.5775ZM6.96446 6.33646C5.10234 6.33646 3.25664 6.33646 1.43555 6.33646C1.43555 6.81224 1.43555 7.2388 1.43555 7.67357C3.29766 7.67357 5.11875 7.67357 6.96446 7.67357C6.96446 7.21419 6.96446 6.77122 6.96446 6.33646ZM39.1781 6.32005C37.2996 6.32005 35.4703 6.32005 33.641 6.32005C33.641 6.78763 33.641 7.2306 33.641 7.66536C35.5031 7.66536 37.3406 7.66536 39.1781 7.66536C39.1781 7.19778 39.1781 6.77122 39.1781 6.32005ZM19.6055 13.2763C20.0813 13.2763 20.5242 13.2763 20.9672 13.2763C20.9672 12.3411 20.9672 11.4224 20.9672 10.5201C20.4914 10.5201 20.0566 10.5201 19.6055 10.5201C19.6055 11.447 19.6055 12.3411 19.6055 13.2763ZM19.6219 1.41458C19.6219 2.13646 19.6219 2.80091 19.6219 3.46536C20.0895 3.46536 20.5324 3.46536 20.9836 3.46536C20.9836 2.7681 20.9836 2.10365 20.9836 1.41458C20.5242 1.41458 20.0813 1.41458 19.6219 1.41458ZM16.1191 7.66536C16.6031 7.66536 17.0379 7.66536 17.4727 7.66536C17.4727 7.19778 17.4727 6.75482 17.4727 6.32005C16.9969 6.32005 16.5621 6.32005 16.1191 6.32005C16.1191 6.77943 16.1191 7.21419 16.1191 7.66536ZM24.4699 7.67357C24.4699 7.18138 24.4699 6.74661 24.4699 6.32005C23.9941 6.32005 23.5594 6.32005 23.1328 6.32005C23.1328 6.79583 23.1328 7.2306 23.1328 7.67357C23.5922 7.67357 24.027 7.67357 24.4699 7.67357Z" fill="#005252"></path><path d="M12.0339 25.1955C9.41709 25.3185 7.12841 23.1775 6.99716 20.4787C6.86591 17.8701 9.01513 15.5076 11.6237 15.4009C14.3718 15.2861 16.6851 17.3779 16.7999 20.0931C16.9147 22.8084 14.7983 25.0724 12.0339 25.1955ZM11.9108 16.8037C9.9913 16.7955 8.41631 18.3377 8.3999 20.249C8.38349 22.1849 9.94209 23.7763 11.8616 23.7927C13.7894 23.8091 15.3808 22.2423 15.389 20.3146C15.3972 18.3705 13.855 16.8119 11.9108 16.8037Z" fill="#005252"></path><path d="M28.6864 15.4009C31.3935 15.3927 33.6165 17.6157 33.6083 20.3146C33.6001 22.997 31.3771 25.2118 28.6946 25.2036C26.004 25.1954 23.7974 22.9888 23.7974 20.3064C23.7974 17.6157 26.004 15.4009 28.6864 15.4009ZM25.2083 20.29C25.2001 22.2259 26.7669 23.8009 28.7028 23.8009C30.6142 23.8009 32.1892 22.2341 32.1974 20.331C32.2056 18.3868 30.6634 16.82 28.7192 16.8118C26.7833 16.7954 25.2165 18.3458 25.2083 20.29Z" fill="#005252"></path></svg>
+                </span>
+                                <div class="h6 title">Optometry Services</div>
+                            </div>
+                            <div class="feature">
+                                <span class="icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="28" viewBox="0 0 40 28" fill="none"><path d="M39.973 17.4482C38.7425 19.1134 37.2741 20.5408 35.6827 21.8369C35.2972 22.1486 34.8788 22.1322 34.6163 21.8041C34.362 21.4841 34.4195 21.0904 34.805 20.7787C36.1011 19.7123 37.3152 18.5556 38.4226 17.2103C35.248 13.5271 31.4171 10.8447 26.7577 9.34352C29.0874 11.5173 30.3671 14.1588 30.3179 17.3662C30.2687 20.5736 28.9726 23.215 26.5034 25.2412C22.4019 28.588 16.5202 28.3009 12.755 24.5767C10.614 22.4603 9.58039 19.8599 9.68703 16.8412C9.79367 13.8388 11.0569 11.3779 13.2472 9.34352C8.58781 10.8283 4.75695 13.5189 1.57413 17.2103C2.57492 18.4408 3.66593 19.5072 4.84718 20.4916C5.00304 20.6228 5.17531 20.7541 5.32296 20.9017C5.58546 21.1642 5.60187 21.5498 5.37218 21.8205C5.1507 22.0912 4.75695 22.1568 4.46163 21.9435C4.14992 21.7138 3.82999 21.4759 3.55929 21.197C2.48468 20.106 1.41007 19.015 0.368274 17.8912C-0.14032 17.3416 -0.107507 17.1283 0.376477 16.5377C3.0589 13.2236 6.30734 10.6068 10.2448 8.97438C19.2191 5.24195 27.5945 6.49703 35.3218 12.3048C37.0937 13.6338 38.6359 15.217 39.9812 16.9806C39.973 17.1365 39.973 17.2923 39.973 17.4482ZM19.9819 8.26891C15.0519 8.27711 11.0241 12.313 11.0323 17.2349C11.0405 22.165 15.0765 26.1845 19.9984 26.1845C24.9284 26.1845 28.9562 22.1404 28.948 17.2185C28.948 12.2884 24.9038 8.2525 19.9819 8.26891Z" fill="#005252"></path><path d="M7.03735 7.88336C6.68462 7.27633 6.34009 6.6775 6.00376 6.07867C5.74946 5.6275 5.82329 5.23375 6.18423 5.02867C6.54516 4.81539 6.93071 4.95484 7.19321 5.38961C7.53774 5.98023 7.88227 6.57906 8.20219 7.12867C9.76899 6.45601 11.303 5.80797 12.8862 5.12711C12.8124 4.83179 12.7221 4.47086 12.6237 4.11812C12.5088 3.69156 12.3858 3.265 12.2791 2.83843C12.1397 2.31343 12.312 1.93609 12.7221 1.82945C13.1487 1.72281 13.4604 1.94429 13.6081 2.46929C13.7885 3.11734 13.9608 3.77359 14.1413 4.42164C14.1741 4.54468 14.2151 4.66773 14.2397 4.73336C15.9213 4.50367 17.5784 4.28218 19.2846 4.0525C19.2846 3.98687 19.301 3.84742 19.301 3.71617C19.301 2.7564 19.301 1.78843 19.301 0.828669C19.301 0.320076 19.5635 0.00835716 19.9819 0.000154034C20.4166 -0.00804909 20.6873 0.311873 20.6873 0.845076C20.6873 1.79664 20.6873 2.74 20.6873 3.69156C20.6873 3.83101 20.6873 3.97047 20.6873 4.0607C22.3936 4.29039 24.0424 4.51187 25.7569 4.74156C25.9291 4.11812 26.1178 3.42086 26.3065 2.72359C26.3475 2.58414 26.3721 2.44468 26.4131 2.31343C26.5526 1.91968 26.8971 1.73101 27.2745 1.83765C27.6272 1.93609 27.8323 2.27242 27.7338 2.66617C27.5452 3.42086 27.3401 4.17554 27.1432 4.93023C27.1186 5.01226 27.1104 5.1025 27.1022 5.14351C28.669 5.80797 30.203 6.46422 31.7862 7.13687C32.0979 6.60367 32.426 6.00484 32.787 5.42242C32.8936 5.25015 33.0659 5.06968 33.2545 4.98765C33.517 4.87281 33.7959 4.95484 33.9846 5.19273C34.1815 5.44703 34.1815 5.72593 34.0338 5.99664C33.6811 6.62828 33.312 7.25172 32.951 7.88336C33.5745 8.31812 34.1897 8.73648 34.7885 9.17125C35.0674 9.36812 35.1823 9.67164 35.0264 9.95875C34.9198 10.1556 34.6737 10.3443 34.4522 10.4017C34.2799 10.4427 34.0338 10.3033 33.8616 10.1884C32.951 9.62242 32.0733 8.98258 31.1299 8.45758C27.0448 6.18531 22.6643 5.19273 18.0049 5.61109C13.7475 5.98843 9.91665 7.51422 6.43852 9.97515C6.34009 10.0408 6.24985 10.1146 6.15141 10.1802C5.67563 10.5166 5.28188 10.4919 5.02759 10.1228C4.7897 9.77007 4.89634 9.37632 5.3393 9.06461C5.88891 8.67086 6.44673 8.29351 7.03735 7.88336Z" fill="#005252"></path><path d="M26.2244 17.2103C26.1998 20.5244 23.6568 23.1822 20.2607 23.4119C17.1518 23.6251 14.2479 21.197 13.8377 18.0306C13.2717 13.7158 17.2256 10.172 21.4666 11.1974C22.1064 11.3533 22.2869 11.8783 21.885 12.4033C21.1713 13.3302 21.2041 14.4705 21.9752 15.2333C22.7463 15.9962 23.8783 16.0291 24.8053 15.3072C25.3303 14.9052 25.8635 15.0857 26.0029 15.7419C26.1014 16.2341 26.1588 16.7181 26.2244 17.2103ZM24.7807 16.9642C23.3615 17.4482 22.0736 17.2595 21.0154 16.2095C19.949 15.1431 19.7522 13.847 20.2443 12.4443C18.6119 12.1818 16.5857 13.3384 15.7244 14.9873C14.7564 16.8494 15.0764 19.0642 16.5283 20.5736C17.9475 22.0501 20.1541 22.4603 22.0162 21.5908C23.7963 20.7623 24.9939 18.7935 24.7807 16.9642Z" fill="#005252"></path></svg>
+                </span>
+                                <div class="h6 title">Prescription Glasses</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end banner-section-two -->
+
+        <!-- start feature-section -->
+        <section class="services-section">
+            <div class="outer-box fix section-padding">
+                <div class="outer-container fix">
+                    <!-- Section Title -->
+                    <div class="sec-title text-center mb-5">
+                        <div class="sub-title">Our Core Business</div>
+                        <div class="h2">Core Business Verticals</div>
+                        <div class="text">Delivering excellence across healthcare and pharmaceutical sectors</div>
+                    </div>
+
+                    <div class="swiper services-slider pb-0">
+                        <div class="swiper-wrapper">
+                            <!-- Vertical 1: Pharmaceutical Trade & Distribution -->
+                            <div class="service-block swiper-slide wow fadeInUp" data-wow-delay="200ms">
+                                <div class="inner-block">
+                                    <div class="content-box">
+                                        <div class="inner-box">
+                                            <div class="icon">
+                                                <div class="service-icon">
+                                                    <i aria-hidden="true" class="fas fa-pills"></i>
+                                                </div>
+                                            </div>
+                                            <div class="h4 service-title">Pharmaceutical Trade & Distribution</div>
+                                            <div class="service-details">
+                                                We specialize in the wholesale, retail, import, export, stocking, and marketing of prescription and over-the-counter medicines, generic and patented drugs, formulations, vaccines, APIs, bulk chemicals and allied healthcare products. Our extensive distribution
+                                                network ensures timely and compliant delivery across domestic and international markets.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Vertical 2: Medical & Surgical Supplies -->
+                            <div class="service-block swiper-slide wow fadeInUp" data-wow-delay="400ms">
+                                <div class="inner-block">
+                                    <div class="content-box">
+                                        <div class="inner-box">
+                                            <div class="icon">
+                                                <div class="service-icon">
+                                                    <i aria-hidden="true" class="fas fa-hospital-user"></i>
+                                                </div>
+                                            </div>
+                                            <div class="h4 service-title">Medical & Surgical Supplies</div>
+                                            <div class="service-details">
+                                                We provide a comprehensive range of medical, surgical, diagnostic, and orthopaedic products, including hospital equipment and surgical instruments, diagnostic devices and healthcare appliances, implants, disposables, medical consumables, personal hygiene
+                                                and toilet articles. Our offerings are curated to meet the evolving needs of hospitals, clinics, and healthcare professionals.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Vertical 3: Manufacturing & Processing -->
+                            <div class="service-block swiper-slide wow fadeInUp" data-wow-delay="600ms">
+                                <div class="inner-block">
+                                    <div class="content-box">
+                                        <div class="inner-box">
+                                            <div class="icon">
+                                                <div class="service-icon">
+                                                    <i aria-hidden="true" class="fas fa-industry"></i>
+                                                </div>
+                                            </div>
+                                            <div class="h4 service-title">Manufacturing & Processing</div>
+                                            <div class="service-details">
+                                                With state-of-the-art facilities and adherence to global quality standards, we undertake manufacturing and formulation of pharmaceutical and medical products, contract manufacturing and private labeling, packaging, labeling, and repackaging services,
+                                                regulatory-compliant production under GMP and ISO frameworks.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Vertical 4: Publishing & Knowledge Dissemination -->
+                            <div class="service-block swiper-slide wow fadeInUp" data-wow-delay="800ms">
+                                <div class="inner-block">
+                                    <div class="content-box">
+                                        <div class="inner-box">
+                                            <div class="icon">
+                                                <div class="service-icon">
+                                                    <i aria-hidden="true" class="fas fa-book-open"></i>
+                                                </div>
+                                            </div>
+                                            <div class="h4 service-title">Publishing & Knowledge Dissemination</div>
+                                            <div class="service-details">
+                                                We are dedicated to enriching the healthcare ecosystem through publishing of pharmaceutical directories, journals, and manuals, compilation of medical references, case law digests, and compendia, distribution of content in both print and digital formats,
+                                                supporting academic, clinical, and regulatory communities with credible resources.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Vertical 5: Retail & Digital Infrastructure -->
+                            <div class="service-block swiper-slide">
+                                <div class="inner-block">
+                                    <div class="content-box">
+                                        <div class="inner-box">
+                                            <div class="icon">
+                                                <div class="service-icon">
+                                                    <i aria-hidden="true" class="fas fa-store"></i>
+                                                </div>
+                                            </div>
+                                            <div class="h4 service-title">Retail & Digital Infrastructure</div>
+                                            <div class="service-details">
+                                                We operate and manage pharmacies and medical stores, warehouses and distribution hubs, e-commerce platforms and digital storefronts, franchise and agency-based retail models. Our omnichannel presence ensures accessibility, affordability, and convenience
+                                                for all stakeholders.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="services-dot"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end feature-section -->
+
+        <!-- start about-section-two -->
+        <section class="about-section-two fix section-padding pt-0">
+            <div class="auto-container">
+                <div class="row">
+                    <div class="image-column col-xl-6 col-lg-8">
+                        <div class="inner-column">
+                            <div class="image-box one wow fadeInUp" data-wow-delay="200ms">
+                                <div class="image"><img src="images/resource/about2-1.jpg" alt=""></div>
+                            </div>
+                            <div class="image-box two wow fadeInUp" data-wow-delay="400ms">
+                                <div class="image"><img src="images/resource/about2-2.jpg" alt=""></div>
+                            </div>
+                            <div class="round-text">
+                                <div class="number">25</div>
+                                <span>
+                            <svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <path id="circlePath" d="M100,100 m-80,0 a80,80 0 1,1 160,0 a80,80 0 1,1 -160,0"></path>
+                                </defs>
+                                <text letter-spacing="6" text-anchor="middle">
+                                    <textPath href="#circlePath" startOffset="50%">
+                                        Years of Excellence ~ Years of Excellence ~
+                                    </textPath>
+                                </text>
+                            </svg>
+                        </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-column col-xl-6 col-lg-10">
+                        <div class="inner-column">
+                            <div class="sec-title">
+                                <div class="h6 sub-title border-style">About Us</div>
+                                <div class="h2 title char-animation">Empowering Future Pharma, Lifesciences, & Healthcare Leaders</div>
+                                <div class="text">
+                                    <strong>Pearl PharmMed Healthcare Consulting Pvt. Ltd.</strong> is a professional healthcare consulting and training organization committed to bridging the gap between academic learning and real-world pharmaceutical
+                                    and healthcare industry expectations. We serve as a trusted partner for institutions, graduates, and professionals by delivering industry-relevant knowledge, practical skills, and regulatory expertise.
+                                </div>
+                            </div>
+                            <div class="feature-box">
+                                <div class="feature wow fadeInUp" data-wow-delay="200ms">
+                                    <div class="icon"><i aria-hidden="true" class="flaticon-set-doctor-2"></i></div>
+                                    <div class="h5 title">Industry Experts<br>& Researchers</div>
+                                </div>
+                                <div class="feature wow fadeInUp" data-wow-delay="400ms">
+                                    <div class="icon"><i aria-hidden="true" class="flaticon-set-patient"></i></div>
+                                    <div class="h5 title">Hands-on Training<br>& Real Exposure</div>
+                                </div>
+                            </div>
+                            <ul class="list-style-one wow fadeInUp" data-wow-delay="500ms">
+                                <li>
+                                    <i aria-hidden="true" class="fas fa-check-circle"></i>
+                                    <span>Clinical Research & Clinical Trials – Aligned with global standards</span>
+                                </li>
+                                <li>
+                                    <i aria-hidden="true" class="fas fa-check-circle"></i>
+                                    <span>Pharmacovigilance & Drug Safety Operations – Project-based learning</span>
+                                </li>
+                                <li>
+                                    <i aria-hidden="true" class="fas fa-check-circle"></i>
+                                    <span>Regulatory Affairs, Medical Coding, Medical Device Compliance & Post-Market Surveillance</span>
+                                </li>
+                            </ul>
+                            <a href="page-services.html" class="theme-btn btn-style-one wow fadeInUp" data-wow-delay="600ms">
+                                <span class="btn-arrow-left"><i class="fas flaticon-common-right-arrow"></i></span>
+                                <span class="btn-title">More About Us</span>
+                                <span class="btn-arrow-right"><i class="fas flaticon-common-right-arrow"></i></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end about-section-two -->
+        <section class="working-section-two">
+            <div class="outer-box fix section-padding pb-0">
+                <div class="shape-1"><img src="images/icons/shape-5.png" alt=""></div>
+                <div class="shape-2 bounce-y"><img src="images/icons/shape-6.png" alt=""></div>
+                <div class="auto-container">
+                    <div class="row">
+                        <div class="content-column col-xl-7">
+                            <div class="inner-column">
+                                <div class="sec-title light">
+                                    <div class="h6 sub-title border-style style-two">Our Vision & Mission</div>
+                                    <div class="h2 title char-animation">Transforming Pharma Graduates Into Industry-Ready Professionals</div>
+                                    <div class="text">
+                                        Clinical Research | Pharmacovigilance | Medical Writing | Medical Device Regulation | Internship & Training
+                                    </div>
+                                </div>
+                                <div class="work-outer">
+                                    <div class="row gx-4">
+                                        <div class="work-block col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="200ms">
+                                            <div class="inner-box">
+                                                <div class="features-count">🎯</div>
+                                                <div class="icon-box">
+                                                    <i aria-hidden="true" class="flaticon-set-patient"></i>
+                                                </div>
+                                                <div class="content">
+                                                    <div class="h5 features-title">Our Vision</div>
+                                                    <div class="features-details">To empower pharmacy and life science graduates with globally recognized professional skills, industry knowledge, and practical experience to build meaningful careers in the healthcare ecosystem.</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="work-block col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="400ms">
+                                            <div class="inner-box">
+                                                <div class="features-count">🚀</div>
+                                                <div class="icon-box">
+                                                    <i aria-hidden="true" class="flaticon-set-pharmacy"></i>
+                                                </div>
+                                                <div class="content">
+                                                    <div class="h5 features-title">Our Mission</div>
+                                                    <div class="features-details">To bridge the skill gap between academia and industry by delivering high-quality, industry-focused training aligned with current global regulatory standards, while supporting organizations with compliant
+                                                        research, reporting, and regulatory solutions.</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="work-block col-lg-12 col-md-12 wow fadeInUp" data-wow-delay="600ms">
+                                            <div class="inner-box">
+                                                <div class="features-count">💡</div>
+                                                <div class="icon-box">
+                                                    <i aria-hidden="true" class="flaticon-set-research"></i>
+                                                </div>
+                                                <div class="content">
+                                                    <div class="h5 features-title">Our Commitment</div>
+                                                    <div class="features-details">We are committed to developing workforce-ready professionals in clinical research and pharmacovigilance equipped with practical skills, regulatory knowledge, and real-world industry exposure.</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bottom-box">
+                                    <div class="inner-box">
+                                        <span>4.9</span>
+                                        <div class="rating">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <span>Trusted by 2,000+ Professionals</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="image-column col-xl-5">
+                            <div class="inner-column">
+                                <div class="image wow fadeInUp" data-wow-delay="400ms"><img src="images/resource/work1-1.png" alt="Pharma Graduates Training"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- start marquee-section -->
+        <section class="marquee-section fix section-padding pt-0">
+            <div class="marquee one">
+                <div class="marquee-group">
+                    <div class="text" data-text="Clinical Trials & Research Support">Clinical Trials & Research Support</div>
+                    <span class="text divider">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M19.471 0.371832C19.5364 0.151832 19.7393 0 19.9694 0C20.1995 0 20.4024 0.151832 20.4679 0.371832C20.4679 0.371832 21.3801 3.42833 22.3579 6.70666C23.916 11.9296 28.0036 16.0153 33.229 17.5726C36.5089 18.5499 39.5668 19.4618 39.5668 19.4618C39.7869 19.5272 39.9388 19.73 39.9388 19.96C39.9388 20.19 39.7869 20.3927 39.5668 20.4582C39.5668 20.4582 36.5089 21.37 33.229 22.3474C28.0036 23.9047 23.916 27.9903 22.3579 33.2133C21.3801 36.4916 20.4679 39.5481 20.4679 39.5481C20.4024 39.7681 20.1995 39.9199 19.9694 39.9199C19.7393 39.9199 19.5364 39.7681 19.471 39.5481C19.471 39.5481 18.5587 36.4916 17.5809 33.2133C16.0228 27.9903 11.9352 23.9047 6.70982 22.3474C3.42995 21.37 0.372008 20.4582 0.372008 20.4582C0.15189 20.3927 0 20.19 0 19.96C0 19.73 0.15189 19.5272 0.372008 19.4618C0.372008 19.4618 3.42995 18.5499 6.70982 17.5726C11.9352 16.0153 16.0228 11.9296 17.5809 6.70666C18.5587 3.42833 19.471 0.371832 19.471 0.371832Z" fill="#121212"></path></svg>
+            </span>
+                    <div class="text" data-text="Pharmaceutical Trade & Distribution">Pharmaceutical Trade & Distribution</div>
+                    <span class="text divider">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M19.471 0.371832C19.5364 0.151832 19.7393 0 19.9694 0C20.1995 0 20.4024 0.151832 20.4679 0.371832C20.4679 0.371832 21.3801 3.42833 22.3579 6.70666C23.916 11.9296 28.0036 16.0153 33.229 17.5726C36.5089 18.5499 39.5668 19.4618 39.5668 19.4618C39.7869 19.5272 39.9388 19.73 39.9388 19.96C39.9388 20.19 39.7869 20.3927 39.5668 20.4582C39.5668 20.4582 36.5089 21.37 33.229 22.3474C28.0036 23.9047 23.916 27.9903 22.3579 33.2133C21.3801 36.4916 20.4679 39.5481 20.4679 39.5481C20.4024 39.7681 20.1995 39.9199 19.9694 39.9199C19.7393 39.9199 19.5364 39.7681 19.471 39.5481C19.471 39.5481 18.5587 36.4916 17.5809 33.2133C16.0228 27.9903 11.9352 23.9047 6.70982 22.3474C3.42995 21.37 0.372008 20.4582 0.372008 20.4582C0.15189 20.3927 0 20.19 0 19.96C0 19.73 0.15189 19.5272 0.372008 19.4618C0.372008 19.4618 3.42995 18.5499 6.70982 17.5726C11.9352 16.0153 16.0228 11.9296 17.5809 6.70666C18.5587 3.42833 19.471 0.371832 19.471 0.371832Z" fill="#121212"></path></svg>
+            </span>
+                    <div class="text" data-text="Medical & Surgical Supplies">Medical & Surgical Supplies</div>
+                    <span class="text divider">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M19.471 0.371832C19.5364 0.151832 19.7393 0 19.9694 0C20.1995 0 20.4024 0.151832 20.4679 0.371832C20.4679 0.371832 21.3801 3.42833 22.3579 6.70666C23.916 11.9296 28.0036 16.0153 33.229 17.5726C36.5089 18.5499 39.5668 19.4618 39.5668 19.4618C39.7869 19.5272 39.9388 19.73 39.9388 19.96C39.9388 20.19 39.7869 20.3927 39.5668 20.4582C39.5668 20.4582 36.5089 21.37 33.229 22.3474C28.0036 23.9047 23.916 27.9903 22.3579 33.2133C21.3801 36.4916 20.4679 39.5481 20.4679 39.5481C20.4024 39.7681 20.1995 39.9199 19.9694 39.9199C19.7393 39.9199 19.5364 39.7681 19.471 39.5481C19.471 39.5481 18.5587 36.4916 17.5809 33.2133C16.0228 27.9903 11.9352 23.9047 6.70982 22.3474C3.42995 21.37 0.372008 20.4582 0.372008 20.4582C0.15189 20.3927 0 20.19 0 19.96C0 19.73 0.15189 19.5272 0.372008 19.4618C0.372008 19.4618 3.42995 18.5499 6.70982 17.5726C11.9352 16.0153 16.0228 11.9296 17.5809 6.70666C18.5587 3.42833 19.471 0.371832 19.471 0.371832Z" fill="#121212"></path></svg>
+            </span>
+                    <div class="text" data-text="Manufacturing & Processing">Manufacturing & Processing</div>
+                    <span class="text divider">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M19.471 0.371832C19.5364 0.151832 19.7393 0 19.9694 0C20.1995 0 20.4024 0.151832 20.4679 0.371832C20.4679 0.371832 21.3801 3.42833 22.3579 6.70666C23.916 11.9296 28.0036 16.0153 33.229 17.5726C36.5089 18.5499 39.5668 19.4618 39.5668 19.4618C39.7869 19.5272 39.9388 19.73 39.9388 19.96C39.9388 20.19 39.7869 20.3927 39.5668 20.4582C39.5668 20.4582 36.5089 21.37 33.229 22.3474C28.0036 23.9047 23.916 27.9903 22.3579 33.2133C21.3801 36.4916 20.4679 39.5481 20.4679 39.5481C20.4024 39.7681 20.1995 39.9199 19.9694 39.9199C19.7393 39.9199 19.5364 39.7681 19.471 39.5481C19.471 39.5481 18.5587 36.4916 17.5809 33.2133C16.0228 27.9903 11.9352 23.9047 6.70982 22.3474C3.42995 21.37 0.372008 20.4582 0.372008 20.4582C0.15189 20.3927 0 20.19 0 19.96C0 19.73 0.15189 19.5272 0.372008 19.4618C0.372008 19.4618 3.42995 18.5499 6.70982 17.5726C11.9352 16.0153 16.0228 11.9296 17.5809 6.70666C18.5587 3.42833 19.471 0.371832 19.471 0.371832Z" fill="#121212"></path></svg>
+            </span>
+                    <div class="text" data-text="Publishing & Knowledge Dissemination">Publishing & Knowledge Dissemination</div>
+                    <span class="text divider">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M19.471 0.371832C19.5364 0.151832 19.7393 0 19.9694 0C20.1995 0 20.4024 0.151832 20.4679 0.371832C20.4679 0.371832 21.3801 3.42833 22.3579 6.70666C23.916 11.9296 28.0036 16.0153 33.229 17.5726C36.5089 18.5499 39.5668 19.4618 39.5668 19.4618C39.7869 19.5272 39.9388 19.73 39.9388 19.96C39.9388 20.19 39.7869 20.3927 39.5668 20.4582C39.5668 20.4582 36.5089 21.37 33.229 22.3474C28.0036 23.9047 23.916 27.9903 22.3579 33.2133C21.3801 36.4916 20.4679 39.5481 20.4679 39.5481C20.4024 39.7681 20.1995 39.9199 19.9694 39.9199C19.7393 39.9199 19.5364 39.7681 19.471 39.5481C19.471 39.5481 18.5587 36.4916 17.5809 33.2133C16.0228 27.9903 11.9352 23.9047 6.70982 22.3474C3.42995 21.37 0.372008 20.4582 0.372008 20.4582C0.15189 20.3927 0 20.19 0 19.96C0 19.73 0.15189 19.5272 0.372008 19.4618C0.372008 19.4618 3.42995 18.5499 6.70982 17.5726C11.9352 16.0153 16.0228 11.9296 17.5809 6.70666C18.5587 3.42833 19.471 0.371832 19.471 0.371832Z" fill="#121212"></path></svg>
+            </span>
+                    <div class="text" data-text="Retail & Digital Infrastructure">Retail & Digital Infrastructure</div>
+                    <span class="text divider">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M19.471 0.371832C19.5364 0.151832 19.7393 0 19.9694 0C20.1995 0 20.4024 0.151832 20.4679 0.371832C20.4679 0.371832 21.3801 3.42833 22.3579 6.70666C23.916 11.9296 28.0036 16.0153 33.229 17.5726C36.5089 18.5499 39.5668 19.4618 39.5668 19.4618C39.7869 19.5272 39.9388 19.73 39.9388 19.96C39.9388 20.19 39.7869 20.3927 39.5668 20.4582C39.5668 20.4582 36.5089 21.37 33.229 22.3474C28.0036 23.9047 23.916 27.9903 22.3579 33.2133C21.3801 36.4916 20.4679 39.5481 20.4679 39.5481C20.4024 39.7681 20.1995 39.9199 19.9694 39.9199C19.7393 39.9199 19.5364 39.7681 19.471 39.5481C19.471 39.5481 18.5587 36.4916 17.5809 33.2133C16.0228 27.9903 11.9352 23.9047 6.70982 22.3474C3.42995 21.37 0.372008 20.4582 0.372008 20.4582C0.15189 20.3927 0 20.19 0 19.96C0 19.73 0.15189 19.5272 0.372008 19.4618C0.372008 19.4618 3.42995 18.5499 6.70982 17.5726C11.9352 16.0153 16.0228 11.9296 17.5809 6.70666C18.5587 3.42833 19.471 0.371832 19.471 0.371832Z" fill="#121212"></path></svg>
+            </span>
+                </div>
+                <!-- duplicate group for seamless loop -->
+                <div class="marquee-group">
+                    <div class="text" data-text="Clinical Trials & Research Support">Clinical Trials & Research Support</div>
+                    <span class="text divider"><svg>...same as above...</svg></span>
+                    <div class="text" data-text="Pharmaceutical Trade & Distribution">Pharmaceutical Trade & Distribution</div>
+                    <span class="text divider"><svg>...</svg></span>
+                    <div class="text" data-text="Medical & Surgical Supplies">Medical & Surgical Supplies</div>
+                    <span class="text divider"><svg>...</svg></span>
+                    <div class="text" data-text="Manufacturing & Processing">Manufacturing & Processing</div>
+                    <span class="text divider"><svg>...</svg></span>
+                    <div class="text" data-text="Publishing & Knowledge Dissemination">Publishing & Knowledge Dissemination</div>
+                    <span class="text divider"><svg>...</svg></span>
+                    <div class="text" data-text="Retail & Digital Infrastructure">Retail & Digital Infrastructure</div>
+                    <span class="text divider"><svg>...</svg></span>
+                </div>
+            </div>
+
+            <div class="marquee two">
+                <div class="marquee-group">
+                    <div class="text" data-text="Clinical Trials & Research Support">Clinical Trials & Research Support</div>
+                    <span class="text divider"><svg fill="white">...</svg></span>
+                    <div class="text" data-text="Pharmaceutical Trade & Distribution">Pharmaceutical Trade & Distribution</div>
+                    <span class="text divider"><svg fill="white">...</svg></span>
+                    <div class="text" data-text="Medical & Surgical Supplies">Medical & Surgical Supplies</div>
+                    <span class="text divider"><svg fill="white">...</svg></span>
+                    <div class="text" data-text="Manufacturing & Processing">Manufacturing & Processing</div>
+                    <span class="text divider"><svg fill="white">...</svg></span>
+                    <div class="text" data-text="Publishing & Knowledge Dissemination">Publishing & Knowledge Dissemination</div>
+                    <span class="text divider"><svg fill="white">...</svg></span>
+                    <div class="text" data-text="Retail & Digital Infrastructure">Retail & Digital Infrastructure</div>
+                    <span class="text divider"><svg fill="white">...</svg></span>
+                </div>
+                <div class="marquee-group">
+                    <div class="text" data-text="Clinical Trials & Research Support">Clinical Trials & Research Support</div>
+                    <span class="text divider"><svg fill="white">...</svg></span>
+                    <div class="text" data-text="Pharmaceutical Trade & Distribution">Pharmaceutical Trade & Distribution</div>
+                    <span class="text divider"><svg fill="white">...</svg></span>
+                    <div class="text" data-text="Medical & Surgical Supplies">Medical & Surgical Supplies</div>
+                    <span class="text divider"><svg fill="white">...</svg></span>
+                    <div class="text" data-text="Manufacturing & Processing">Manufacturing & Processing</div>
+                    <span class="text divider"><svg fill="white">...</svg></span>
+                    <div class="text" data-text="Publishing & Knowledge Dissemination">Publishing & Knowledge Dissemination</div>
+                    <span class="text divider"><svg fill="white">...</svg></span>
+                    <div class="text" data-text="Retail & Digital Infrastructure">Retail & Digital Infrastructure</div>
+                    <span class="text divider"><svg fill="white">...</svg></span>
+                </div>
+            </div>
+        </section>
+        <!-- end marquee-section -->
+
+        <!-- start services-section-two -->
+        <section class="services-section-two">
+            <div class="outer-box fix section-padding">
+                <div class="auto-container">
+                    <div class="row justify-content-center">
+                        <div class="sec-title col-lg-6 text-center mb-50">
+                            <div class="h6 sub-title border-style style-two">Industry Expertise</div>
+                            <div class="h2 title char-animation">What We Are Offering to Our Potential Clients</div>
+                        </div>
+                    </div>
+
+                    <div class="default-tabs tabs-box mb-0">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <!-- Tab Btns -->
+                                <div class="tab-btns tab-buttons">
+                                    <button data-tab="#prod-clinical" class="tab-btn active-btn wow fadeInUp" data-wow-delay="200ms">
+                                <i aria-hidden="true" class="flaticon-set-maternity-care"></i>
+                                <span>Clinical Trials & Research Support</span>
+                            </button>
+                                    <button data-tab="#prod-medical-writing" class="tab-btn wow fadeInUp" data-wow-delay="300ms">
+                                <i aria-hidden="true" class="flaticon-set-pregnant-1"></i>
+                                <span>Medical Writing & Regulatory Documentation</span>
+                            </button>
+                                    <button data-tab="#prod-pharmacovigilance" class="tab-btn wow fadeInUp" data-wow-delay="400ms">
+                                <i aria-hidden="true" class="flaticon-set-pregnancy-1"></i>
+                                <span>Pharmacovigilance & Drug Safety Monitoring</span>
+                            </button>
+                                    <button data-tab="#prod-medical-device" class="tab-btn wow fadeInUp" data-wow-delay="500ms">
+                                <i aria-hidden="true" class="flaticon-set-pregnancy-test-2"></i>
+                                <span>Medical Device Reporting & Compliance</span>
+                            </button>
+                                    <button data-tab="#prod-gcp" class="tab-btn wow fadeInUp" data-wow-delay="600ms">
+                                <i aria-hidden="true" class="flaticon-set-medical-team"></i>
+                                <span>GCP, GDP & Regulatory Standards</span>
+                            </button>
+                                    <button data-tab="#prod-gmp-glp" class="tab-btn wow fadeInUp" data-wow-delay="700ms">
+                                <i aria-hidden="true" class="flaticon-set-ivf-6"></i>
+                                <span>GMP & GLP</span>
+                            </button>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-8">
+                                <!-- Tabs Container -->
+                                <div class="tabs-content">
+
+                                    <!-- Tab 1 - Clinical Trials & Research Support -->
+                                    <div class="tab active-tab" id="prod-clinical">
+                                        <div class="tab-inner-content">
+                                            <div class="content-box">
+                                                <div class="inner-box">
+                                                    <div class="image"><img src="images/resource/service2-1.jpg" alt="Clinical Trials"></div>
+                                                    <div class="h3 title">Clinical Trials & Research Support</div>
+                                                    <div class="text">
+                                                        We offer comprehensive clinical research and trial support services, ensuring compliance with global regulatory standards. Our expertise includes trial design, patient recruitment, data management, monitoring, and submission support for successful study
+                                                        outcomes.
+                                                    </div>
+                                                    <a href="page-services.html" class="theme-btn btn-style-one">
+                                                        <span class="btn-arrow-left"><i class="fas flaticon-common-right-arrow"></i></span>
+                                                        <span class="btn-title">View All Services</span>
+                                                        <span class="btn-arrow-right"><i class="fas flaticon-common-right-arrow"></i></span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Tab 2 - Medical Writing & Regulatory Documentation -->
+                                    <div class="tab" id="prod-medical-writing">
+                                        <div class="tab-inner-content">
+                                            <div class="content-box">
+                                                <div class="inner-box">
+                                                    <div class="image"><img src="images/resource/service2-2.jpg" alt="Medical Writing"></div>
+                                                    <div class="h3 title">Medical Writing & Regulatory Documentation</div>
+                                                    <div class="text">
+                                                        Our team delivers high-quality medical writing and regulatory documentation services, including clinical study reports, investigator brochures, informed consent forms, and regulatory submission dossiers aligned with ICH and FDA/EMA guidelines.
+                                                    </div>
+                                                    <a href="page-services.html" class="theme-btn btn-style-one">
+                                                        <span class="btn-arrow-left"><i class="fas flaticon-common-right-arrow"></i></span>
+                                                        <span class="btn-title">View All Services</span>
+                                                        <span class="btn-arrow-right"><i class="fas flaticon-common-right-arrow"></i></span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Tab 3 - Pharmacovigilance & Drug Safety Monitoring -->
+                                    <div class="tab" id="prod-pharmacovigilance">
+                                        <div class="tab-inner-content">
+                                            <div class="content-box">
+                                                <div class="inner-box">
+                                                    <div class="image"><img src="images/resource/service2-1.jpg" alt="Pharmacovigilance"></div>
+                                                    <div class="h3 title">Pharmacovigilance & Drug Safety Monitoring</div>
+                                                    <div class="text">
+                                                        We provide end-to-end pharmacovigilance solutions including adverse event reporting, signal detection, risk management plans, PSUR/PADER preparation, and safety database management to ensure patient safety and regulatory compliance.
+                                                    </div>
+                                                    <a href="page-services.html" class="theme-btn btn-style-one">
+                                                        <span class="btn-arrow-left"><i class="fas flaticon-common-right-arrow"></i></span>
+                                                        <span class="btn-title">View All Services</span>
+                                                        <span class="btn-arrow-right"><i class="fas flaticon-common-right-arrow"></i></span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Tab 4 - Medical Device Reporting & Compliance -->
+                                    <div class="tab" id="prod-medical-device">
+                                        <div class="tab-inner-content">
+                                            <div class="content-box">
+                                                <div class="inner-box">
+                                                    <div class="image"><img src="images/resource/service2-2.jpg" alt="Medical Device Compliance"></div>
+                                                    <div class="h3 title">Medical Device Reporting & Compliance</div>
+                                                    <div class="text">
+                                                        Our expertise covers MDR, PMS, PMSR, PMCFER, and CER. We assist medical device manufacturers with regulatory submissions, post-market surveillance, clinical evaluation reports, and compliance with EU MDR and FDA requirements.
+                                                    </div>
+                                                    <a href="page-services.html" class="theme-btn btn-style-one">
+                                                        <span class="btn-arrow-left"><i class="fas flaticon-common-right-arrow"></i></span>
+                                                        <span class="btn-title">View All Services</span>
+                                                        <span class="btn-arrow-right"><i class="fas flaticon-common-right-arrow"></i></span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Tab 5 - GCP, GDP & Regulatory Standards -->
+                                    <div class="tab" id="prod-gcp">
+                                        <div class="tab-inner-content">
+                                            <div class="content-box">
+                                                <div class="inner-box">
+                                                    <div class="image"><img src="images/resource/gcp.jpg" alt="GCP GDP"></div>
+                                                    <div class="h3 title">GCP, GDP & Regulatory Standards</div>
+                                                    <div class="text">
+                                                        We ensure compliance with Good Clinical Practice (GCP), Good Documentation Practice (GDP), and international regulatory standards. Our services include gap analysis, audit preparation, SOP development, and staff training.
+                                                    </div>
+                                                    <a href="page-services.html" class="theme-btn btn-style-one">
+                                                        <span class="btn-arrow-left"><i class="fas flaticon-common-right-arrow"></i></span>
+                                                        <span class="btn-title">View All Services</span>
+                                                        <span class="btn-arrow-right"><i class="fas flaticon-common-right-arrow"></i></span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Tab 6 - GMP & GLP -->
+                                    <div class="tab" id="prod-gmp-glp">
+                                        <div class="tab-inner-content">
+                                            <div class="content-box">
+                                                <div class="inner-box">
+                                                    <div class="image"><img src="images/resource/GMP-vs-GLP.webp" alt="GMP GLP"></div>
+                                                    <div class="h3 title">Good Manufacturing Practices (GMP) & Good Laboratory Practices (GLP)</div>
+                                                    <div class="text">
+                                                        We provide consulting and training on GMP and GLP compliance for pharmaceutical and laboratory environments. Our services include quality system implementation, facility audits, validation support, and regulatory inspection readiness.
+                                                    </div>
+                                                    <a href="page-services.html" class="theme-btn btn-style-one">
+                                                        <span class="btn-arrow-left"><i class="fas flaticon-common-right-arrow"></i></span>
+                                                        <span class="btn-title">View All Services</span>
+                                                        <span class="btn-arrow-right"><i class="fas flaticon-common-right-arrow"></i></span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end services-section-two -->
+        <section class="working-section fix">
+            <div class="outer-box fix section-padding">
+                <div class="bg bg-image"><img src="images/resource/work1-1.jpg" alt=""></div>
+                <div class="auto-container">
+                    <div class="row align-items-center">
+                        <div class="content-column col-xl-6 col-lg-10">
+                            <div class="inner-column">
+                                <div class="sec-title light">
+                                    <div class="h6 sub-title">Our Commitment</div>
+                                    <div class="h2 title ">Upholding Ethics, Transparency & Compliance</div>
+                                </div>
+                                <div class="text one">We uphold the highest standards of ethics, transparency, and regulatory compliance in all our operations. Every initiative we undertake is guided by our mission to improve lives, empower professionals, and contribute meaningfully
+                                    to the global healthcare landscape.</div>
+                                <div class="text two">Our collaborative ethos drives innovation, compliance, and shared growth. We actively engage with healthcare institutions, research bodies, regulatory authorities, and academic organizations worldwide.</div>
+                                <a href="page-contact.html" class="theme-btn btn-style-two">
+                                    <span class="btn-arrow-left"><i class="fas flaticon-common-right-arrow"></i></span>
+                                    <span class="btn-title">Partner With Us</span>
+                                    <span class="btn-arrow-right"><i class="fas flaticon-common-right-arrow"></i></span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="exp-column col-xl-5 offset-xl-1">
+                            <div class="inner-column">
+                                <div class="exp-details__progress">
+                                    <div class="exp-details__progress-single">
+                                        <div class="bar">
+                                            <div class="bar-inner count-bar" data-percent="95%">
+                                                <div class="count-text">95%</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="exp-details__progress-single">
+                                        <div class="bar">
+                                            <div class="bar-inner count-bar" data-percent="100%">
+                                                <div class="count-text">100%</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="exp-details__progress-single">
+                                        <div class="bar marb-0">
+                                            <div class="bar-inner count-bar" data-percent="85%">
+                                                <div class="count-text">85%</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="exp-details__progress-single">
+                                        <div class="bar marb-0">
+                                            <div class="bar-inner count-bar" data-percent="78%">
+                                                <div class="count-text">78%</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="h3 title">Strategic Collaborations & Global Partnerships</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- start why-choose-us-section-two -->
+        <section class="why-choose-us-section-two fix section-padding">
+            <div class="auto-container">
+                <div class="sec-title-box">
+                    <div class="sec-title">
+                        <div class="h6 sub-title style-two">Why Choose Us</div>
+                        <div class="h2 title ">Industry-recognized and job-focused training</div>
+                    </div>
+                    <a href="page-contact.html" class="theme-btn btn-style-one">
+                        <span class="btn-arrow-left"><i class="fas flaticon-common-right-arrow"></i></span>
+                        <span class="btn-title">Contact Us</span>
+                        <span class="btn-arrow-right"><i class="fas flaticon-common-right-arrow"></i></span>
+                    </a>
+                </div>
+                <div class="row gx-4">
+                    <div class="image-column col-lg-4">
+                        <div class="inner-column">
+                            <div class="image wow fadeInUp" data-wow-delay="100ms"><img src="images/resource/wcu2-1.jpg" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="content-column col-lg-8">
+                        <div class="inner-column">
+                            <div class="row g-3">
+                                <div class="wcu-block col-md-6 wow fadeInUp" data-wow-delay="200ms">
+                                    <div class="inner">
+                                        <div class="shape"></div>
+                                        <div class="icon">
+                                            <i aria-hidden="true" class="flaticon-set-doctor-2"></i>
+                                        </div>
+                                        <div class="h4 features-title">Industry-recognized & job-focused training</div>
+                                        <div class="features-details">Our training programs are designed to meet current industry demands and enhance employability.</div>
+                                    </div>
+                                </div>
+                                <div class="wcu-block col-md-6 wow fadeInUp" data-wow-delay="400ms">
+                                    <div class="inner">
+                                        <div class="shape"></div>
+                                        <div class="icon">
+                                            <i aria-hidden="true" class="flaticon-set-check-up"></i>
+                                        </div>
+                                        <div class="h4 features-title">Experienced faculty with CRO & pharma background</div>
+                                        <div class="features-details">Learn from industry experts who bring real-world clinical research and pharmaceutical experience.</div>
+                                    </div>
+                                </div>
+                                <div class="wcu-block col-md-6 wow fadeInUp" data-wow-delay="600ms">
+                                    <div class="inner">
+                                        <div class="shape"></div>
+                                        <div class="icon">
+                                            <i aria-hidden="true" class="flaticon-set-mother-1"></i>
+                                        </div>
+                                        <div class="h4 features-title">Real-time data, tools & documentation exposure</div>
+                                        <div class="features-details">Hands-on training with industry-standard tools and regulatory documentation practices.</div>
+                                    </div>
+                                </div>
+                                <div class="wcu-block col-md-6 wow fadeInUp" data-wow-delay="800ms">
+                                    <div class="inner">
+                                        <div class="shape"></div>
+                                        <div class="icon">
+                                            <i aria-hidden="true" class="flaticon-set-ivf-3"></i>
+                                        </div>
+                                        <div class="h4 features-title">Placement assistance & career guidance</div>
+                                        <div class="features-details">We provide dedicated placement support and career mentorship to help you succeed.</div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end why-choose-us-section-two -->
+
+        <!-- start funfact-section -->
+        <section class="funfact-section section-padding pt-0">
+            <div class="auto-container fix">
+                <div class="row">
+                    <div class="funfact-block col-md-3">
+                        <div class="inner-block">
+                            <div class="counter-box">
+                                <div class="h2 count-box"><span class="count-text" data-speed="3000" data-stop="10">0</span>+</div>
+                                <div class="text">Years of Industry Expertise</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="funfact-block col-md-3">
+                        <div class="inner-block">
+                            <div class="counter-box">
+                                <div class="h2 count-box"><span class="count-text" data-speed="3000" data-stop="50">0</span>+</div>
+                                <div class="text">Qualified Trainers & Consultants</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="funfact-block col-md-3">
+                        <div class="inner-block">
+                            <div class="counter-box">
+                                <div class="h2 count-box"><span class="count-text" data-speed="3000" data-stop="5">0</span>K+</div>
+                                <div class="text">Professionals Trained</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="funfact-block col-md-3">
+                        <div class="inner-block mb-0">
+                            <div class="counter-box">
+                                <div class="h2 count-box"><span class="count-text" data-speed="3000" data-stop="25">0</span>+</div>
+                                <div class="text">CRO & Pharma Partners</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end funfact-section -->
+
+        <!-- start working-section-two -->
+        <section class="working-section-two">
+            <div class="outer-box fix section-padding pb-0">
+                <div class="shape-1"><img src="images/icons/shape-5.png" alt=""></div>
+                <div class="shape-2 bounce-y"><img src="images/icons/shape-6.png" alt=""></div>
+                <div class="auto-container">
+                    <div class="row">
+                        <div class="content-column col-xl-7">
+                            <div class="inner-column">
+                                <div class="sec-title light">
+                                    <div class="h6 sub-title border-style style-two">How It Work</div>
+                                    <div class="h2 title char-animation">We guide you through every stage with transparency</div>
+                                    <div class="text">Our process begins with a personalized assessment where we carefully evaluate medical requirements, daily routines.</div>
+                                </div>
+                                <div class="work-outer">
+                                    <div class="row gx-4">
+                                        <div class="work-block col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="200ms">
+                                            <div class="inner-box">
+                                                <div class="features-count">01</div>
+                                                <div class="icon-box">
+                                                    <i aria-hidden="true" class=" flaticon-set-patient"></i>
+                                                </div>
+                                                <div class="content">
+                                                    <div class="h5 features-title">Initial Consultation</div>
+                                                    <div class="features-details">Our initial consultation is the first step toward.</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="work-block col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="400ms">
+                                            <div class="inner-box">
+                                                <div class="features-count">02</div>
+                                                <div class="icon-box">
+                                                    <i aria-hidden="true" class=" flaticon-set-pharmacy"></i>
+                                                </div>
+                                                <div class="content">
+                                                    <div class="h5 features-title">Ongoing Care</div>
+                                                    <div class="features-details">Our initial consultation is the first step toward.</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="work-block col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="600ms">
+                                            <div class="inner-box">
+                                                <div class="features-count">03</div>
+                                                <div class="icon-box">
+                                                    <i aria-hidden="true" class=" flaticon-set-research"></i>
+                                                </div>
+                                                <div class="content">
+                                                    <div class="h5 features-title">Safety Vetting</div>
+                                                    <div class="features-details">Our initial consultation is the first step toward.</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bottom-box">
+                                    <div class="inner-box">
+                                        <span>4.9</span>
+                                        <div class="rating">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <span>Our 5,000 Reviews</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="image-column col-xl-5">
+                            <div class="inner-column">
+                                <div class="image wow fadeInUp" data-wow-delay="400ms"><img src="images/resource/work1-1.png" alt=""></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end working-section-two -->
+
+        <!-- start team-section-two -->
+
+        <!-- end team-section-two -->
+        <section class="pricing-section fix section-padding">
+            <div class="auto-container">
+                <div class="row justify-content-center">
+                    <div class="sec-title col-lg-8 text-center mb-30">
+                        <div class="h6 sub-title">Internship & Project</div>
+                        <div class="h2 title char-animation">Industry Programs for Life Science Graduates</div>
+                        <div class="text mt-3">
+                            Our structured internship and project platform is designed specifically for B.Pharm, M.Pharm, Pharm.D, Nursing, Biomedical Engineering and Life Science graduates seeking real-world practical experience.
+                        </div>
+                        <div class="program-tags mt-3">
+                            <span class="badge">B.Pharm</span>
+                            <span class="badge">M.Pharm</span>
+                            <span class="badge">Pharm.D</span>
+                            <span class="badge">Life Sciences</span>
+                            <span class="badge">Biomedical Engineering</span>
+                            <span class="badge">Nursing</span>
+                            <span class="badge">Biotechnology</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row gx-3">
+                    <!-- Card 1 - Internship Areas -->
+                    <div class="price-block col-xl-4 col-md-6 wow fadeInUp" data-wow-delay="200ms">
+                        <div class="inner-block">
+                            <div class="pricing-header">
+                                <div class="title-outer">
+                                    <div class="title-box">
+                                        <div class="h4 pricing-plan-title">🎓 Internship Areas</div>
+                                    </div>
+                                    <div class="offer">8+ Domains</div>
+                                </div>
+                                <div class="pricing-plan-pricing">
+                                    <div class="price price-normal">
+                                        <span class="pricing-plan-price">Learn</span>
+                                        <span class="pricing-plan-postfix">Industry-Ready Skills</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pricing-bottom">
+                                <ul class="features-list">
+                                    <li><i aria-hidden="true" class="icon flaticon-common-checked"></i><span>Clinical Research Operations</span></li>
+                                    <li><i aria-hidden="true" class="icon flaticon-common-checked"></i><span>Clinical Data Management</span></li>
+                                    <li><i aria-hidden="true" class="icon flaticon-common-checked"></i><span>Pharmacovigilance (PV)</span></li>
+                                    <li><i aria-hidden="true" class="icon flaticon-common-checked"></i><span>Medical Device Regulation & Report Writing</span></li>
+                                    <li><i aria-hidden="true" class="icon flaticon-common-checked"></i><span>Medical and Regulatory Writing</span></li>
+                                    <li><i aria-hidden="true" class="icon flaticon-common-checked"></i><span>Medical Coding</span></li>
+                                </ul>
+                                <a href="page-contact.html" class="theme-btn btn-style-pricing">Enquire Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 - Project Work Support -->
+                    <div class="price-block col-xl-4 col-md-6 wow fadeInUp" data-wow-delay="400ms">
+                        <div class="inner-block">
+                            <div class="pricing-header">
+                                <div class="title-outer">
+                                    <div class="title-box">
+                                        <div class="h4 pricing-plan-title">📚 Project Work Support</div>
+                                    </div>
+                                    <div class="offer">Final Year</div>
+                                </div>
+                                <div class="pricing-plan-pricing">
+                                    <div class="price price-normal">
+                                        <span class="pricing-plan-price">Guided</span>
+                                        <span class="pricing-plan-postfix">Project Mentorship</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pricing-bottom">
+                                <ul class="features-list">
+                                    <li><i aria-hidden="true" class="icon flaticon-common-checked"></i><span>B.Pharm / M.Pharm</span></li>
+                                    <li><i aria-hidden="true" class="icon flaticon-common-checked"></i><span>Pharm.D (Clerkship / Thesis)</span></li>
+                                    <li><i aria-hidden="true" class="icon flaticon-common-checked"></i><span>Biomedical & Life Sciences</span></li>
+                                    <li><i aria-hidden="true" class="icon flaticon-common-checked"></i><span>Clinical trial protocol development</span></li>
+                                    <li><i aria-hidden="true" class="icon flaticon-common-checked"></i><span>ICSR handling & CRF designing</span></li>
+                                    <li><i aria-hidden="true" class="icon flaticon-common-checked"></i><span>Literature review & publication support</span></li>
+                                </ul>
+                                <a href="page-contact.html" class="theme-btn btn-style-pricing">Enquire Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 - Internship Highlights -->
+                    <div class="price-block col-xl-4 col-md-6 wow fadeInUp" data-wow-delay="600ms">
+                        <div class="inner-block">
+                            <div class="pricing-header">
+                                <div class="title-outer">
+                                    <div class="title-box">
+                                        <div class="h4 pricing-plan-title">✅ Program Benefits</div>
+                                    </div>
+                                    <div class="offer">5+ Benefits</div>
+                                </div>
+                                <div class="pricing-plan-pricing">
+                                    <div class="price price-normal">
+                                        <span class="pricing-plan-price">Certified</span>
+                                        <span class="pricing-plan-postfix">Industry Recognition</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pricing-bottom">
+                                <ul class="features-list">
+                                    <li><i aria-hidden="true" class="icon flaticon-common-checked"></i><span>Industry-aligned curriculum</span></li>
+                                    <li><i aria-hidden="true" class="icon flaticon-common-checked"></i><span>Hands-on case studies & simulation projects</span></li>
+                                    <li><i aria-hidden="true" class="icon flaticon-common-checked"></i><span>Certificates recognized by industry partners</span></li>
+                                    <li><i aria-hidden="true" class="icon flaticon-common-checked"></i><span>Expert sessions & one-on-one mentorship</span></li>
+                                    <li><i aria-hidden="true" class="icon flaticon-common-checked"></i><span>Placement training & industry networking</span></li>
+                                    <li><i aria-hidden="true" class="icon flaticon-common-checked"></i><span>International guideline training (ICH-GCP, FDA, EMA)</span></li>
+                                </ul>
+                                <a href="page-contact.html" class="theme-btn btn-style-pricing">Enquire Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bottom Features Row -->
+                <div class="bottom-box col-lg-12">
+                    <div class="inner-box wow fadeInUp" data-wow-delay="800ms">
+                        <div class="feature">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M16 8C16 6.91424 15.5236 5.8899 14.7156 5.24619C14.809 4.1631 14.422 3.10204 13.6547 2.33346C12.8874 1.56621 11.8298 1.17958 10.801 1.29511C9.45718 -0.411668 6.55408 -0.44372 5.24165 1.27173C4.15807 1.17558 3.09918 1.56488 2.33187 2.33346C1.56523 3.10137 1.17824 4.1631 1.29434 5.18943C-0.411092 6.53428 -0.443786 9.43967 1.27098 10.7538C1.17757 11.8369 1.56456 12.898 2.33187 13.6665C3.09918 14.4338 4.15807 14.8218 5.1856 14.7049C6.52939 16.4117 9.43249 16.4437 10.7449 14.7283C11.8258 14.8191 12.8867 14.4351 13.6547 13.6665C14.4213 12.8986 14.8083 11.8369 14.6922 10.8106C15.5236 10.1108 16 9.08643 16 8.00067V8ZM11.6897 7.04244L8.52773 10.0927C7.75175 10.868 6.48202 10.8613 5.70604 10.0841L4.20344 8.68712C3.93388 8.43604 3.91787 8.01336 4.16875 7.74358C4.42029 7.47314 4.84331 7.45845 5.11154 7.70886L6.63148 9.12249C6.91038 9.40094 7.33207 9.40028 7.59228 9.13918L10.7629 6.08021C11.0285 5.82513 11.4509 5.83248 11.7064 6.09758C11.9626 6.36267 11.9546 6.78603 11.6897 7.04178V7.04244Z" fill="#708F87"></path></svg>
+                            <span>Industry-recognized Certification</span>
+                        </div>
+                        <div class="feature">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M16 8C16 6.91424 15.5236 5.8899 14.7156 5.24619C14.809 4.1631 14.422 3.10204 13.6547 2.33346C12.8874 1.56621 11.8298 1.17958 10.801 1.29511C9.45718 -0.411668 6.55408 -0.44372 5.24165 1.27173C4.15807 1.17558 3.09918 1.56488 2.33187 2.33346C1.56523 3.10137 1.17824 4.1631 1.29434 5.18943C-0.411092 6.53428 -0.443786 9.43967 1.27098 10.7538C1.17757 11.8369 1.56456 12.898 2.33187 13.6665C3.09918 14.4338 4.15807 14.8218 5.1856 14.7049C6.52939 16.4117 9.43249 16.4437 10.7449 14.7283C11.8258 14.8191 12.8867 14.4351 13.6547 13.6665C14.4213 12.8986 14.8083 11.8369 14.6922 10.8106C15.5236 10.1108 16 9.08643 16 8.00067V8ZM11.6897 7.04244L8.52773 10.0927C7.75175 10.868 6.48202 10.8613 5.70604 10.0841L4.20344 8.68712C3.93388 8.43604 3.91787 8.01336 4.16875 7.74358C4.42029 7.47314 4.84331 7.45845 5.11154 7.70886L6.63148 9.12249C6.91038 9.40094 7.33207 9.40028 7.59228 9.13918L10.7629 6.08021C11.0285 5.82513 11.4509 5.83248 11.7064 6.09758C11.9626 6.36267 11.9546 6.78603 11.6897 7.04178V7.04244Z" fill="#708F87"></path></svg>
+                            <span>Real-time Tools & Documentation Exposure</span>
+                        </div>
+                        <div class="feature">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M16 8C16 6.91424 15.5236 5.8899 14.7156 5.24619C14.809 4.1631 14.422 3.10204 13.6547 2.33346C12.8874 1.56621 11.8298 1.17958 10.801 1.29511C9.45718 -0.411668 6.55408 -0.44372 5.24165 1.27173C4.15807 1.17558 3.09918 1.56488 2.33187 2.33346C1.56523 3.10137 1.17824 4.1631 1.29434 5.18943C-0.411092 6.53428 -0.443786 9.43967 1.27098 10.7538C1.17757 11.8369 1.56456 12.898 2.33187 13.6665C3.09918 14.4338 4.15807 14.8218 5.1856 14.7049C6.52939 16.4117 9.43249 16.4437 10.7449 14.7283C11.8258 14.8191 12.8867 14.4351 13.6547 13.6665C14.4213 12.8986 14.8083 11.8369 14.6922 10.8106C15.5236 10.1108 16 9.08643 16 8.00067V8ZM11.6897 7.04244L8.52773 10.0927C7.75175 10.868 6.48202 10.8613 5.70604 10.0841L4.20344 8.68712C3.93388 8.43604 3.91787 8.01336 4.16875 7.74358C4.42029 7.47314 4.84331 7.45845 5.11154 7.70886L6.63148 9.12249C6.91038 9.40094 7.33207 9.40028 7.59228 9.13918L10.7629 6.08021C11.0285 5.82513 11.4509 5.83248 11.7064 6.09758C11.9626 6.36267 11.9546 6.78603 11.6897 7.04178V7.04244Z" fill="#708F87"></path></svg>
+                            <span>Placement Assistance & Career Guidance</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Service Section -->
+        <section class="services-section-three fix pt-0">
+            <div class="outer-container">
+                <div class="bg bg-image"><img src="images/background/service-bg2-1.png" alt=""></div>
+                <div class="auto-container">
+                    <div class="sec-title light mb-50">
+                        <div class="row align-items-end">
+                            <div class="col-xl-6">
+                                <div class="h6 sub-title style-two border-style">case study</div>
+                                <div class="h2 title char-animation">Transforming challenges into success stories</div>
+                            </div>
+                            <div class="col-xl-6">
+                                <div class="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="outer-box" data-background="images/resource/service2-bg1.jpg">
+                    <div class="service-one-slider swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <!-- service-block -->
+                                <div class="service-block-three" data-bg="images/resource/service2-bg2.jpg">
+                                    <div class="inner-box">
+                                        <div class="content">
+                                            <div class="h6 sub-title">
+                                                <div class="text">Fertility</div>
+                                            </div>
+                                            <div class="h4 title"><a href="page-service-details.html">Understanding IVF A Step-by- <br>Step Guide for Beginners</a></div>
+                                            <div class="btn-box">
+                                                <a href="page-service-details.html" class="theme-btn btn-style-one">
+                                                    <span class="btn-arrow-left"><i class="fas flaticon-common-right-arrow"></i></span>
+                                                    <span class="btn-title">More Details</span>
+                                                    <span class="btn-arrow-right"><i class="fas flaticon-common-right-arrow"></i></span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <!-- service-block-three -->
+                                <div class="service-block-three" data-bg="images/resource/service2-bg3.jpg">
+                                    <div class="inner-box">
+                                        <div class="content">
+                                            <div class="h6 sub-title">
+                                                <div class="text">IVF Care</div>
+                                            </div>
+                                            <div class="h4 title"><a href="page-service-details.html">IVF Demystified One Couple’s <br>Path to Parenthood</a></div>
+                                            <div class="btn-box">
+                                                <a href="page-service-details.html" class="theme-btn btn-style-one">
+                                                    <span class="btn-arrow-left"><i class="fas flaticon-common-right-arrow"></i></span>
+                                                    <span class="btn-title">More Details</span>
+                                                    <span class="btn-arrow-right"><i class="fas flaticon-common-right-arrow"></i></span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <!-- service-block-three -->
+                                <div class="service-block-three" data-bg="images/resource/service2-bg4.jpg">
+                                    <div class="inner-box">
+                                        <div class="content">
+                                            <div class="h6 sub-title">
+                                                <div class="text">Pregnancy</div>
+                                            </div>
+                                            <div class="h4 title"><a href="page-service-details.html">The IVF Experience Challenges, <br>Choices, and Success</a></div>
+                                            <div class="btn-box">
+                                                <a href="page-service-details.html" class="theme-btn btn-style-one">
+                                                    <span class="btn-arrow-left"><i class="fas flaticon-common-right-arrow"></i></span>
+                                                    <span class="btn-title">More Details</span>
+                                                    <span class="btn-arrow-right"><i class="fas flaticon-common-right-arrow"></i></span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <!-- service-block-three -->
+                                <div class="service-block-three" data-bg="images/resource/service2-bg1.jpg">
+                                    <div class="inner-box">
+                                        <div class="content">
+                                            <div class="h6 sub-title">
+                                                <div class="text">Treatments</div>
+                                            </div>
+                                            <div class="h4 title"><a href="page-service-details.html">IVF Explained A Case Study in <br>Modern Fertility</a></div>
+                                            <div class="btn-box">
+                                                <a href="page-service-details.html" class="theme-btn btn-style-one">
+                                                    <span class="btn-arrow-left"><i class="fas flaticon-common-right-arrow"></i></span>
+                                                    <span class="btn-title">More Details</span>
+                                                    <span class="btn-arrow-right"><i class="fas flaticon-common-right-arrow"></i></span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <!-- service-block -->
+                                <div class="service-block-three" data-bg="images/resource/service2-bg2.jpg">
+                                    <div class="inner-box">
+                                        <div class="content">
+                                            <div class="h6 sub-title">
+                                                <div class="text">Fertility</div>
+                                            </div>
+                                            <div class="h4 title"><a href="page-service-details.html">Understanding IVF A Step-by- <br>Step Guide for Beginners</a></div>
+                                            <div class="btn-box">
+                                                <a href="page-service-details.html" class="theme-btn btn-style-one">
+                                                    <span class="btn-arrow-left"><i class="fas flaticon-common-right-arrow"></i></span>
+                                                    <span class="btn-title">More Details</span>
+                                                    <span class="btn-arrow-right"><i class="fas flaticon-common-right-arrow"></i></span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <!-- service-block-three -->
+                                <div class="service-block-three" data-bg="images/resource/service2-bg3.jpg">
+                                    <div class="inner-box">
+                                        <div class="content">
+                                            <div class="h6 sub-title">
+                                                <div class="text">IVF Care</div>
+                                            </div>
+                                            <div class="h4 title"><a href="page-service-details.html">IVF Demystified One Couple’s <br>Path to Parenthood</a></div>
+                                            <div class="btn-box">
+                                                <a href="page-service-details.html" class="theme-btn btn-style-one">
+                                                    <span class="btn-arrow-left"><i class="fas flaticon-common-right-arrow"></i></span>
+                                                    <span class="btn-title">More Details</span>
+                                                    <span class="btn-arrow-right"><i class="fas flaticon-common-right-arrow"></i></span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <!-- service-block-three -->
+                                <div class="service-block-three" data-bg="images/resource/service2-bg4.jpg">
+                                    <div class="inner-box">
+                                        <div class="content">
+                                            <div class="h6 sub-title">
+                                                <div class="text">Pregnancy</div>
+                                            </div>
+                                            <div class="h4 title"><a href="page-service-details.html">The IVF Experience Challenges, <br>Choices, and Success</a></div>
+                                            <div class="btn-box">
+                                                <a href="page-service-details.html" class="theme-btn btn-style-one">
+                                                    <span class="btn-arrow-left"><i class="fas flaticon-common-right-arrow"></i></span>
+                                                    <span class="btn-title">More Details</span>
+                                                    <span class="btn-arrow-right"><i class="fas flaticon-common-right-arrow"></i></span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <!-- service-block-three -->
+                                <div class="service-block-three" data-bg="images/resource/service2-bg1.jpg">
+                                    <div class="inner-box">
+                                        <div class="content">
+                                            <div class="h6 sub-title">
+                                                <div class="text">Treatments</div>
+                                            </div>
+                                            <div class="h4 title"><a href="page-service-details.html">IVF Explained A Case Study in <br>Modern Fertility</a></div>
+                                            <div class="btn-box">
+                                                <a href="page-service-details.html" class="theme-btn btn-style-one">
+                                                    <span class="btn-arrow-left"><i class="fas flaticon-common-right-arrow"></i></span>
+                                                    <span class="btn-title">More Details</span>
+                                                    <span class="btn-arrow-right"><i class="fas flaticon-common-right-arrow"></i></span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="arrow-box">
+                            <button class="slider-prev">
+                <i class="fa-regular fa-arrow-left"></i>
+              </button>
+                            <button class="slider-next">
+                <i class="fa-regular fa-arrow-right"></i>
+              </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Service Section -->
+
+        <!-- start pricing-section-two -->
+
+
+        <!-- end pricing-section-two -->
+        <section class="why-choose-us-section fix section-padding">
+            <div class="auto-container">
+                <div class="row">
+                    <div class="content-column col-xl-6 col-lg-8">
+                        <div class="inner-column">
+                            <div class="sec-title">
+                                <div class="h6 sub-title">Internship Tracks</div>
+                                <div class="h2 title char-animation">Industry-Focused Training Programs</div>
+                                <div class="text">Hands-on simulation assignments, live case studies, international guideline training (ICH-GCP, US-FDA, EMA, CDSCO, WHO), placement support & interview training, and internship completion certificate.</div>
+                            </div>
+                            <ul class="accordion-box">
+                                <!-- Block 1: Clinical Research & Trial Management -->
+                                <li class="accordion block wow fadeInUp" data-wow-delay="200ms">
+                                    <div class="acc-btn">01. Clinical Research & Trial Management
+                                        <i class="icon flaticon-common-right-arrow"></i>
+                                    </div>
+                                    <div class="acc-content">
+                                        <div class="content">
+                                            <div class="text">Protocols, ICF, CRF, site management, GCP compliance training.</div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <!-- Block 2: Pharmacovigilance & Drug Safety -->
+                                <li class="accordion block active-block wow fadeInUp" data-wow-delay="400ms">
+                                    <div class="acc-btn active">02. Pharmacovigilance & Drug Safety
+                                        <i class="icon flaticon-common-right-arrow"></i>
+                                    </div>
+                                    <div class="acc-content current">
+                                        <div class="content">
+                                            <div class="text">ICSR processing, narrative writing, signal detection, risk management.</div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <!-- Block 3: Medical Device Reporting & MDR Compliance -->
+                                <li class="accordion block wow fadeInUp" data-wow-delay="600ms">
+                                    <div class="acc-btn">03. Medical Device Reporting & MDR Compliance
+                                        <i class="icon flaticon-common-right-arrow"></i>
+                                    </div>
+                                    <div class="acc-content">
+                                        <div class="content">
+                                            <div class="text">PMS, vigilance reports, CER writing, MDR compliance support.</div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <!-- Block 4: Medical & Regulatory Writing -->
+                                <li class="accordion block wow fadeInUp" data-wow-delay="800ms">
+                                    <div class="acc-btn">04. Medical & Regulatory Writing
+                                        <i class="icon flaticon-common-right-arrow"></i>
+                                    </div>
+                                    <div class="acc-content">
+                                        <div class="content">
+                                            <div class="text">SOPs, IB, CSR, CTD modules, regulatory documentation.</div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <!-- Block 5: Clinical Data Management -->
+                                <li class="accordion block wow fadeInUp" data-wow-delay="1000ms">
+                                    <div class="acc-btn">05. Clinical Data Management
+                                        <i class="icon flaticon-common-right-arrow"></i>
+                                    </div>
+                                    <div class="acc-content">
+                                        <div class="content">
+                                            <div class="text">CDM tools, documentation, query management, data validation.</div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="image-column col-xl-6 col-lg-8 col-md-10">
+                        <div class="inner-column wow fadeInUp" data-wow-delay="200ms">
+                            <div class="image"><img src="images/resource/wcu1-1.jpg" alt="Internship Training"></div>
+                            <div class="info wow fadeInUp" data-wow-delay="400ms">
+                                <div class="h4 title">Program Benefits</div>
+                                <div class="list-info">
+                                    <ul class="list-style-two">
+                                        <li>
+                                            <i class="fa-solid fa-check"></i>
+                                            <span>Hands-on simulation assignments</span>
+                                        </li>
+                                        <li>
+                                            <i class="fa-solid fa-check"></i>
+                                            <span>Live case studies & industry workflows</span>
+                                        </li>
+                                        <li>
+                                            <i class="fa-solid fa-check"></i>
+                                            <span>International guideline training</span>
+                                        </li>
+                                    </ul>
+                                    <ul class="list-style-two">
+                                        <li>
+                                            <i class="fa-solid fa-check"></i>
+                                            <span>Placement support & interview training</span>
+                                        </li>
+                                        <li>
+                                            <i class="fa-solid fa-check"></i>
+                                            <span>Internship completion certificate</span>
+                                        </li>
+                                        <li>
+                                            <i class="fa-solid fa-check"></i>
+                                            <span>ICH-GCP, US-FDA, EMA, CDSCO, WHO</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- start faq-section -->
+        <section class="faq-section fix">
+            <div class="outer-box">
+                <div class="bg bg-image"><img src="images/resource/faq2-1.jpg" alt=""></div>
+                <div class="row">
+                    <div class="faq-column col-lg-7 offset-lg-5">
+                        <div class="inner-column">
+                            <div class="shape-1"><img src="images/icons/shape-7.png" alt=""></div>
+                            <div class="sec-title light">
+                                <div class="h6 sub-title style-two border-style">Academic Project Support</div>
+                                <div class="h2 title char-animation">We Support Final-Year & Dissertation Projects</div>
+                            </div>
+                            <div class="faq-box">
+                                <div class="inner-box">
+                                    <ul class="accordion-box">
+                                        <!-- Block 1: Research & Design -->
+                                        <li class="accordion block active-block">
+                                            <div class="acc-btn active">📝 Research & Design
+                                                <i class="icon fa-solid fa-chevron-down"></i>
+                                            </div>
+                                            <div class="acc-content current">
+                                                <div class="content">
+                                                    <div class="text">
+                                                        <ul class="faq-list">
+                                                            <li>Study design development</li>
+                                                            <li>Protocol writing</li>
+                                                            <li>Literature review & publication support</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <!-- Block 2: Specialized Models -->
+                                        <li class="accordion block">
+                                            <div class="acc-btn">🧪 Specialized Models
+                                                <i class="icon fa-solid fa-chevron-down"></i>
+                                            </div>
+                                            <div class="acc-content">
+                                                <div class="content">
+                                                    <div class="text">
+                                                        <ul class="faq-list">
+                                                            <li>Clinical research documentation</li>
+                                                            <li>Medical device post-market analysis projects</li>
+                                                            <li>Pharmacovigilance-based research models</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <!-- Block 3: Services for Industry Partners -->
+                                        <li class="accordion block">
+                                            <div class="acc-btn">🛠️ Services for Industry Partners
+                                                <i class="icon fa-solid fa-chevron-down"></i>
+                                            </div>
+                                            <div class="acc-content">
+                                                <div class="content">
+                                                    <div class="text">
+                                                        <ul class="faq-list two-columns">
+                                                            <li>Clinical research documentation</li>
+                                                            <li>Medical & regulatory writing</li>
+                                                            <li>Pharmacovigilance case processing</li>
+                                                            <li>Medical device CER/MDR support</li>
+                                                            <li>Training & capacity building</li>
+                                                            <li>SOP development & compliance audits</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <!-- Block 4: We Collaborate With -->
+                                        <li class="accordion block">
+                                            <div class="acc-btn">🤝 We Collaborate With
+                                                <i class="icon fa-solid fa-chevron-down"></i>
+                                            </div>
+                                            <div class="acc-content">
+                                                <div class="content">
+                                                    <div class="text">
+                                                        <ul class="faq-list two-columns">
+                                                            <li>🏫 Universities & Colleges</li>
+                                                            <li>💊 Pharmaceutical Companies</li>
+                                                            <li>🏥 Hospitals & Clinical Research Sites</li>
+                                                            <li>📑 Regulatory & Medical Device Organizations</li>
+                                                        </ul>
+                                                        <p class="note"><strong>💡 Note:</strong> Our mentorship includes guidance on global regulatory standards to ensure high-quality project outcomes.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end faq-section -->
+
+        <!-- start testimonial-section-two -->
+        <section class="testimonial-section">
+            <div class="outer-box fix section-padding">
+                <div class="shape-1"><img src="images/icons/shape-1.png" alt=""></div>
+                <div class="shape-2"><img src="images/icons/shape-2.png" alt=""></div>
+                <div class="auto-container">
+                    <div class="row g-4">
+                        <div class="col-xl-7 col-lg-6 wow fadeInUp" data-wow-delay=".3s">
+                            <div class="testimonial-block-content2">
+                                <div class="sec-title mb-0">
+                                    <div class="h6 sub-title border-style">Testimonials</div>
+                                    <div class="h2 title char-animation">What our students & industry partners say</div>
+                                </div>
+                                <div class="swiper testimonial-slider pb-0">
+                                    <div class="swiper-wrapper">
+                                        <!-- Slide 1 -->
+                                        <div class="swiper-slide">
+                                            <div class="testi-slider-block-2">
+                                                <div class="quote-icon">
+                                                    <img src="images/icons/quote.png" alt="">
+                                                </div>
+                                                <div class="text">"The clinical research training at Pearl PharmMed was exceptional. The hands-on exposure to real-time case processing and regulatory documentation prepared me for my current role at a leading CRO. The mentorship
+                                                    was invaluable."</div>
+                                                <div class="client-info">
+                                                    <div class="client-img">
+                                                        <img src="images/resource/testi-2-1.jpg" alt="">
+                                                    </div>
+                                                    <div class="info-content">
+                                                        <div class="h5 name">Dr. Sarah Johnson</div>
+                                                        <span>Clinical Research Associate</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Slide 2 -->
+                                        <div class="swiper-slide">
+                                            <div class="testi-slider-block-2">
+                                                <div class="quote-icon">
+                                                    <img src="images/icons/quote.png" alt="">
+                                                </div>
+                                                <div class="text">"The pharmacovigilance internship gave me real-world experience in ICSR processing and signal detection. The placement team helped me secure a position at a top pharmaceutical company within months."</div>
+                                                <div class="client-info">
+                                                    <div class="client-img">
+                                                        <img src="images/resource/testi-2-1.jpg" alt="">
+                                                    </div>
+                                                    <div class="info-content">
+                                                        <div class="h5 name">Priya Sharma</div>
+                                                        <span>Pharmacovigilance Associate</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Slide 3 -->
+                                        <div class="swiper-slide">
+                                            <div class="testi-slider-block-2">
+                                                <div class="quote-icon">
+                                                    <img src="images/icons/quote.png" alt="">
+                                                </div>
+                                                <div class="text">"Pearl PharmMed's medical writing training was thorough and industry-focused. The regulatory documentation skills I learned helped me advance my career in medical affairs. Highly recommended!"</div>
+                                                <div class="client-info">
+                                                    <div class="client-img">
+                                                        <img src="images/resource/testi-2-1.jpg" alt="">
+                                                    </div>
+                                                    <div class="info-content">
+                                                        <div class="h5 name">Michael Chen</div>
+                                                        <span>Medical Writer</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Slide 4 -->
+                                        <div class="swiper-slide">
+                                            <div class="testi-slider-block-2">
+                                                <div class="quote-icon">
+                                                    <img src="images/icons/quote.png" alt="">
+                                                </div>
+                                                <div class="text">"The GCP and regulatory standards training was comprehensive and practical. The faculty's industry experience made all the difference. I feel confident in my clinical trial coordination role."</div>
+                                                <div class="client-info">
+                                                    <div class="client-img">
+                                                        <img src="images/resource/testi-2-1.jpg" alt="">
+                                                    </div>
+                                                    <div class="info-content">
+                                                        <div class="h5 name">Dr. James Wilson</div>
+                                                        <span>Clinical Trial Coordinator</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Slide 5 -->
+                                        <div class="swiper-slide">
+                                            <div class="testi-slider-block-2">
+                                                <div class="quote-icon">
+                                                    <img src="images/icons/quote.png" alt="">
+                                                </div>
+                                                <div class="text">"We partnered with Pearl PharmMed for medical device CER and MDR compliance. Their expertise in regulatory writing and post-market surveillance documentation saved us time and ensured compliance."</div>
+                                                <div class="client-info">
+                                                    <div class="client-img">
+                                                        <img src="images/resource/testi-2-1.jpg" alt="">
+                                                    </div>
+                                                    <div class="info-content">
+                                                        <div class="h5 name">Rajesh Mehta</div>
+                                                        <span>Regulatory Affairs Manager</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="array-button">
+                                    <button class="array-prev">
+                                <i class="lnr-icon-arrow-left"></i>
+                            </button>
+                                    <button class="array-next">
+                                <i class="lnr-icon-arrow-right"></i>
+                            </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-5 col-lg-6 wow fadeInUp" data-wow-delay=".5s">
+                            <div class="tetsimonial-image-items">
+                                <div class="thumb fix">
+                                    <img data-speed=".8" src="images/resource/testimonial-image2-1.jpg" alt="">
+                                </div>
+                                <div class="testi-ratting">
+                                    <div class="rattings">
+                                        <div class="h2 ratting-count">4.9</div>
+                                        <div class="star">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                    </div>
+                                    <div class="testi-line"></div>
+                                    <p>
+                                        From 2,000+ Trained Professionals,<br> Reviewed by Google & Trustpilot
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+
+    <footer class="main-footer footer-style-one">
+        <div class="footer-area">
+            <div class="outer-box">
+                <div class="bg bg-image"><img src="images/background/footer-bg1-1.png" alt=""></div>
+                <!-- Widgets Section -->
+                <div class="widgets-section">
+                    <div class="auto-container">
+                        <div class="row">
+                            <!-- Footer Column 1: Company Name & Description -->
+                            <div class="footer-column border-0 col-xl-3 col-lg-6 col-md-6">
+                                <div class="footer-widget about-widget wow fadeInLeft">
+                                    <div class="widget-content">
+                                        <h3 class="company-name">Pearl PharmMed Healthcare</h3>
+                                        <div class="text text-white">Empowering healthcare through innovation, integrity & global reach. We deliver high-quality pharmaceutical and medical solutions across the globe at the intersection of science, service, and sustainability.</div>
+                                        <div class="social-widget">
+                                            <ul class="social-icon-list1">
+                                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                                <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Footer Column 2: Quick Links -->
+                            <div class="footer-column border-0 col-xl-3 col-lg-6 col-md-6">
+                                <div class="footer-widget links-widget style-two col wow fadeInLeft" data-wow-delay="400ms">
+                                    <div class="h4 widget-title">Quick Links</div>
+                                    <div class="widget-content">
+                                        <ul class="user-links">
+                                            <li><a href="index.html">Home</a></li>
+                                            <li><a href="page-services.html">Services</a></li>
+                                            <li><a href="page-contact.html">Contact Us</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Footer Column 3: Our Services -->
+                            <div class="footer-column border-0 col-xl-3 col-lg-6 col-md-6">
+                                <div class="footer-widget links-widget style-two col wow fadeInLeft" data-wow-delay="400ms">
+                                    <div class="h4 widget-title">Our Services</div>
+                                    <div class="widget-content">
+                                        <ul class="user-links">
+                                            <li><a href="page-services.html">Clinical Research & Trials</a></li>
+                                            <li><a href="page-services.html">Pharmacovigilance & Drug Safety</a></li>
+                                            <li><a href="page-services.html">Medical & Regulatory Writing</a></li>
+                                            <li><a href="page-services.html">Medical Device Compliance</a></li>
+                                            <li><a href="page-services.html">Internship & Training</a></li>
+                                            <li><a href="page-services.html">Pharmaceutical Trade</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Footer Column 4: Contact Details -->
+                            <div class="footer-column border-0 col-xl-3 col-lg-6 col-md-6">
+                                <div class="footer-widget contact-widget style-two col wow fadeInLeft" data-wow-delay="400ms">
+                                    <div class="h4 widget-title">Contact Details</div>
+                                    <div class="widget-content">
+                                        <div class="info"><i aria-hidden="true" class="flaticon-common-call-1"></i><span><a href="tel:+919884700344">+91-9884700344</a>/ <a href="tel:+919840673580">9840673580</a></span></div>
+                                        <div class="info"><i aria-hidden="true" class="fab fa-whatsapp"></i><span><a href="https://wa.me/919884700344">9884700344</a>/ <a href="https://wa.me/919840673580">9840673580</a></span></div>
+                                        <div class="info"><i aria-hidden="true" class="flaticon-common-email-1"></i><span><a href="mailto:info@ppti.in">info@ppti.in</a></span></div>
+                                        <div class="info"><i aria-hidden="true" class="flaticon-common-location"></i><span>71/2 Middle Street,
+        Kudiyiruppu,
+        Courtallam Post,
+        Tenkasi - 627802</span></div>
+                                        <div class="info"><i aria-hidden="true" class="fas fa-globe"></i><span><a href="https://www.pharmmedhealthcare.com" target="_blank">www.pharmmedhealthcare.com</a></span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Footer Bottom with Dynamic Copyright -->
+                <div class="auto-container">
+                    <div class="footer-bottom">
+                        <div class="inner-container justify-content-center justify-content-md-between">
+                            <p class="copyright-text" id="copyright-year"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Dynamic Copyright JavaScript -->
+    <script>
+        document.getElementById('copyright-year').innerHTML = '&copy; ' + new Date().getFullYear() + ' Pearl PharmMed Healthcare. All Rights Reserved.';
+    </script>
+    <!-- Dynamic Copyright Script -->
+    <script>
+        document.getElementById('copyright-year').innerHTML = '© Copyright ' + new Date().getFullYear() + ' Pearl PharmMed Healthcare Consulting Pvt. Ltd. All Rights Reserved. Developed By <a href="https://chennaileads.com" target="_blank">Chennai Leads</a>';
+    </script>
+    <!--End Main Footer -->
+    </div>
+    <!-- End Page Wrapper -->
+
+    <script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.fancybox.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/wow.js"></script>
+    <script src="js/select2.min.js"></script>
+    <script src="js/appear.js"></script>
+    <script src="js/bxslider.js"></script>
+    <script src="js/knob.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/gsap.min.js"></script>
+    <script src="js/ScrollTrigger.min.js"></script>
+    <script src="js/splitType.js"></script>
+    <script src="js/gsap-scroll-smoother.js"></script>
+    <script src="js/gsap-scroll-to-plugin.js"></script>
+    <script src="js/SplitText.min.js"></script>
+    <script src="js/custom-gsap.js"></script>
+    <script src="js/script.js"></script>
+    <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v833ccba57c9e4d2798f2e76cebdd09a11778172276447" integrity="sha512-57MDmcccJXYtNnH+ZiBwzC4jb2rvgVCEokYN+L/nLlmO8rfYT/gIpW2A569iJ/3b+0UEasghjuZH/ma3wIs/EQ==" data-cf-beacon='{"version":"2024.11.0","token":"88f4fa328f314d4c95a104b4a60b2313","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}'
+        crossorigin="anonymous"></script>
+    <div class="sticky-buttons"><a href="https://wa.me/919884700344" class="sticky-btn whatsapp-btn" target="_blank"><i class="fab fa-whatsapp"></i><span class="btn-text">WhatsApp</span></a><a href="tel:+919884700344" class="sticky-btn call-btn"><i class="fas fa-phone-alt"></i><span class="btn-text">Call Now</span></a></div>
+    <style>
+        /* Sticky Buttons Styling */
+        
+        .sticky-buttons {
+            position: fixed;
+            bottom: 30px;
+            right: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            z-index: 999;
+        }
+        
+        .sticky-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            overflow: hidden;
+            white-space: nowrap;
+        }
+        
+        .sticky-btn i {
+            font-size: 24px;
+            color: white;
+        }
+        
+        .sticky-btn .btn-text {
+            display: none;
+            font-size: 14px;
+            font-weight: 500;
+        }
+        /* WhatsApp Button */
+        
+        .whatsapp-btn {
+            background-color: #25D366;
+        }
+        /* Call Button */
+        
+        .call-btn {
+            background-color: #00a651;
+        }
+        /* Hover Effect - Expand on hover */
+        
+        .sticky-btn:hover {
+            width: auto;
+            border-radius: 30px;
+            padding: 0 18px;
+            gap: 8px;
+        }
+        
+        .sticky-btn:hover .btn-text {
+            display: inline-block;
+            color: white;
+        }
+        /* Mobile Optimization */
+        
+        @media (max-width: 768px) {
+            .sticky-buttons {
+                bottom: 20px;
+                right: 15px;
+                gap: 10px;
+            }
+            .sticky-btn {
+                width: 45px;
+                height: 45px;
+            }
+            .sticky-btn i {
+                font-size: 20px;
+            }
+        }
+    </style>
+    <script>
+        // Tab Toggle Functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const tabBtns = document.querySelectorAll('.tab-btns .tab-btn');
+            const tabs = document.querySelectorAll('.tabs-content .tab');
+
+            function activateTab(tabId) {
+                // Hide all tabs
+                tabs.forEach(tab => {
+                    tab.classList.remove('active-tab');
+                });
+
+                // Remove active class from all buttons
+                tabBtns.forEach(btn => {
+                    btn.classList.remove('active-btn');
+                });
+
+                // Show selected tab
+                const selectedTab = document.getElementById(tabId);
+                if (selectedTab) {
+                    selectedTab.classList.add('active-tab');
+                }
+
+                // Add active class to clicked button
+                const activeBtn = document.querySelector(`.tab-btn[data-tab="${tabId}"]`);
+                if (activeBtn) {
+                    activeBtn.classList.add('active-btn');
+                }
+            }
+
+            // Add click event to each tab button
+            tabBtns.forEach(btn => {
+                btn.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const tabId = this.getAttribute('data-tab');
+                    if (tabId) {
+                        activateTab(tabId);
+                    }
+                });
+            });
+        });
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Get all tab buttons
+            const tabBtns = document.querySelectorAll('.tab-btns .tab-btn');
+            // Get all tab content divs
+            const tabs = document.querySelectorAll('.tabs-content .tab');
+
+            function switchTab(tabId) {
+                // Hide all tabs
+                tabs.forEach(function(tab) {
+                    tab.classList.remove('active-tab');
+                });
+
+                // Remove active class from all buttons
+                tabBtns.forEach(function(btn) {
+                    btn.classList.remove('active-btn');
+                });
+
+                // Show the selected tab
+                var selectedTab = document.getElementById(tabId);
+                if (selectedTab) {
+                    selectedTab.classList.add('active-tab');
+                }
+
+                // Add active class to the clicked button
+                var activeBtn = document.querySelector('.tab-btn[data-tab="' + tabId + '"]');
+                if (activeBtn) {
+                    activeBtn.classList.add('active-btn');
+                }
+            }
+
+            // Add click event to each tab button
+            tabBtns.forEach(function(btn) {
+                btn.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    var tabId = this.getAttribute('data-tab');
+                    if (tabId) {
+                        switchTab(tabId);
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+<!-- Sticky WhatsApp and Call Buttons -->
+
+
+</html>
