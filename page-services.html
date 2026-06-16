@@ -173,6 +173,97 @@
         .contact-widget .info .fa-globe {
             font-size: 14px;
         }
+        /* ===== BULLET LIST WITH ICONS - LEFT ALIGNED ===== */
+        
+        .bullet-list {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 0.5rem 0;
+            display: flex;
+            flex-direction: column;
+            gap: 0.7rem;
+            text-align: left;
+        }
+        
+        .bullet-list li {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.75rem;
+            font-size: 0.95rem;
+            line-height: 1.5;
+            color: #1f3348;
+            text-align: left;
+        }
+        
+        .bullet-list li i {
+            color: #1b5e9e;
+            font-size: 1rem;
+            width: 1.25rem;
+            margin-top: 0.1rem;
+            flex-shrink: 0;
+        }
+        /* ===== MAIN ICON (top) - WHITE BG ON HOVER ===== */
+        
+        .icon {
+            margin-bottom: 1rem;
+        }
+        
+        .service-icon {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 64px;
+            height: 64px;
+            background: linear-gradient(135deg, #e8f0fe 0%, #d4e2f7 100%);
+            border-radius: 18px;
+            color: #1b5e9e;
+            font-size: 2rem;
+            transition: all 0.3s ease;
+        }
+        
+        .service-block:hover .service-icon {
+            background: #ffffff !important;
+            color: #1b5e9e;
+            box-shadow: 0 4px 12px rgba(27, 94, 158, 0.15);
+            transform: scale(1.03);
+        }
+        /* ===== TITLE - LEFT ALIGNED ===== */
+        
+        .service-title {
+            font-size: 1.35rem;
+            font-weight: 700;
+            color: #0b2a44;
+            margin-bottom: 1rem;
+            letter-spacing: -0.01em;
+            line-height: 1.3;
+            text-align: left;
+        }
+        /* ===== PARAGRAPH TEXT - LEFT ALIGNED ===== */
+        
+        .service-details .mt-2 {
+            margin-top: 0.85rem;
+            color: #3d5268;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            border-top: 1px solid rgba(0, 0, 0, 0.04);
+            padding-top: 0.85rem;
+            text-align: left;
+        }
+        /* ===== RESPONSIVE ===== */
+        
+        @media (max-width: 768px) {
+            .service-icon {
+                width: 56px;
+                height: 56px;
+                font-size: 1.6rem;
+            }
+            .service-title {
+                font-size: 1.2rem;
+            }
+            .bullet-list li {
+                font-size: 0.9rem;
+            }
+        }
         /* Widget title styling for all columns */
         
         .widget-title {
@@ -895,8 +986,13 @@
                                             </div>
                                             <div class="h4 service-title">Pharmaceutical Trade & Distribution</div>
                                             <div class="service-details">
-                                                We specialize in the wholesale, retail, import, export, stocking, and marketing of prescription and over-the-counter medicines, generic and patented drugs, formulations, vaccines, APIs, bulk chemicals and allied healthcare products. Our extensive distribution
-                                                network ensures timely and compliant delivery across domestic and international markets.
+                                                <ul class="bullet-list">
+                                                    <li><i class="fas fa-capsules"></i> Prescription and over-the-counter medicines</li>
+                                                    <li><i class="fas fa-flask"></i> Generic and patented drugs</li>
+                                                    <li><i class="fas fa-syringe"></i> Formulations, vaccines, and APIs</li>
+                                                    <li><i class="fas fa-vial"></i> Bulk chemicals and allied healthcare products</li>
+                                                </ul>
+                                                <p class="mt-2">Our extensive distribution network ensures timely and compliant delivery across domestic and international markets.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -915,8 +1011,13 @@
                                             </div>
                                             <div class="h4 service-title">Medical & Surgical Supplies</div>
                                             <div class="service-details">
-                                                We provide a comprehensive range of medical, surgical, diagnostic, and orthopaedic products, including hospital equipment and surgical instruments, diagnostic devices and healthcare appliances, implants, disposables, medical consumables, personal hygiene
-                                                and toilet articles. Our offerings are curated to meet the evolving needs of hospitals, clinics, and healthcare professionals.
+                                                <ul class="bullet-list">
+                                                    <li><i class="fas fa-microscope"></i> Hospital equipment and surgical instruments</li>
+                                                    <li><i class="fas fa-heartbeat"></i> Diagnostic devices and healthcare appliances</li>
+                                                    <li><i class="fas fa-bone"></i> Implants, disposables, and medical consumables</li>
+                                                    <li><i class="fas fa-hand-sparkles"></i> Personal hygiene and toilet articles</li>
+                                                </ul>
+                                                <p class="mt-2">Our offerings are curated to meet the evolving needs of hospitals, clinics, and healthcare professionals.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -935,8 +1036,12 @@
                                             </div>
                                             <div class="h4 service-title">Manufacturing & Processing</div>
                                             <div class="service-details">
-                                                With state-of-the-art facilities and adherence to global quality standards, we undertake manufacturing and formulation of pharmaceutical and medical products, contract manufacturing and private labeling, packaging, labeling, and repackaging services,
-                                                regulatory-compliant production under GMP and ISO frameworks.
+                                                <ul class="bullet-list">
+                                                    <li><i class="fas fa-cogs"></i> Manufacturing and formulation of pharmaceutical and medical products</li>
+                                                    <li><i class="fas fa-tags"></i> Contract manufacturing and private labeling</li>
+                                                    <li><i class="fas fa-boxes"></i> Packaging, labeling, and repackaging services</li>
+                                                    <li><i class="fas fa-check-circle"></i> Regulatory-compliant production under GMP and ISO frameworks</li>
+                                                </ul>
                                             </div>
                                         </div>
                                     </div>
@@ -955,8 +1060,12 @@
                                             </div>
                                             <div class="h4 service-title">Publishing & Knowledge Dissemination</div>
                                             <div class="service-details">
-                                                We are dedicated to enriching the healthcare ecosystem through publishing of pharmaceutical directories, journals, and manuals, compilation of medical references, case law digests, and compendia, distribution of content in both print and digital formats,
-                                                supporting academic, clinical, and regulatory communities with credible resources.
+                                                <ul class="bullet-list">
+                                                    <li><i class="fas fa-book"></i> Publishing of pharmaceutical directories, journals, and manuals</li>
+                                                    <li><i class="fas fa-file-alt"></i> Compilation of medical references, case law digests, and compendia</li>
+                                                    <li><i class="fas fa-print"></i> Distribution of content in both print and digital formats</li>
+                                                    <li><i class="fas fa-graduation-cap"></i> Supporting academic, clinical, and regulatory communities with credible resources</li>
+                                                </ul>
                                             </div>
                                         </div>
                                     </div>
@@ -975,8 +1084,13 @@
                                             </div>
                                             <div class="h4 service-title">Retail & Digital Infrastructure</div>
                                             <div class="service-details">
-                                                We operate and manage pharmacies and medical stores, warehouses and distribution hubs, e-commerce platforms and digital storefronts, franchise and agency-based retail models. Our omnichannel presence ensures accessibility, affordability, and convenience
-                                                for all stakeholders.
+                                                <ul class="bullet-list">
+                                                    <li><i class="fas fa-shop"></i> Pharmacies and medical stores</li>
+                                                    <li><i class="fas fa-warehouse"></i> Warehouses and distribution hubs</li>
+                                                    <li><i class="fas fa-laptop"></i> E-commerce platforms and digital storefronts</li>
+                                                    <li><i class="fas fa-network-wired"></i> Franchise and agency-based retail models</li>
+                                                </ul>
+                                                <p class="mt-2">Our omnichannel presence ensures accessibility, affordability, and convenience for all stakeholders.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -1023,7 +1137,7 @@
                                             </div>
                                             <div class="h4 title">Clinical Trials & Research Support</div>
                                             <div class="service-description">
-                                                <p class="text-white">Trial management, protocol development, site coordination, and GCP compliance.</p>
+                                                <!-- <p class="text-white">Trial management, protocol development, site coordination, and GCP compliance.</p> -->
                                             </div>
                                         </div>
                                     </div>
@@ -1040,7 +1154,7 @@
                                             </div>
                                             <div class="h4 title">Medical Writing & Regulatory Documentation</div>
                                             <div class="service-description">
-                                                <p class="text-white">Regulatory documents, clinical study reports, SOPs, and CTD modules.</p>
+                                                <!-- <p class="text-white">Regulatory documents, clinical study reports, SOPs, and CTD modules.</p> -->
                                             </div>
                                         </div>
                                     </div>
@@ -1056,9 +1170,9 @@
                                                 <div class="text"><i class="fas fa-shield-alt"></i> Drug Safety</div>
                                             </div>
                                             <div class="h4 title">Pharmacovigilance & Drug Safety Monitoring</div>
-                                            <div class="service-description">
+                                            <!-- <div class="service-description">
                                                 <p class="text-white">ICSR processing, narrative writing, signal detection, risk management services.</p>
-                                            </div>
+                                            </div> -->
                                         </div>
                                     </div>
                                 </div>
@@ -1073,9 +1187,9 @@
                                                 <div class="text"><i class="fas fa-microscope"></i> Medical Devices</div>
                                             </div>
                                             <div class="h4 title">Medical Device Reporting & Compliance</div>
-                                            <div class="service-description">
+                                            <!-- <div class="service-description">
                                                 <p class="text-white">MDR, PMS, PMSR, PMCFER, CER writing and regulatory compliance support.</p>
-                                            </div>
+                                            </div> -->
                                         </div>
                                     </div>
                                 </div>
@@ -1083,16 +1197,16 @@
 
                             <!-- Slide 5: GCP, GDP & Regulatory Standards -->
                             <div class="swiper-slide">
-                                <div class="service-block-three" data-bg="images/resource/service2-bg2.jpg">
+                                <div class="service-block-three" data-bg="images/resource/service2-bg5.jpg">
                                     <div class="inner-box">
                                         <div class="content">
                                             <div class="h6 sub-title">
                                                 <div class="text"><i class="fas fa-clipboard-list"></i> Regulatory Standards</div>
                                             </div>
                                             <div class="h4 title">GCP, GDP & Regulatory Standards</div>
-                                            <div class="service-description">
+                                            <!-- <div class="service-description">
                                                 <p class="text-white">Good Clinical Practice (GCP), Good Documentation Practice (GDP), and global regulatory standards training.</p>
-                                            </div>
+                                            </div> -->
                                         </div>
                                     </div>
                                 </div>
@@ -1100,16 +1214,16 @@
 
                             <!-- Slide 6: Good Manufacturing Practices (GMP) -->
                             <div class="swiper-slide">
-                                <div class="service-block-three" data-bg="images/resource/service2-bg3.jpg">
+                                <div class="service-block-three" data-bg="images/resource/gmp.avif">
                                     <div class="inner-box">
                                         <div class="content">
                                             <div class="h6 sub-title">
                                                 <div class="text"><i class="fas fa-industry"></i> Manufacturing</div>
                                             </div>
                                             <div class="h4 title">Good Manufacturing Practices (GMP)</div>
-                                            <div class="service-description">
+                                            <!-- <div class="service-description">
                                                 <p class="text-white">GMP compliance, quality assurance, manufacturing standards, and regulatory inspection readiness.</p>
-                                            </div>
+                                            </div> -->
                                         </div>
                                     </div>
                                 </div>
@@ -1117,16 +1231,16 @@
 
                             <!-- Slide 7: Good Laboratory Practices (GLP) -->
                             <div class="swiper-slide">
-                                <div class="service-block-three" data-bg="images/resource/service2-bg4.jpg">
+                                <div class="service-block-three" data-bg="images/resource/glp.jpg">
                                     <div class="inner-box">
                                         <div class="content">
                                             <div class="h6 sub-title">
                                                 <div class="text"><i class="fas fa-vial"></i> Laboratory</div>
                                             </div>
                                             <div class="h4 title">Good Laboratory Practices (GLP)</div>
-                                            <div class="service-description">
+                                            <!-- <div class="service-description">
                                                 <p class="text-white">GLP compliance, laboratory quality systems, data integrity, and regulatory standards for testing labs.</p>
-                                            </div>
+                                            </div> -->
                                         </div>
                                     </div>
                                 </div>
