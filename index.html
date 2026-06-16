@@ -330,6 +330,31 @@
             transition: all 0.3s ease;
         }
         /* Hover effect on contact items */
+        /* ===== NOTE OUTSIDE ACCORDION ===== */
+        
+        .faq-note {
+            margin-top: 1.5rem;
+            padding: 0.85rem 1.25rem;
+            background: #f0f6ff;
+            border-radius: 10px;
+            border-left: 4px solid #1b5e9e;
+            color: #1f3348;
+            font-size: 0.95rem;
+            display: flex;
+            align-items: flex-start;
+            gap: 0.75rem;
+        }
+        
+        .faq-note i {
+            color: #1b5e9e;
+            font-size: 1.2rem;
+            margin-top: 0.1rem;
+            flex-shrink: 0;
+        }
+        
+        .faq-note strong {
+            color: #0b2a44;
+        }
         
         .contact-widget .info:hover i {
             background: #00a651;
@@ -501,14 +526,6 @@
             line-height: 1.6;
         }
         
-        .faq-list li:before {
-            content: "•";
-            position: absolute;
-            left: 0;
-            color: #00a651;
-            font-size: 16px;
-        }
-        
         .faq-list.two-columns {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
@@ -517,6 +534,37 @@
         
         .faq-list.two-columns li {
             margin-bottom: 0;
+        }
+        
+        .acc-btn {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #0b2a44;
+            padding: 1rem 1.5rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border-radius: 12px;
+            border: 1px solid rgba(27, 94, 158, 0.06);
+        }
+        
+        .acc-btn i:first-child {
+            font-size: 1.2rem;
+            width: 1.8rem;
+            text-align: center;
+            flex-shrink: 0;
+        }
+        
+        .acc-btn .icon {
+            margin-left: auto;
+            transition: transform 0.3s ease;
+            color: #1b5e9e;
+        }
+        
+        .acc-btn.active .icon {
+            transform: rotate(180deg);
         }
         
         .note {
@@ -1113,229 +1161,38 @@
         <!-- start banner-section-two -->
         <section class="banner-section-two">
             <div class="outer-box fix">
-                <!-- Swiper Slider Container -->
-                <div class="swiper banner-slider">
-                    <div class="swiper-wrapper">
-                        <!-- Slide 1 -->
-                        <div class="swiper-slide">
-                            <div class="bg bg-image"><img src="images/banner/banner2-1.jpg" alt="Clinical Research Training"></div>
-                            <div class="banner-content">
-                                <div class="inner-content">
-                                    <div class="h1 banner-title wow fadeInUp" data-wow-delay="200ms">Empowering Future Pharma & Healthcare Leaders</div>
-                                    <div class="text wow fadeInUp" data-wow-delay="400ms">Bridging the gap between academic learning and real-world pharmaceutical industry expectations with industry-relevant training, regulatory expertise, and practical skills.</div>
-                                    <a href="page-contact.html" class="theme-btn btn-style-one wow fadeInUp" data-wow-delay="600ms">
-                                        <span class="btn-arrow-left"><i class="fas flaticon-common-right-arrow"></i></span>
-                                        <span class="btn-title">Explore Programs</span>
-                                        <span class="btn-arrow-right"><i class="fas flaticon-common-right-arrow"></i></span>
-                                    </a>
-                                    <div class="feature-box wow fadeInUp" data-wow-delay="800ms">
-                                        <div class="feature">
-                                            <span class="icon">
+                <div class="bg bg-image"><img src="images/resource/banner2-1.jpg" alt=""></div>
+                <div class="banner-content">
+                    <div class="inner-content">
+                        <div class="h1 banner-title wow fadeInUp" data-wow-delay="200ms">Empowering Future Pharma & Healthcare Leaders</div>
+                        <div class="text wow fadeInUp" data-wow-delay="400ms">Bridging the gap between academic learning and real-world pharmaceutical industry expectations with industry-relevant training, regulatory expertise, and practical skills.</div>
+                        <a href="page-services.html" class="theme-btn btn-style-one wow fadeInUp" data-wow-delay="600ms">
+                            <span class="btn-arrow-left"><i class="fas flaticon-common-right-arrow"></i></span>
+                            <span class="btn-title">Explore Services</span>
+                            <span class="btn-arrow-right"><i class="fas flaticon-common-right-arrow"></i></span>
+                        </a>
+                        <div class="feature-box wow fadeInUp" data-wow-delay="800ms">
+                            <div class="feature">
+                                <span class="icon">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="41" height="31" viewBox="0 0 41 31" fill="none">
                                             <path d="M0 5.95911C0.328125 5.15521 0.91875 4.8845 1.78008 4.89271C6.84141 4.91732 11.9027 4.90911 16.9641 4.90911C17.1281 4.90911 17.3004 4.90911 17.4973 4.90911C17.5465 4.31029 17.3414 3.62122 18.2109 3.48177C18.2109 2.82552 18.2027 2.19388 18.2109 1.56224C18.2191 0.536849 18.7606 0.011849 19.7859 0.00364583C20.1797 0.00364583 20.5816 -0.00455729 20.9754 0.00364583C21.8039 0.0200521 22.3617 0.553255 22.4027 1.38997C22.4191 1.7345 22.4109 2.07904 22.4109 2.42357C22.4109 2.7681 22.4109 3.11263 22.4109 3.48177C23.2641 3.61302 23.0836 4.28568 23.1164 4.90911C23.3051 4.90911 23.4691 4.90911 23.6414 4.90911C28.7274 4.90911 33.8215 4.90911 38.9074 4.90911C40.1215 4.90911 40.6219 5.4013 40.6219 6.60716C40.6219 6.93529 40.6219 7.27161 40.6219 7.59974C40.6137 8.51028 40.0559 9.09271 39.1453 9.10091C37.8656 9.11732 36.5777 9.10091 35.2981 9.10091C34.7566 9.10091 34.2234 9.10091 33.6328 9.10091C33.6328 9.71614 33.6164 10.2904 33.6492 10.8728C33.6574 10.9876 33.8215 11.1107 33.9445 11.1845C36.5039 12.7021 38.1774 14.8923 38.9156 17.7716C40.466 23.8501 36.2168 30.0107 29.9988 30.7243C29.6215 30.7654 29.2359 30.79 28.8504 30.7982C28.2926 30.8064 28.0301 30.5439 28.0301 29.9779C28.0219 29.3216 28.0301 28.6654 28.0301 28.0009C25.0688 27.5825 22.8785 26.106 21.6891 23.3743C20.4914 20.6427 20.918 18.0341 22.6652 15.5322C22.2223 15.2615 21.7957 14.7939 21.3281 14.7365C19.4332 14.515 19.0641 14.6626 18.0387 15.5814C19.7449 18.0013 20.1715 20.6181 18.982 23.3579C17.7926 26.0896 15.6106 27.5661 12.641 27.9927C12.641 28.6243 12.641 29.256 12.641 29.8876C12.641 30.5767 12.4031 30.8064 11.7059 30.7982C6.5461 30.7243 2.05078 26.7376 1.50117 21.6681C1.00898 17.0908 2.80547 13.5962 6.71016 11.1763C6.91524 11.0451 6.99727 10.922 6.98906 10.6759C6.97266 10.1673 6.98086 9.65052 6.98086 9.09271C6.78399 9.09271 6.62813 9.09271 6.47227 9.09271C4.89727 9.09271 3.32227 9.0681 1.75547 9.10091C0.910547 9.12552 0.311719 8.83021 0 8.0181C0 7.33724 0 6.64817 0 5.95911Z" fill="#005252"></path>
                                         </svg>
                                     </span>
-                                            <div class="h6 title">Clinical Research & Training</div>
-                                        </div>
-                                        <div class="feature">
-                                            <span class="icon">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="28" viewBox="0 0 40 28" fill="none">
-                                            <path d="M39.973 17.4482C38.7425 19.1134 37.2741 20.5408 35.6827 21.8369C35.2972 22.1486 34.8788 22.1322 34.6163 21.8041C34.362 21.4841 34.4195 21.0904 34.805 20.7787C36.1011 19.7123 37.3152 18.5556 38.4226 17.2103C35.248 13.5271 31.4171 10.8447 26.7577 9.34352C29.0874 11.5173 30.3671 14.1588 30.3179 17.3662C30.2687 20.5736 28.9726 23.215 26.5034 25.2412C22.4019 28.588 16.5202 28.3009 12.755 24.5767C10.614 22.4603 9.58039 19.8599 9.68703 16.8412C9.79367 13.8388 11.0569 11.3779 13.2472 9.34352C8.58781 10.8283 4.75695 13.5189 1.57413 17.2103C2.57492 18.4408 3.66593 19.5072 4.84718 20.4916C5.00304 20.6228 5.17531 20.7541 5.32296 20.9017C5.58546 21.1642 5.60187 21.5498 5.37218 21.8205C5.1507 22.0912 4.75695 22.1568 4.46163 21.9435C4.14992 21.7138 3.82999 21.4759 3.55929 21.197C2.48468 20.106 1.41007 19.015 0.368274 17.8912C-0.14032 17.3416 -0.107507 17.1283 0.376477 16.5377C3.0589 13.2236 6.30734 10.6068 10.2448 8.97438C19.2191 5.24195 27.5945 6.49703 35.3218 12.3048C37.0937 13.6338 38.6359 15.217 39.9812 16.9806C39.973 17.1365 39.973 17.2923 39.973 17.4482Z" fill="#005252"></path>
-                                        </svg>
-                                    </span>
-                                            <div class="h6 title">Pharmacovigilance & Drug Safety</div>
-                                        </div>
-                                    </div>
-                                </div>
+                                <div class="h6 title">Clinical Research & Training</div>
                             </div>
-                        </div>
-
-                        <!-- Slide 2 -->
-                        <div class="swiper-slide">
-                            <div class="bg bg-image"><img src="images/banner/banner2-2.jpg" alt="Internship & Training"></div>
-                            <div class="banner-content">
-                                <div class="inner-content">
-                                    <div class="h1 banner-title wow fadeInUp" data-wow-delay="200ms">Industry-Recognized Internship Programs</div>
-                                    <div class="text wow fadeInUp" data-wow-delay="400ms">Hands-on training in Clinical Research, Pharmacovigilance, Medical Writing, and Regulatory Affairs with real-time case studies and placement assistance.</div>
-                                    <a href="page-contact.html" class="theme-btn btn-style-one wow fadeInUp" data-wow-delay="600ms">
-                                        <span class="btn-arrow-left"><i class="fas flaticon-common-right-arrow"></i></span>
-                                        <span class="btn-title">Apply Now</span>
-                                        <span class="btn-arrow-right"><i class="fas flaticon-common-right-arrow"></i></span>
-                                    </a>
-                                    <div class="feature-box wow fadeInUp" data-wow-delay="800ms">
-                                        <div class="feature">
-                                            <span class="icon">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="41" height="31" viewBox="0 0 41 31" fill="none">
-                                            <path d="M0 5.95911C0.328125 5.15521 0.91875 4.8845 1.78008 4.89271C6.84141 4.91732 11.9027 4.90911 16.9641 4.90911C17.1281 4.90911 17.3004 4.90911 17.4973 4.90911C17.5465 4.31029 17.3414 3.62122 18.2109 3.48177C18.2109 2.82552 18.2027 2.19388 18.2109 1.56224C18.2191 0.536849 18.7606 0.011849 19.7859 0.00364583C20.1797 0.00364583 20.5816 -0.00455729 20.9754 0.00364583C21.8039 0.0200521 22.3617 0.553255 22.4027 1.38997C22.4191 1.7345 22.4109 2.07904 22.4109 2.42357C22.4109 2.7681 22.4109 3.11263 22.4109 3.48177C23.2641 3.61302 23.0836 4.28568 23.1164 4.90911C23.3051 4.90911 23.4691 4.90911 23.6414 4.90911C28.7274 4.90911 33.8215 4.90911 38.9074 4.90911C40.1215 4.90911 40.6219 5.4013 40.6219 6.60716C40.6219 6.93529 40.6219 7.27161 40.6219 7.59974C40.6137 8.51028 40.0559 9.09271 39.1453 9.10091C37.8656 9.11732 36.5777 9.10091 35.2981 9.10091C34.7566 9.10091 34.2234 9.10091 33.6328 9.10091C33.6328 9.71614 33.6164 10.2904 33.6492 10.8728C33.6574 10.9876 33.8215 11.1107 33.9445 11.1845C36.5039 12.7021 38.1774 14.8923 38.9156 17.7716C40.466 23.8501 36.2168 30.0107 29.9988 30.7243C29.6215 30.7654 29.2359 30.79 28.8504 30.7982C28.2926 30.8064 28.0301 30.5439 28.0301 29.9779C28.0219 29.3216 28.0301 28.6654 28.0301 28.0009C25.0688 27.5825 22.8785 26.106 21.6891 23.3743C20.4914 20.6427 20.918 18.0341 22.6652 15.5322C22.2223 15.2615 21.7957 14.7939 21.3281 14.7365C19.4332 14.515 19.0641 14.6626 18.0387 15.5814C19.7449 18.0013 20.1715 20.6181 18.982 23.3579C17.7926 26.0896 15.6106 27.5661 12.641 27.9927C12.641 28.6243 12.641 29.256 12.641 29.8876C12.641 30.5767 12.4031 30.8064 11.7059 30.7982C6.5461 30.7243 2.05078 26.7376 1.50117 21.6681C1.00898 17.0908 2.80547 13.5962 6.71016 11.1763C6.91524 11.0451 6.99727 10.922 6.98906 10.6759C6.97266 10.1673 6.98086 9.65052 6.98086 9.09271C6.78399 9.09271 6.62813 9.09271 6.47227 9.09271C4.89727 9.09271 3.32227 9.0681 1.75547 9.10091C0.910547 9.12552 0.311719 8.83021 0 8.0181C0 7.33724 0 6.64817 0 5.95911Z" fill="#005252"></path>
-                                        </svg>
-                                    </span>
-                                            <div class="h6 title">Hands-on Training</div>
-                                        </div>
-                                        <div class="feature">
-                                            <span class="icon">
+                            <div class="feature">
+                                <span class="icon">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="40" height="28" viewBox="0 0 40 28" fill="none">
                                             <path d="M39.973 17.4482C38.7425 19.1134 37.2741 20.5408 35.6827 21.8369C35.2972 22.1486 34.8788 22.1322 34.6163 21.8041C34.362 21.4841 34.4195 21.0904 34.805 20.7787C36.1011 19.7123 37.3152 18.5556 38.4226 17.2103C35.248 13.5271 31.4171 10.8447 26.7577 9.34352C29.0874 11.5173 30.3671 14.1588 30.3179 17.3662C30.2687 20.5736 28.9726 23.215 26.5034 25.2412C22.4019 28.588 16.5202 28.3009 12.755 24.5767C10.614 22.4603 9.58039 19.8599 9.68703 16.8412C9.79367 13.8388 11.0569 11.3779 13.2472 9.34352C8.58781 10.8283 4.75695 13.5189 1.57413 17.2103C2.57492 18.4408 3.66593 19.5072 4.84718 20.4916C5.00304 20.6228 5.17531 20.7541 5.32296 20.9017C5.58546 21.1642 5.60187 21.5498 5.37218 21.8205C5.1507 22.0912 4.75695 22.1568 4.46163 21.9435C4.14992 21.7138 3.82999 21.4759 3.55929 21.197C2.48468 20.106 1.41007 19.015 0.368274 17.8912C-0.14032 17.3416 -0.107507 17.1283 0.376477 16.5377C3.0589 13.2236 6.30734 10.6068 10.2448 8.97438C19.2191 5.24195 27.5945 6.49703 35.3218 12.3048C37.0937 13.6338 38.6359 15.217 39.9812 16.9806C39.973 17.1365 39.973 17.2923 39.973 17.4482Z" fill="#005252"></path>
                                         </svg>
                                     </span>
-                                            <div class="h6 title">Placement Assistance</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Slide 3 -->
-                        <div class="swiper-slide">
-                            <div class="bg bg-image"><img src="images/banner/banner2-3.jpg" alt="Regulatory Consulting"></div>
-                            <div class="banner-content">
-                                <div class="inner-content">
-                                    <div class="h1 banner-title wow fadeInUp" data-wow-delay="200ms">Regulatory & Medical Writing Excellence</div>
-                                    <div class="text wow fadeInUp" data-wow-delay="400ms">Expert consulting for Medical Device Compliance, MDR, PMS, CER, and Regulatory Documentation aligned with global standards.</div>
-                                    <a href="page-contact.html" class="theme-btn btn-style-one wow fadeInUp" data-wow-delay="600ms">
-                                        <span class="btn-arrow-left"><i class="fas flaticon-common-right-arrow"></i></span>
-                                        <span class="btn-title">Contact Us</span>
-                                        <span class="btn-arrow-right"><i class="fas flaticon-common-right-arrow"></i></span>
-                                    </a>
-                                    <div class="feature-box wow fadeInUp" data-wow-delay="800ms">
-                                        <div class="feature">
-                                            <span class="icon">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="41" height="31" viewBox="0 0 41 31" fill="none">
-                                            <path d="M0 5.95911C0.328125 5.15521 0.91875 4.8845 1.78008 4.89271C6.84141 4.91732 11.9027 4.90911 16.9641 4.90911C17.1281 4.90911 17.3004 4.90911 17.4973 4.90911C17.5465 4.31029 17.3414 3.62122 18.2109 3.48177C18.2109 2.82552 18.2027 2.19388 18.2109 1.56224C18.2191 0.536849 18.7606 0.011849 19.7859 0.00364583C20.1797 0.00364583 20.5816 -0.00455729 20.9754 0.00364583C21.8039 0.0200521 22.3617 0.553255 22.4027 1.38997C22.4191 1.7345 22.4109 2.07904 22.4109 2.42357C22.4109 2.7681 22.4109 3.11263 22.4109 3.48177C23.2641 3.61302 23.0836 4.28568 23.1164 4.90911C23.3051 4.90911 23.4691 4.90911 23.6414 4.90911C28.7274 4.90911 33.8215 4.90911 38.9074 4.90911C40.1215 4.90911 40.6219 5.4013 40.6219 6.60716C40.6219 6.93529 40.6219 7.27161 40.6219 7.59974C40.6137 8.51028 40.0559 9.09271 39.1453 9.10091C37.8656 9.11732 36.5777 9.10091 35.2981 9.10091C34.7566 9.10091 34.2234 9.10091 33.6328 9.10091C33.6328 9.71614 33.6164 10.2904 33.6492 10.8728C33.6574 10.9876 33.8215 11.1107 33.9445 11.1845C36.5039 12.7021 38.1774 14.8923 38.9156 17.7716C40.466 23.8501 36.2168 30.0107 29.9988 30.7243C29.6215 30.7654 29.2359 30.79 28.8504 30.7982C28.2926 30.8064 28.0301 30.5439 28.0301 29.9779C28.0219 29.3216 28.0301 28.6654 28.0301 28.0009C25.0688 27.5825 22.8785 26.106 21.6891 23.3743C20.4914 20.6427 20.918 18.0341 22.6652 15.5322C22.2223 15.2615 21.7957 14.7939 21.3281 14.7365C19.4332 14.515 19.0641 14.6626 18.0387 15.5814C19.7449 18.0013 20.1715 20.6181 18.982 23.3579C17.7926 26.0896 15.6106 27.5661 12.641 27.9927C12.641 28.6243 12.641 29.256 12.641 29.8876C12.641 30.5767 12.4031 30.8064 11.7059 30.7982C6.5461 30.7243 2.05078 26.7376 1.50117 21.6681C1.00898 17.0908 2.80547 13.5962 6.71016 11.1763C6.91524 11.0451 6.99727 10.922 6.98906 10.6759C6.97266 10.1673 6.98086 9.65052 6.98086 9.09271C6.78399 9.09271 6.62813 9.09271 6.47227 9.09271C4.89727 9.09271 3.32227 9.0681 1.75547 9.10091C0.910547 9.12552 0.311719 8.83021 0 8.0181C0 7.33724 0 6.64817 0 5.95911Z" fill="#005252"></path>
-                                        </svg>
-                                    </span>
-                                            <div class="h6 title">Regulatory Compliance</div>
-                                        </div>
-                                        <div class="feature">
-                                            <span class="icon">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="28" viewBox="0 0 40 28" fill="none">
-                                            <path d="M39.973 17.4482C38.7425 19.1134 37.2741 20.5408 35.6827 21.8369C35.2972 22.1486 34.8788 22.1322 34.6163 21.8041C34.362 21.4841 34.4195 21.0904 34.805 20.7787C36.1011 19.7123 37.3152 18.5556 38.4226 17.2103C35.248 13.5271 31.4171 10.8447 26.7577 9.34352C29.0874 11.5173 30.3671 14.1588 30.3179 17.3662C30.2687 20.5736 28.9726 23.215 26.5034 25.2412C22.4019 28.588 16.5202 28.3009 12.755 24.5767C10.614 22.4603 9.58039 19.8599 9.68703 16.8412C9.79367 13.8388 11.0569 11.3779 13.2472 9.34352C8.58781 10.8283 4.75695 13.5189 1.57413 17.2103C2.57492 18.4408 3.66593 19.5072 4.84718 20.4916C5.00304 20.6228 5.17531 20.7541 5.32296 20.9017C5.58546 21.1642 5.60187 21.5498 5.37218 21.8205C5.1507 22.0912 4.75695 22.1568 4.46163 21.9435C4.14992 21.7138 3.82999 21.4759 3.55929 21.197C2.48468 20.106 1.41007 19.015 0.368274 17.8912C-0.14032 17.3416 -0.107507 17.1283 0.376477 16.5377C3.0589 13.2236 6.30734 10.6068 10.2448 8.97438C19.2191 5.24195 27.5945 6.49703 35.3218 12.3048C37.0937 13.6338 38.6359 15.217 39.9812 16.9806C39.973 17.1365 39.973 17.2923 39.973 17.4482Z" fill="#005252"></path>
-                                        </svg>
-                                    </span>
-                                            <div class="h6 title">Medical Writing</div>
-                                        </div>
-                                    </div>
-                                </div>
+                                <div class="h6 title">Pharmacovigilance & Drug Safety</div>
                             </div>
                         </div>
                     </div>
-
-                    <!-- Slider Navigation Arrows -->
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
-
-                    <!-- Slider Pagination Dots -->
-                    <div class="swiper-pagination"></div>
                 </div>
             </div>
         </section>
-
-        <!-- Swiper CSS and JS (required for slider) -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-        <!-- Initialize Swiper -->
-        <script>
-            document.addEventListener('DOMContentLoaded', function() {
-                const bannerSwiper = new Swiper('.banner-slider', {
-                    loop: true,
-                    autoplay: {
-                        delay: 5000,
-                        disableOnInteraction: false,
-                    },
-                    effect: 'fade',
-                    fadeEffect: {
-                        crossFade: true
-                    },
-                    navigation: {
-                        nextEl: '.swiper-button-next',
-                        prevEl: '.swiper-button-prev',
-                    },
-                    pagination: {
-                        el: '.swiper-pagination',
-                        clickable: true,
-                    },
-                    speed: 1000,
-                });
-            });
-        </script>
-
-        <!-- Additional CSS for Swiper Navigation Styling -->
-        <style>
-            .banner-slider {
-                position: relative;
-                overflow: hidden;
-            }
-            
-            .banner-slider .swiper-slide {
-                position: relative;
-            }
-            
-            .banner-slider .swiper-button-next,
-            .banner-slider .swiper-button-prev {
-                width: 45px;
-                height: 45px;
-                background: rgba(255, 255, 255, 0.2);
-                border-radius: 50%;
-                backdrop-filter: blur(5px);
-                transition: all 0.3s ease;
-            }
-            
-            .banner-slider .swiper-button-next:hover,
-            .banner-slider .swiper-button-prev:hover {
-                background: rgba(26, 95, 139, 0.8);
-            }
-            
-            .banner-slider .swiper-button-next:after,
-            .banner-slider .swiper-button-prev:after {
-                font-size: 18px;
-                color: #ffffff;
-                font-weight: bold;
-            }
-            
-            .banner-slider .swiper-pagination-bullet {
-                width: 10px;
-                height: 10px;
-                background: #ffffff;
-                opacity: 0.5;
-                transition: all 0.3s ease;
-            }
-            
-            .banner-slider .swiper-pagination-bullet-active {
-                width: 25px;
-                border-radius: 5px;
-                background: #1a5f8b;
-                opacity: 1;
-            }
-            
-            .banner-slider .swiper-pagination {
-                bottom: 30px;
-            }
-            /* Ensure banner content is above slider */
-            
-            .banner-section-two .outer-box {
-                position: relative;
-            }
-            
-            .banner-slider .bg {
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                z-index: 0;
-            }
-            
-            .banner-slider .bg img {
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-            }
-            
-            .banner-slider .banner-content {
-                position: relative;
-                z-index: 2;
-            }
-        </style>
         <!-- end banner-section-two -->
 
         <!-- start feature-section -->
@@ -1588,19 +1445,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="bottom-box">
-                                    <div class="inner-box">
-                                        <span>4.9</span>
-                                        <div class="rating">
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                        </div>
-                                        <span>Trusted by 2,000+ Professionals</span>
-                                    </div>
-                                </div>
+
                             </div>
                         </div>
                         <div class="image-column col-xl-5">
@@ -1613,82 +1458,7 @@
             </div>
         </section>
         <!-- start marquee-section -->
-        <section class="marquee-section fix section-padding pt-0">
-            <div class="marquee one">
-                <div class="marquee-group">
-                    <div class="text" data-text="Clinical Trials & Research Support">Clinical Trials & Research Support</div>
-                    <span class="text divider">
-                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M19.471 0.371832C19.5364 0.151832 19.7393 0 19.9694 0C20.1995 0 20.4024 0.151832 20.4679 0.371832C20.4679 0.371832 21.3801 3.42833 22.3579 6.70666C23.916 11.9296 28.0036 16.0153 33.229 17.5726C36.5089 18.5499 39.5668 19.4618 39.5668 19.4618C39.7869 19.5272 39.9388 19.73 39.9388 19.96C39.9388 20.19 39.7869 20.3927 39.5668 20.4582C39.5668 20.4582 36.5089 21.37 33.229 22.3474C28.0036 23.9047 23.916 27.9903 22.3579 33.2133C21.3801 36.4916 20.4679 39.5481 20.4679 39.5481C20.4024 39.7681 20.1995 39.9199 19.9694 39.9199C19.7393 39.9199 19.5364 39.7681 19.471 39.5481C19.471 39.5481 18.5587 36.4916 17.5809 33.2133C16.0228 27.9903 11.9352 23.9047 6.70982 22.3474C3.42995 21.37 0.372008 20.4582 0.372008 20.4582C0.15189 20.3927 0 20.19 0 19.96C0 19.73 0.15189 19.5272 0.372008 19.4618C0.372008 19.4618 3.42995 18.5499 6.70982 17.5726C11.9352 16.0153 16.0228 11.9296 17.5809 6.70666C18.5587 3.42833 19.471 0.371832 19.471 0.371832Z" fill="#121212"></path></svg>
-            </span>
-                    <div class="text" data-text="Pharmaceutical Trade & Distribution">Pharmaceutical Trade & Distribution</div>
-                    <span class="text divider">
-                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M19.471 0.371832C19.5364 0.151832 19.7393 0 19.9694 0C20.1995 0 20.4024 0.151832 20.4679 0.371832C20.4679 0.371832 21.3801 3.42833 22.3579 6.70666C23.916 11.9296 28.0036 16.0153 33.229 17.5726C36.5089 18.5499 39.5668 19.4618 39.5668 19.4618C39.7869 19.5272 39.9388 19.73 39.9388 19.96C39.9388 20.19 39.7869 20.3927 39.5668 20.4582C39.5668 20.4582 36.5089 21.37 33.229 22.3474C28.0036 23.9047 23.916 27.9903 22.3579 33.2133C21.3801 36.4916 20.4679 39.5481 20.4679 39.5481C20.4024 39.7681 20.1995 39.9199 19.9694 39.9199C19.7393 39.9199 19.5364 39.7681 19.471 39.5481C19.471 39.5481 18.5587 36.4916 17.5809 33.2133C16.0228 27.9903 11.9352 23.9047 6.70982 22.3474C3.42995 21.37 0.372008 20.4582 0.372008 20.4582C0.15189 20.3927 0 20.19 0 19.96C0 19.73 0.15189 19.5272 0.372008 19.4618C0.372008 19.4618 3.42995 18.5499 6.70982 17.5726C11.9352 16.0153 16.0228 11.9296 17.5809 6.70666C18.5587 3.42833 19.471 0.371832 19.471 0.371832Z" fill="#121212"></path></svg>
-            </span>
-                    <div class="text" data-text="Medical & Surgical Supplies">Medical & Surgical Supplies</div>
-                    <span class="text divider">
-                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M19.471 0.371832C19.5364 0.151832 19.7393 0 19.9694 0C20.1995 0 20.4024 0.151832 20.4679 0.371832C20.4679 0.371832 21.3801 3.42833 22.3579 6.70666C23.916 11.9296 28.0036 16.0153 33.229 17.5726C36.5089 18.5499 39.5668 19.4618 39.5668 19.4618C39.7869 19.5272 39.9388 19.73 39.9388 19.96C39.9388 20.19 39.7869 20.3927 39.5668 20.4582C39.5668 20.4582 36.5089 21.37 33.229 22.3474C28.0036 23.9047 23.916 27.9903 22.3579 33.2133C21.3801 36.4916 20.4679 39.5481 20.4679 39.5481C20.4024 39.7681 20.1995 39.9199 19.9694 39.9199C19.7393 39.9199 19.5364 39.7681 19.471 39.5481C19.471 39.5481 18.5587 36.4916 17.5809 33.2133C16.0228 27.9903 11.9352 23.9047 6.70982 22.3474C3.42995 21.37 0.372008 20.4582 0.372008 20.4582C0.15189 20.3927 0 20.19 0 19.96C0 19.73 0.15189 19.5272 0.372008 19.4618C0.372008 19.4618 3.42995 18.5499 6.70982 17.5726C11.9352 16.0153 16.0228 11.9296 17.5809 6.70666C18.5587 3.42833 19.471 0.371832 19.471 0.371832Z" fill="#121212"></path></svg>
-            </span>
-                    <div class="text" data-text="Manufacturing & Processing">Manufacturing & Processing</div>
-                    <span class="text divider">
-                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M19.471 0.371832C19.5364 0.151832 19.7393 0 19.9694 0C20.1995 0 20.4024 0.151832 20.4679 0.371832C20.4679 0.371832 21.3801 3.42833 22.3579 6.70666C23.916 11.9296 28.0036 16.0153 33.229 17.5726C36.5089 18.5499 39.5668 19.4618 39.5668 19.4618C39.7869 19.5272 39.9388 19.73 39.9388 19.96C39.9388 20.19 39.7869 20.3927 39.5668 20.4582C39.5668 20.4582 36.5089 21.37 33.229 22.3474C28.0036 23.9047 23.916 27.9903 22.3579 33.2133C21.3801 36.4916 20.4679 39.5481 20.4679 39.5481C20.4024 39.7681 20.1995 39.9199 19.9694 39.9199C19.7393 39.9199 19.5364 39.7681 19.471 39.5481C19.471 39.5481 18.5587 36.4916 17.5809 33.2133C16.0228 27.9903 11.9352 23.9047 6.70982 22.3474C3.42995 21.37 0.372008 20.4582 0.372008 20.4582C0.15189 20.3927 0 20.19 0 19.96C0 19.73 0.15189 19.5272 0.372008 19.4618C0.372008 19.4618 3.42995 18.5499 6.70982 17.5726C11.9352 16.0153 16.0228 11.9296 17.5809 6.70666C18.5587 3.42833 19.471 0.371832 19.471 0.371832Z" fill="#121212"></path></svg>
-            </span>
-                    <div class="text" data-text="Publishing & Knowledge Dissemination">Publishing & Knowledge Dissemination</div>
-                    <span class="text divider">
-                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M19.471 0.371832C19.5364 0.151832 19.7393 0 19.9694 0C20.1995 0 20.4024 0.151832 20.4679 0.371832C20.4679 0.371832 21.3801 3.42833 22.3579 6.70666C23.916 11.9296 28.0036 16.0153 33.229 17.5726C36.5089 18.5499 39.5668 19.4618 39.5668 19.4618C39.7869 19.5272 39.9388 19.73 39.9388 19.96C39.9388 20.19 39.7869 20.3927 39.5668 20.4582C39.5668 20.4582 36.5089 21.37 33.229 22.3474C28.0036 23.9047 23.916 27.9903 22.3579 33.2133C21.3801 36.4916 20.4679 39.5481 20.4679 39.5481C20.4024 39.7681 20.1995 39.9199 19.9694 39.9199C19.7393 39.9199 19.5364 39.7681 19.471 39.5481C19.471 39.5481 18.5587 36.4916 17.5809 33.2133C16.0228 27.9903 11.9352 23.9047 6.70982 22.3474C3.42995 21.37 0.372008 20.4582 0.372008 20.4582C0.15189 20.3927 0 20.19 0 19.96C0 19.73 0.15189 19.5272 0.372008 19.4618C0.372008 19.4618 3.42995 18.5499 6.70982 17.5726C11.9352 16.0153 16.0228 11.9296 17.5809 6.70666C18.5587 3.42833 19.471 0.371832 19.471 0.371832Z" fill="#121212"></path></svg>
-            </span>
-                    <div class="text" data-text="Retail & Digital Infrastructure">Retail & Digital Infrastructure</div>
-                    <span class="text divider">
-                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M19.471 0.371832C19.5364 0.151832 19.7393 0 19.9694 0C20.1995 0 20.4024 0.151832 20.4679 0.371832C20.4679 0.371832 21.3801 3.42833 22.3579 6.70666C23.916 11.9296 28.0036 16.0153 33.229 17.5726C36.5089 18.5499 39.5668 19.4618 39.5668 19.4618C39.7869 19.5272 39.9388 19.73 39.9388 19.96C39.9388 20.19 39.7869 20.3927 39.5668 20.4582C39.5668 20.4582 36.5089 21.37 33.229 22.3474C28.0036 23.9047 23.916 27.9903 22.3579 33.2133C21.3801 36.4916 20.4679 39.5481 20.4679 39.5481C20.4024 39.7681 20.1995 39.9199 19.9694 39.9199C19.7393 39.9199 19.5364 39.7681 19.471 39.5481C19.471 39.5481 18.5587 36.4916 17.5809 33.2133C16.0228 27.9903 11.9352 23.9047 6.70982 22.3474C3.42995 21.37 0.372008 20.4582 0.372008 20.4582C0.15189 20.3927 0 20.19 0 19.96C0 19.73 0.15189 19.5272 0.372008 19.4618C0.372008 19.4618 3.42995 18.5499 6.70982 17.5726C11.9352 16.0153 16.0228 11.9296 17.5809 6.70666C18.5587 3.42833 19.471 0.371832 19.471 0.371832Z" fill="#121212"></path></svg>
-            </span>
-                </div>
-                <!-- duplicate group for seamless loop -->
-                <div class="marquee-group">
-                    <div class="text" data-text="Clinical Trials & Research Support">Clinical Trials & Research Support</div>
-                    <span class="text divider"><svg>...same as above...</svg></span>
-                    <div class="text" data-text="Pharmaceutical Trade & Distribution">Pharmaceutical Trade & Distribution</div>
-                    <span class="text divider"><svg>...</svg></span>
-                    <div class="text" data-text="Medical & Surgical Supplies">Medical & Surgical Supplies</div>
-                    <span class="text divider"><svg>...</svg></span>
-                    <div class="text" data-text="Manufacturing & Processing">Manufacturing & Processing</div>
-                    <span class="text divider"><svg>...</svg></span>
-                    <div class="text" data-text="Publishing & Knowledge Dissemination">Publishing & Knowledge Dissemination</div>
-                    <span class="text divider"><svg>...</svg></span>
-                    <div class="text" data-text="Retail & Digital Infrastructure">Retail & Digital Infrastructure</div>
-                    <span class="text divider"><svg>...</svg></span>
-                </div>
-            </div>
 
-            <div class="marquee two">
-                <div class="marquee-group">
-                    <div class="text" data-text="Clinical Trials & Research Support">Clinical Trials & Research Support</div>
-                    <span class="text divider"><svg fill="white">...</svg></span>
-                    <div class="text" data-text="Pharmaceutical Trade & Distribution">Pharmaceutical Trade & Distribution</div>
-                    <span class="text divider"><svg fill="white">...</svg></span>
-                    <div class="text" data-text="Medical & Surgical Supplies">Medical & Surgical Supplies</div>
-                    <span class="text divider"><svg fill="white">...</svg></span>
-                    <div class="text" data-text="Manufacturing & Processing">Manufacturing & Processing</div>
-                    <span class="text divider"><svg fill="white">...</svg></span>
-                    <div class="text" data-text="Publishing & Knowledge Dissemination">Publishing & Knowledge Dissemination</div>
-                    <span class="text divider"><svg fill="white">...</svg></span>
-                    <div class="text" data-text="Retail & Digital Infrastructure">Retail & Digital Infrastructure</div>
-                    <span class="text divider"><svg fill="white">...</svg></span>
-                </div>
-                <div class="marquee-group">
-                    <div class="text" data-text="Clinical Trials & Research Support">Clinical Trials & Research Support</div>
-                    <span class="text divider"><svg fill="white">...</svg></span>
-                    <div class="text" data-text="Pharmaceutical Trade & Distribution">Pharmaceutical Trade & Distribution</div>
-                    <span class="text divider"><svg fill="white">...</svg></span>
-                    <div class="text" data-text="Medical & Surgical Supplies">Medical & Surgical Supplies</div>
-                    <span class="text divider"><svg fill="white">...</svg></span>
-                    <div class="text" data-text="Manufacturing & Processing">Manufacturing & Processing</div>
-                    <span class="text divider"><svg fill="white">...</svg></span>
-                    <div class="text" data-text="Publishing & Knowledge Dissemination">Publishing & Knowledge Dissemination</div>
-                    <span class="text divider"><svg fill="white">...</svg></span>
-                    <div class="text" data-text="Retail & Digital Infrastructure">Retail & Digital Infrastructure</div>
-                    <span class="text divider"><svg fill="white">...</svg></span>
-                </div>
-            </div>
-        </section>
         <!-- end marquee-section -->
 
         <!-- start services-section-two -->
@@ -1880,7 +1650,9 @@
                                 </div>
                                 <div class="text one">We uphold the highest standards of ethics, transparency, and regulatory compliance in all our operations. Every initiative we undertake is guided by our mission to improve lives, empower professionals, and contribute meaningfully
                                     to the global healthcare landscape.</div>
-                                <div class="text two">Our collaborative ethos drives innovation, compliance, and shared growth. We actively engage with healthcare institutions, research bodies, regulatory authorities, and academic organizations worldwide.</div>
+                                <div class="text two">We actively engage with healthcare institutions and research bodies, regulatory authorities and academic organizations, and domestic and international firms for joint ventures and knowledge exchange. Our collaborative ethos
+                                    drives innovation, compliance, and shared growth.
+                                </div>
                                 <a href="page-contact.html" class="theme-btn btn-style-two">
                                     <span class="btn-arrow-left"><i class="fas flaticon-common-right-arrow"></i></span>
                                     <span class="btn-title">Partner With Us</span>
@@ -2047,71 +1819,68 @@
                 <div class="shape-2 bounce-y"><img src="images/icons/shape-6.png" alt=""></div>
                 <div class="auto-container">
                     <div class="row">
-                        <div class="content-column col-xl-7">
+                        <div class="content-column col-xl-12">
                             <div class="inner-column">
-                                <div class="sec-title light">
-                                    <div class="h6 sub-title border-style style-two">How It Work</div>
-                                    <div class="h2 title char-animation">We guide you through every stage with transparency</div>
-                                    <div class="text">Our process begins with a personalized assessment where we carefully evaluate medical requirements, daily routines.</div>
+                                <div class="sec-title light text-center">
+                                    <div class="h6 sub-title border-style style-two">Official Accreditations & Registrations</div>
+                                    <div class="h2 title char-animation">Pearl PharmMed Healthcare Consulting Pvt. Ltd.</div>
+                                    <div class="text">Legally incorporated entity under the Ministry of Corporate Affairs</div>
                                 </div>
                                 <div class="work-outer">
                                     <div class="row gx-4">
-                                        <div class="work-block col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="200ms">
+                                        <div class="work-block col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="200ms">
                                             <div class="inner-box">
-                                                <div class="features-count">01</div>
                                                 <div class="icon-box">
-                                                    <i aria-hidden="true" class=" flaticon-set-patient"></i>
+                                                    <i aria-hidden="true" class="fas fa-building"></i>
                                                 </div>
                                                 <div class="content">
-                                                    <div class="h5 features-title">Initial Consultation</div>
-                                                    <div class="features-details">Our initial consultation is the first step toward.</div>
+                                                    <div class="h5 features-title">Incorporation</div>
+                                                    <div class="features-details">CIN: U58122TZ2026PTC037337</div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="work-block col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="400ms">
+                                        <div class="work-block col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="400ms">
                                             <div class="inner-box">
-                                                <div class="features-count">02</div>
                                                 <div class="icon-box">
-                                                    <i aria-hidden="true" class=" flaticon-set-pharmacy"></i>
+                                                    <i aria-hidden="true" class="fas fa-id-card"></i>
                                                 </div>
                                                 <div class="content">
-                                                    <div class="h5 features-title">Ongoing Care</div>
-                                                    <div class="features-details">Our initial consultation is the first step toward.</div>
+                                                    <div class="h5 features-title">PAN Card</div>
+                                                    <div class="features-details">PAN: AAQCP5405R</div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="work-block col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="600ms">
+                                        <div class="work-block col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="600ms">
                                             <div class="inner-box">
-                                                <div class="features-count">03</div>
                                                 <div class="icon-box">
-                                                    <i aria-hidden="true" class=" flaticon-set-research"></i>
+                                                    <i aria-hidden="true" class="fas fa-university"></i>
                                                 </div>
                                                 <div class="content">
-                                                    <div class="h5 features-title">Safety Vetting</div>
-                                                    <div class="features-details">Our initial consultation is the first step toward.</div>
+                                                    <div class="h5 features-title">TAN Detail</div>
+                                                    <div class="features-details">TAN: CMBP11030F</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="work-block col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="800ms">
+                                            <div class="inner-box">
+                                                <div class="icon-box">
+                                                    <i aria-hidden="true" class="fas fa-file-signature"></i>
+                                                </div>
+                                                <div class="content">
+                                                    <div class="h5 features-title">DIN Letter</div>
+                                                    <div class="features-details">DIN: 11461892</div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="bottom-box">
+                                <div class="bottom-box text-center">
                                     <div class="inner-box">
-                                        <span>4.9</span>
-                                        <div class="rating">
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                        </div>
-                                        <span>Our 5,000 Reviews</span>
+                                        <a href="#" class="view-btn">
+                                            <i class="fas fa-eye"></i> View All Accreditations
+                                        </a>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="image-column col-xl-5">
-                            <div class="inner-column">
-                                <div class="image wow fadeInUp" data-wow-delay="400ms"><img src="images/resource/work1-1.png" alt=""></div>
                             </div>
                         </div>
                     </div>
@@ -2168,6 +1937,9 @@
                                     <li><i aria-hidden="true" class="icon flaticon-common-checked"></i><span>Pharmacovigilance (PV)</span></li>
                                     <li><i aria-hidden="true" class="icon flaticon-common-checked"></i><span>Medical Device Regulation & Report Writing</span></li>
                                     <li><i aria-hidden="true" class="icon flaticon-common-checked"></i><span>Medical and Regulatory Writing</span></li>
+                                    <li><i aria-hidden="true" class="icon flaticon-common-checked"></i><span> Signal Detection, Risk Management & Literature Review</span></li>
+
+                                    <li><i aria-hidden="true" class="icon flaticon-common-checked"></i><span> Real-time Case Processing & Narrative Writing</span></li>
                                     <li><i aria-hidden="true" class="icon flaticon-common-checked"></i><span>Medical Coding</span></li>
                                 </ul>
                                 <a href="page-contact.html" class="theme-btn btn-style-pricing">Enquire Now</a>
@@ -2230,7 +2002,7 @@
                                     <li><i aria-hidden="true" class="icon flaticon-common-checked"></i><span>Certificates recognized by industry partners</span></li>
                                     <li><i aria-hidden="true" class="icon flaticon-common-checked"></i><span>Expert sessions & one-on-one mentorship</span></li>
                                     <li><i aria-hidden="true" class="icon flaticon-common-checked"></i><span>Placement training & industry networking</span></li>
-                                    <li><i aria-hidden="true" class="icon flaticon-common-checked"></i><span>International guideline training (ICH-GCP, FDA, EMA)</span></li>
+                                    <!-- <li><i aria-hidden="true" class="icon flaticon-common-checked"></i><span>International guideline training (ICH-GCP, FDA, EMA)</span></li> -->
                                 </ul>
                                 <a href="page-contact.html" class="theme-btn btn-style-pricing">Enquire Now</a>
                             </div>
@@ -2576,23 +2348,24 @@
                             <div class="shape-1"><img src="images/icons/shape-7.png" alt=""></div>
                             <div class="sec-title light">
                                 <div class="h6 sub-title style-two border-style">Academic Project Support</div>
-                                <div class="h2 title char-animation">We Support Final-Year & Dissertation Projects</div>
+                                <div class="h2 title ">We Support Final-Year & Dissertation Projects</div>
                             </div>
                             <div class="faq-box">
                                 <div class="inner-box">
                                     <ul class="accordion-box">
                                         <!-- Block 1: Research & Design -->
                                         <li class="accordion block active-block">
-                                            <div class="acc-btn active">📝 Research & Design
+                                            <div class="acc-btn active">
+                                                <i class="fas fa-pencil-alt faq-icon"></i> Research & Design
                                                 <i class="icon fa-solid fa-chevron-down"></i>
                                             </div>
                                             <div class="acc-content current">
                                                 <div class="content">
                                                     <div class="text">
                                                         <ul class="faq-list">
-                                                            <li>Study design development</li>
-                                                            <li>Protocol writing</li>
-                                                            <li>Literature review & publication support</li>
+                                                            <li><i class="fas fa-tasks"></i> Study design development</li>
+                                                            <li><i class="fas fa-file-alt"></i> Protocol writing</li>
+                                                            <li><i class="fas fa-book"></i> Literature review & publication support</li>
                                                         </ul>
                                                     </div>
                                                 </div>
@@ -2600,16 +2373,17 @@
                                         </li>
                                         <!-- Block 2: Specialized Models -->
                                         <li class="accordion block">
-                                            <div class="acc-btn">🧪 Specialized Models
+                                            <div class="acc-btn">
+                                                <i class="fas fa-flask faq-icon"></i> Specialized Models
                                                 <i class="icon fa-solid fa-chevron-down"></i>
                                             </div>
                                             <div class="acc-content">
                                                 <div class="content">
                                                     <div class="text">
                                                         <ul class="faq-list">
-                                                            <li>Clinical research documentation</li>
-                                                            <li>Medical device post-market analysis projects</li>
-                                                            <li>Pharmacovigilance-based research models</li>
+                                                            <li><i class="fas fa-clipboard-list"></i> Clinical research documentation</li>
+                                                            <li><i class="fas fa-microscope"></i> Medical device post-market analysis projects</li>
+                                                            <li><i class="fas fa-shield-alt"></i> Pharmacovigilance-based research models</li>
                                                         </ul>
                                                     </div>
                                                 </div>
@@ -2617,19 +2391,20 @@
                                         </li>
                                         <!-- Block 3: Services for Industry Partners -->
                                         <li class="accordion block">
-                                            <div class="acc-btn">🛠️ Services for Industry Partners
+                                            <div class="acc-btn">
+                                                <i class="fas fa-handshake faq-icon"></i> Services for Industry Partners
                                                 <i class="icon fa-solid fa-chevron-down"></i>
                                             </div>
                                             <div class="acc-content">
                                                 <div class="content">
                                                     <div class="text">
                                                         <ul class="faq-list two-columns">
-                                                            <li>Clinical research documentation</li>
-                                                            <li>Medical & regulatory writing</li>
-                                                            <li>Pharmacovigilance case processing</li>
-                                                            <li>Medical device CER/MDR support</li>
-                                                            <li>Training & capacity building</li>
-                                                            <li>SOP development & compliance audits</li>
+                                                            <li><i class="fas fa-notes-medical"></i> Clinical research documentation</li>
+                                                            <li><i class="fas fa-pen-fancy"></i> Medical & regulatory writing</li>
+                                                            <li><i class="fas fa-exclamation-triangle"></i> Pharmacovigilance case processing</li>
+                                                            <li><i class="fas fa-heartbeat"></i> Medical device CER/MDR support</li>
+                                                            <li><i class="fas fa-chalkboard-teacher"></i> Training & capacity building</li>
+                                                            <li><i class="fas fa-check-double"></i> SOP development & compliance audits</li>
                                                         </ul>
                                                     </div>
                                                 </div>
@@ -2637,19 +2412,20 @@
                                         </li>
                                         <!-- Block 4: We Collaborate With -->
                                         <li class="accordion block">
-                                            <div class="acc-btn">🤝 We Collaborate With
+                                            <div class="acc-btn">
+                                                <i class="fas fa-users faq-icon"></i> We Collaborate With
                                                 <i class="icon fa-solid fa-chevron-down"></i>
                                             </div>
                                             <div class="acc-content">
                                                 <div class="content">
                                                     <div class="text">
                                                         <ul class="faq-list two-columns">
-                                                            <li>🏫 Universities & Colleges</li>
-                                                            <li>💊 Pharmaceutical Companies</li>
-                                                            <li>🏥 Hospitals & Clinical Research Sites</li>
-                                                            <li>📑 Regulatory & Medical Device Organizations</li>
+                                                            <li><i class="fas fa-university"></i> Universities & Colleges</li>
+                                                            <li><i class="fas fa-capsules"></i> Pharmaceutical Companies</li>
+                                                            <li><i class="fas fa-hospital"></i> Hospitals & Clinical Research Sites</li>
+                                                            <li><i class="fas fa-file-medical"></i> Regulatory & Medical Device Organizations</li>
                                                         </ul>
-                                                        <p class="note"><strong>💡 Note:</strong> Our mentorship includes guidance on global regulatory standards to ensure high-quality project outcomes.</p>
+                                                        <p class="note"><i class="fas fa-lightbulb"></i> <strong>Note:</strong> Our mentorship includes guidance on global regulatory standards to ensure high-quality project outcomes.</p>
                                                     </div>
                                                 </div>
                                             </div>
